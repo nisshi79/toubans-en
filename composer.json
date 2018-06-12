@@ -1,0 +1,17 @@
+{
+    "name": "yui/line-liff-starter",
+    "description": "toubanbot",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Yui Nishimura",
+            "email": "nisshi.yui79@gmail.com"
+        }
+    ],
+    "require": {"php": "^7.2.6",
+        "nesbot/carbon": "^1.29"
+    },
+    "require-dev": {
+        "heroku/heroku-buildpack-php": "*"
+    }
+}
