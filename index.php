@@ -4,12 +4,16 @@
 require ('vendor/autoload.php');
 use Carbon\Carbon;
 
+$httpClient = new \LINE\LINEBot\HTTPClient\CurlHTTPClient(getenv("LineMessageAPIChannelAccessToken"));
+$bot = new \LINE\LINEBot($httpClient, ['channelSecret' => getenv("LineMessageAPIChannelSecret")]);
+
 $db = parse_url(getenv("DATABASE_URL"));
 $db["path"] = ltrim($db["path"], "/");
 
 $dt = new Carbon();
 const DAY = 1;
 const WEEK = 7;
+
 
 function getMJD() {
     global $dt;
@@ -34,7 +38,7 @@ function getMJD() {
 $cW = floor((getMJD()+3)/7);
 $toubanNotfication = '今日の掃除は'."\n";
 
-
+//Objects of this class are assigned to each duty table.
 class toubanTable{
     public $itemNum;
     public $memberNum;
@@ -44,6 +48,7 @@ class toubanTable{
     public $firstW;
     public $rotation;
 
+    //Initializing Tables
     function __construct($itemNum, $memberNum, $rotateNum, $perWhat, $firstJD){
         $this->itemNum = $itemNum;
         $this->memberNum = $memberNum;
@@ -52,12 +57,12 @@ class toubanTable{
         $this->firstJD = $firstJD;
         $this->firstW = floor(($firstJD + 3) / 7);
     }
-
+    //Getting Member IDs
     function getMID($iID){
-        $this->rotation = $GLOBALS['cW'] - $this->firstW;
-        $buffer =  (($this->rotation * $this->rotateNum)%max($this->memberNum,$this->itemNum));
+        $this->rotation = $GLOBALS['cW'] - $this->firstW; //Current Rotation
+        $buffer =  (($this->rotation * $this->rotateNum)%max($this->memberNum,$this->itemNum)); //Buffer for Modulo
         if($buffer < 0)$buffer + ($this->rotation * $this->rotateNum);
-        return $iID - $buffer;
+        return $iID - $buffer; //Rotate
     }
 
     function output(){
@@ -67,7 +72,7 @@ class toubanTable{
     }
 }
 
-function time_diff($time_from, $time_to)
+/*function time_diff($time_from, $time_to)
 {
     // 日時差を秒数で取得
     $dif = $time_to - $time_from;
@@ -76,7 +81,8 @@ function time_diff($time_from, $time_to)
     // 日付単位の差
     $dif_days = (strtotime(date("Y-m-d", $dif)) - strtotime("1970-01-01")) / 86400;
     return "{$dif_days}days {$dif_time}";
-}
+}*/
+
 
 
 $itemNums = [1, 3, 5];
