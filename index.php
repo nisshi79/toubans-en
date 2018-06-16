@@ -4,8 +4,19 @@
 require ('vendor/autoload.php');
 use Carbon\Carbon;
 
+use LINE\LINEBot;
+use LINE\LINEBot\HTTPClient;
+
+
+
 $httpClient = new \LINE\LINEBot\HTTPClient\CurlHTTPClient(getenv("LineMessageAPIChannelAccessToken"));
 $bot = new \LINE\LINEBot($httpClient, ['channelSecret' => getenv("LineMessageAPIChannelSecret")]);
+
+$channelSecret = getenv("LineMessageAPIChannelSecret"); // Channel secret string
+$httpRequestBody; // Request body string
+$hash = hash_hmac('sha256', $httpRequestBody, $channelSecret, true);
+$signature = base64_encode($hash);
+
 
 $db = parse_url(getenv("DATABASE_URL"));
 $db["path"] = ltrim($db["path"], "/");
