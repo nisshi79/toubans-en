@@ -30,7 +30,6 @@ function getMJD() {
     return $jD;
 }
 
-
 $cW = floor((getMJD()+3)/7);
 $toubanNotfication = '今日の掃除は'."\n";
 
