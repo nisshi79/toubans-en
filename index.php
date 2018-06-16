@@ -13,10 +13,11 @@ $httpClient = new \LINE\LINEBot\HTTPClient\CurlHTTPClient(getenv("LineMessageAPI
 $bot = new \LINE\LINEBot($httpClient, ['channelSecret' => getenv("LineMessageAPIChannelSecret")]);
 
 $channelSecret = getenv("LineMessageAPIChannelSecret"); // Channel secret string
-$httpRequestBody; // Request body string
+$httpRequestBody = json_decode(file_get_contents('php://input'),true); // Request body string
 $hash = hash_hmac('sha256', $httpRequestBody, $channelSecret, true);
 $signature = base64_encode($hash);
 
+$app->post();
 
 $db = parse_url(getenv("DATABASE_URL"));
 $db["path"] = ltrim($db["path"], "/");
