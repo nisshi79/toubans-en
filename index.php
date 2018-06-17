@@ -15,7 +15,7 @@ $bot = new \LINE\LINEBot($httpClient, ['channelSecret' => getenv("LineMessageAPI
 $channelSecret = getenv('LineMessageAPIChannelSecret'); // Channel secret string
 $httpRequestBody = json_decode(file_get_contents('php://input'),true); // Request body string
 $hash = hash_hmac('sha256', $httpRequestBody, $channelSecret, true);
-$signature = base64_encode($hash);
+$signature = $_SERVER["HTTP_".\LINE\LINEBot\Constant\HTTPHeader::LINE_SIGNATURE];
 $body = file_get_contents('php://input');
 
 
