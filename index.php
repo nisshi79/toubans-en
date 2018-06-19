@@ -3,31 +3,31 @@
 
 require ('vendor/autoload.php');
 use Carbon\Carbon;
-use Silex;
+
 use LINE\LINEBot;
-
-$app = new Silex\Application();
-
-$app->get('/hello/{name}', function($name) use($app) {
-    return 'Hello '.$app->escape($name);
-});
-
-$app->run();
 use LINE\LINEBot\HTTPClient;
 
-
+$request = "php://input";
 
 $httpClient = new \LINE\LINEBot\HTTPClient\CurlHTTPClient(getenv("LineMessageAPIChannelAccessToken"));
 $bot = new \LINE\LINEBot($httpClient, ['channelSecret' => getenv("LineMessageAPIChannelSecret")]);
-$channelSecret = getenv("LineMessageAPIChannelSecret"); // Channel secret string
-$req = 
-$signature = $req->getHeader(HTTPHeader::LINE_SIGNATURE);
 
-/*$httpRequestBody ; // Request body string
+$channelSecret = getenv('LineMessageAPIChannelSecret'); // Channel secret string
+$httpRequestBody = json_decode(file_get_contents('php://input'),true); // Request body string
 $hash = hash_hmac('sha256', $httpRequestBody, $channelSecret, true);
-$signature = base64_encode($hash);*/
+$signature = $_SERVER["HTTP_".\LINE\LINEBot\Constant\HTTPHeader::LINE_SIGNATURE];
+$body = file_get_contents('php://input');
 
 
+
+foreach ($events as $event) {
+    if ($event instanceof \LINE\LINEBot\Event\MessageEvent\TextMessage) {
+        $reply_token = $event->getReplyToken();
+        $text = $event->getText();
+        $bot->replyText($reply_token, $text);
+    }
+}
+$events = $bot->parseEventRequest($body, $signature);
 $db = parse_url(getenv("DATABASE_URL"));
 $db["path"] = ltrim($db["path"], "/");
 
@@ -54,6 +54,7 @@ function getMJD() {
 
     return $jD;
 }
+
 
 $cW = floor((getMJD()+3)/7);
 $toubanNotfication = '今日の掃除は'."\n";
