@@ -11,7 +11,8 @@
     "require": {"php": "^7.2.6",
         "nesbot/carbon": "^1.29",
         "linecorp/line-bot-sdk": "^2.3",
-        "silex/silex": "^2.3"
+        "silex/silex": "^2.3",
+        "slim/slim": "^3.10"
     },
     "require-dev": {
         "heroku/heroku-buildpack-php": "*"
