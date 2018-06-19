@@ -3,6 +3,8 @@
 
 require ('vendor/autoload.php');
 use Carbon\Carbon;
+use Monolog\Logger;
+use Monolog\Handler\StreamHandler;
 
 use LINE\LINEBot;
 use LINE\LINEBot\HTTPClient;
@@ -22,7 +24,7 @@ http_response_code( 200 ) ;
 
 
 $events = $bot->parseEventRequest($body, $signature);
-
+$logger =  new Logger();
 foreach ($events as $event) {
     /** @var EventHandler $handler */
     $handler = null;
