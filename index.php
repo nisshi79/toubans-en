@@ -24,7 +24,7 @@ http_response_code( 200 ) ;
 
 
 $events = $bot->parseEventRequest($body, $signature);
-$logger =  new Logger();
+$logger =  new Logger('lineBotLogger');
 foreach ($events as $event) {
     /** @var EventHandler $handler */
     $handler = null;
