@@ -18,8 +18,7 @@ $hash = hash_hmac('sha256', $httpRequestBody, $channelSecret, true);
 $signature = $_SERVER["HTTP_".\LINE\LINEBot\Constant\HTTPHeader::LINE_SIGNATURE];
 $body = file_get_contents('php://input');
 http_response_code( 200 ) ;
-$route = new Route();
-$route->register();
+
 
 foreach ($events as $event) {
     if ($event instanceof \LINE\LINEBot\Event\MessageEvent\TextMessage) {
