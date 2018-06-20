@@ -19,11 +19,12 @@ $httpRequestBody = json_decode(file_get_contents('php://input'),true); // Reques
 $hash = hash_hmac('sha256', $httpRequestBody, $channelSecret, true);
 $signature = $_SERVER["HTTP_".\LINE\LINEBot\Constant\HTTPHeader::LINE_SIGNATURE];
 $body = file_get_contents('php://input');
-http_response_code( 200 ) ;
+
 
 
 
 $events = $bot->parseEventRequest($body, $signature);
+http_response_code( 200 ) ;
 $logger =  new Logger('lineBotLogger');
 foreach ($events as $event) {
     /** @var EventHandler $handler */
