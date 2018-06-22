@@ -22,65 +22,9 @@ $body = file_get_contents('php://input');
 
 
 
-
 $events = $bot->parseEventRequest($body, $signature);
 http_response_code( 200 ) ;
-$logger =  new Logger('lineBotLogger');
-foreach ($events as $event) {
-    /** @var EventHandler $handler */
-    $handler = null;
-    if ($event instanceof MessageEvent) {
-        if ($event instanceof TextMessage) {
-            $handler = new TextMessageHandler($bot, $logger, $req, $event);
-        } elseif ($event instanceof StickerMessage) {
-            $handler = new StickerMessageHandler($bot, $logger, $event);
-        } elseif ($event instanceof LocationMessage) {
-            $handler = new LocationMessageHandler($bot, $logger, $event);
-        } elseif ($event instanceof ImageMessage) {
-            $handler = new ImageMessageHandler($bot, $logger, $req, $event);
-        } elseif ($event instanceof AudioMessage) {
-            $handler = new AudioMessageHandler($bot, $logger, $req, $event);
-        } elseif ($event instanceof VideoMessage) {
-            $handler = new VideoMessageHandler($bot, $logger, $req, $event);
-        } elseif ($event instanceof UnknownMessage) {
-            $logger->info(sprintf(
-                'Unknown message type has come [message type: %s]',
-                $event->getMessageType()
-            ));
-        } else {
-            // Unexpected behavior (just in case)
-            // something wrong if reach here
-            $logger->info(sprintf(
-                'Unexpected message type has come, something wrong [class name: %s]',
-                get_class($event)
-            ));
-            continue;
-        }
-    } elseif ($event instanceof UnfollowEvent) {
-        $handler = new UnfollowEventHandler($bot, $logger, $event);
-    } elseif ($event instanceof FollowEvent) {
-        $handler = new FollowEventHandler($bot, $logger, $event);
-    } elseif ($event instanceof JoinEvent) {
-        $handler = new JoinEventHandler($bot, $logger, $event);
-    } elseif ($event instanceof LeaveEvent) {
-        $handler = new LeaveEventHandler($bot, $logger, $event);
-    } elseif ($event instanceof PostbackEvent) {
-        $handler = new PostbackEventHandler($bot, $logger, $event);
-    } elseif ($event instanceof BeaconDetectionEvent) {
-        $handler = new BeaconEventHandler($bot, $logger, $event);
-    } elseif ($event instanceof UnknownEvent) {
-        $logger->info(sprintf('Unknown message type has come [type: %s]', $event->getType()));
-    } else {
-        // Unexpected behavior (just in case)
-        // something wrong if reach here
-        $logger->info(sprintf(
-            'Unexpected event type has come, something wrong [class name: %s]',
-            get_class($event)
-        ));
-        continue;
-    }
-    $handler->handle();
-}
+
 $db = parse_url(getenv("DATABASE_URL"));
 $db["path"] = ltrim($db["path"], "/");
 
