@@ -21,11 +21,8 @@ $signature = $_SERVER["HTTP_".\LINE\LINEBot\Constant\HTTPHeader::LINE_SIGNATURE]
 $body = file_get_contents('php://input');
 http_response_code( 200 ) ;
 
-$groupID=$httpRequestBody['events']['source']['groupId'];
-$textMessageBuilder = new \LINE\LINEBot\MessageBuilder\TextMessageBuilder('hello');
-$response = $bot->pushMessage($groupID, $textMessageBuilder);
+/*$groupID=$httpRequestBody['events']['source']['groupId'];*/
 
-echo $response->getHTTPStatus() . ' ' . $response->getRawBody();
 $events = $bot->parseEventRequest($body, $signature);
 
 
@@ -124,7 +121,10 @@ $post_data = array(
     "value2" => getMJD(),
     "value3" => "rr"
 );
+$textMessageBuilder = new \LINE\LINEBot\MessageBuilder\TextMessageBuilder($post_data);
+$response = $bot->pushMessage(Cd7e4374358e5fe9a2a25829af7742985, $textMessageBuilder);
 
+echo $response->getHTTPStatus() . ' ' . $response->getRawBody();
 
 //IFTTT
 $ch = curl_init('https://maker.ifttt.com/trigger/toubanbot1/with/key/rBrhvXD3WeFcdEEwJl6ht');
