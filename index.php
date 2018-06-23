@@ -21,9 +21,9 @@ $signature = $_SERVER["HTTP_".\LINE\LINEBot\Constant\HTTPHeader::LINE_SIGNATURE]
 $body = file_get_contents('php://input');
 http_response_code( 200 ) ;
 
-
+$groupID=$httpRequestBody['events']['source']['groupId'];
 $textMessageBuilder = new \LINE\LINEBot\MessageBuilder\TextMessageBuilder('hello');
-$response = $bot->pushMessage('Ud93e55343ff0dfaa0bd51e382521e44d', $textMessageBuilder);
+$response = $bot->pushMessage($groupID, $textMessageBuilder);
 
 echo $response->getHTTPStatus() . ' ' . $response->getRawBody();
 $events = $bot->parseEventRequest($body, $signature);
