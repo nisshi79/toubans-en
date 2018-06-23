@@ -19,11 +19,15 @@ $httpRequestBody = json_decode(file_get_contents('php://input'),true); // Reques
 $hash = hash_hmac('sha256', $httpRequestBody, $channelSecret, true);
 $signature = $_SERVER["HTTP_".\LINE\LINEBot\Constant\HTTPHeader::LINE_SIGNATURE];
 $body = file_get_contents('php://input');
-
-
-
-$events = $bot->parseEventRequest($body, $signature);
 http_response_code( 200 ) ;
+
+
+$textMessageBuilder = new \LINE\LINEBot\MessageBuilder\TextMessageBuilder('hello');
+$response = $bot->pushMessage('Cd7e4374358e5fe9a2a25829af7742985', $textMessageBuilder);
+
+echo $response->getHTTPStatus() . ' ' . $response->getRawBody();
+$events = $bot->parseEventRequest($body, $signature);
+
 
 $db = parse_url(getenv("DATABASE_URL"));
 $db["path"] = ltrim($db["path"], "/");
