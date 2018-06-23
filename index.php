@@ -24,7 +24,10 @@ http_response_code( 200 ) ;
 /*$groupID=$httpRequestBody['events']['source']['groupId'];*/
 
 $events = $bot->parseEventRequest($body, $signature);
+$textMessageBuilder = new \LINE\LINEBot\MessageBuilder\TextMessageBuilder('test');
+$response = $bot->pushMessage(Cd7e4374358e5fe9a2a25829af7742985, $textMessageBuilder);
 
+echo $response->getHTTPStatus() . ' ' . $response->getRawBody();
 
 $db = parse_url(getenv("DATABASE_URL"));
 $db["path"] = ltrim($db["path"], "/");
@@ -121,13 +124,10 @@ $post_data = array(
     "value2" => getMJD(),
     "value3" => "rr"
 );
-$textMessageBuilder = new \LINE\LINEBot\MessageBuilder\TextMessageBuilder("$toubanNotfication");
-$response = $bot->pushMessage(Cd7e4374358e5fe9a2a25829af7742985, $textMessageBuilder);
 
-echo $response->getHTTPStatus() . ' ' . $response->getRawBody();
 
 //IFTTT
-$ch = curl_init('https://maker.ifttt.com/trigger/toubanbot1/with/key/rBrhvXD3WeFcdEEwJl6ht');
+/*$ch = curl_init('https://maker.ifttt.com/trigger/toubanbot1/with/key/rBrhvXD3WeFcdEEwJl6ht');
 
 curl_setopt($ch,CURLOPT_POST, true);
 
@@ -135,4 +135,4 @@ curl_setopt($ch,CURLOPT_POST, true);
 curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($post_data));
 
 curl_exec($ch);
-curl_close($ch);
+curl_close($ch);*/
