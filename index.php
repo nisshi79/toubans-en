@@ -121,7 +121,7 @@ $post_data = array(
     "value2" => getMJD(),
     "value3" => "rr"
 );
-$textMessageBuilder = new \LINE\LINEBot\MessageBuilder\TextMessageBuilder($post_data);
+$textMessageBuilder = new \LINE\LINEBot\MessageBuilder\TextMessageBuilder($toubanNotfication);
 $response = $bot->pushMessage(Cd7e4374358e5fe9a2a25829af7742985, $textMessageBuilder);
 
 echo $response->getHTTPStatus() . ' ' . $response->getRawBody();
