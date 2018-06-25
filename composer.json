@@ -13,7 +13,8 @@
         "linecorp/line-bot-sdk": "^2.3",
         "silex/silex": "^2.3",
         "slim/slim": "^3.10",
-        "monolog/monolog": "^1.23"
+        "monolog/monolog": "^1.23",
+        "illuminate/database": "^5.6"
     },
     "require-dev": {
         "heroku/heroku-buildpack-php": "*"

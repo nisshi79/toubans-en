@@ -2,6 +2,8 @@
 <?php header( 'Location: /index.html' ) ;
 
 require ('vendor/autoload.php');
+require_once 'bootstrap.php';
+
 use Carbon\Carbon;
 use Monolog\Logger;
 use Monolog\Handler\StreamHandler;
@@ -25,7 +27,7 @@ http_response_code( 200 ) ;
 
 $events = $bot->parseEventRequest($body, $signature);
 $textMessageBuilder = new \LINE\LINEBot\MessageBuilder\TextMessageBuilder('test');
-$response = $bot->pushMessage(Cd7e4374358e5fe9a2a25829af7742985, $textMessageBuilder);
+$response = $bot->pushMessage(Cd7e4374358e5fe9a2a25829aうf7742985, $textMessageBuilder);
 
 echo $response->getHTTPStatus() . ' ' . $response->getRawBody();
 
