@@ -10,10 +10,22 @@ require_once 'vendor/autoload.php';
 
 use Illuminate\Database\Capsule\Manager as Capsule;
 $DATABASE_URL = parse_url(getenv("DATABASE_URL"));
-
+foreach ($DATABASE_URL as $D){
+    echo $D;
+}
+echo $DATABASE_URL;
 $capsule = new Capsule;
-
 $capsule->addConnection([
+    'driver'    => 'pgsql',
+    'host'      => 'localhost',
+    'database'  => 'mylocaldb',
+    'username'  => 'yui',
+    'password'  => '',
+    'charset'   => 'utf8',
+    'collation' => 'utf8_unicode_ci',
+    'prefix'    => '',
+]);
+/*$capsule->addConnection([
     'driver' => 'pgsql',
     'host' => $DATABASE_URL["host"],
     'port' => $DATABASE_URL["port"],
@@ -24,7 +36,7 @@ $capsule->addConnection([
     'prefix' => '',
     'schema' => 'public',
     'sslmode' => 'require',
-]);
+]);*/
 
 // Set the event dispatcher used by Eloquent models... (optional)
 /*use Illuminate\Events\Dispatcher;
@@ -36,3 +48,8 @@ $capsule->setAsGlobal();
 
 // Setup the Eloquent ORM... (optional; unless you've used setEventDispatcher())
 $capsule->bootEloquent();
+
+/*$rows = $capsule::select('show databases');
+foreach($rows as $row) {
+    echo $row->Database . PHP_EOL;
+}*/

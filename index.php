@@ -3,13 +3,21 @@
 
 require ('vendor/autoload.php');
 require_once 'bootstrap.php';
-
+require_once 'users.php';
+$app = new \Slim\App();
 use Carbon\Carbon;
 use Monolog\Logger;
 use Monolog\Handler\StreamHandler;
+/*use Slim;*/
+
+
+
+
 
 use LINE\LINEBot;
 use LINE\LINEBot\HTTPClient;
+
+
 
 $request = "php://input";
 
@@ -22,13 +30,16 @@ $hash = hash_hmac('sha256', $httpRequestBody, $channelSecret, true);
 $signature = $_SERVER["HTTP_".\LINE\LINEBot\Constant\HTTPHeader::LINE_SIGNATURE];
 $body = file_get_contents('php://input');
 http_response_code( 200 ) ;
-
+$user = Models\User::create([
+    'email' => 'test2@example.com'
+]);
 /*$groupID=$httpRequestBody['events']['source']['groupId'];*/
-
-$events = $bot->parseEventRequest($body, $signature);
+$test=Models\User::find(1);
+echo $test['email'];
+/*$events = $bot->parseEventRequest($body, $signature);*/
 $textMessageBuilder = new \LINE\LINEBot\MessageBuilder\TextMessageBuilder('test');
-$response = $bot->pushMessage(Cd7e4374358e5fe9a2a25829aうf7742985, $textMessageBuilder);
-
+$response = $bot->pushMessage(Ud93e55343ff0dfaa0bd51e382521e44d, $textMessageBuilder);
+/*Cd7e4374358e5fe9a2a25829af7742985*/
 echo $response->getHTTPStatus() . ' ' . $response->getRawBody();
 
 $db = parse_url(getenv("DATABASE_URL"));
@@ -127,7 +138,7 @@ $post_data = array(
     "value3" => "rr"
 );
 
-
+echo 'Hello';
 //IFTTT
 /*$ch = curl_init('https://maker.ifttt.com/trigger/toubanbot1/with/key/rBrhvXD3WeFcdEEwJl6ht');
 
@@ -138,3 +149,16 @@ curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($post_data));
 
 curl_exec($ch);
 curl_close($ch);*/
+
+
+$test = $capsule::table('toubantable')->get();
+
+print_r($test);
+/*
+iamhiroserisa
+iamastudentofibarakhighschool
+cells.interior.color=rgb(255,155,133)
+    warewarehautyuujinnda
+    630
+    karayakinikudayo
+*/
