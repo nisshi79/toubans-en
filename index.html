@@ -1,11 +1,45 @@
 <head>
+    <meta http-equiv="content-type" charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LIFF Starter</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="buttongroup">
+
+<form name = "tableInfo" method = "POST" action="update.php">
+    <div>
+        <label for="tablename">当番名:</label>
+        <input type="text" id="tablename"><br><br>
+        <div id = "roles members">
+            <a>役割</a><br>
+            <ol id="roles_list"><!-- "id" attribute is required -->
+                <li class="roles_list_var"><!-- .(id)_var -->
+                    <input type="text" name="roles_list_0" id="roles_list_0">
+                    <button class="roles_list_del">Delete</button><!-- .(id)_del -->
+                </li>
+            </ol>
+            <input type="button" value="Add" class="roles_list_add"><!-- .(id)_add --><br><br>
+
+            <a>メンバー</a><br>
+            <ol id="members_list"><!-- "id" attribute is required -->
+                <li class="members_list_var"><!-- .(id)_var -->
+                    <input type="text" name="members_list_0" id="members_list_0">
+                    <button class="members_list_del">Delete</button><!-- .(id)_del -->
+                </li>
+            </ol>
+            <input type="button" value="Add" class="members_list_add"><!-- .(id)_add --><br>
+
+        </div>
+        <br>
+        <a>回し方</a><br>
+        <input type="radio" id="block_size_day" name="block_size_radio" value="0">日
+        <input type="radio" id="block_size_week" name="block_size_radio" value="1">週
+        <input type="radio" id="block_size_month" name="block_size_radio" value="2">月<br>
+        <button type="submit">送信</button>
+    </div>
+</form>
+<div class="buttongroup">
         <div class="buttonrow">
             <button id="openwindowbutton">Open Window</button>
             <button id="closewindowbutton">Close Window</button>
@@ -69,4 +103,7 @@
     
     <script src="https://d.line-scdn.net/liff/1.0/sdk.js"></script>
     <script src="liff-starter.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.add-input-area@4.11.0/dist/jquery.add-input-area.min.js"></script>
+    <script src="jquery.add-input-area.min.js"></script>
 </body>

@@ -32,5 +32,8 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="jquery-3.3.1" level="application" />
+    <orderEntry type="library" name="sdk" level="application" />
+    <orderEntry type="library" name="jquery.add-input-area" level="application" />
   </component>
 </module>
