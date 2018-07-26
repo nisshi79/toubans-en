@@ -43,3 +43,13 @@ img {
 button {
     margin: 4px;
 }
+
+#avaliable_days_of_week{
+    display: none;
+}
+#avaliable_months_of_year{
+    display: none;
+}
+#notfication_timing_avsolute_value{
+    display: none;
+}
