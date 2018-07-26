@@ -1,7 +1,7 @@
 <?php header( 'Location: /index.html' ) ;
 
 require ('vendor/autoload.php');
-require_once 'bootstrap.php';
+/*require_once 'bootstrap.php';*/
 require_once 'users.php';
 $app = new \Slim\App();
 use Carbon\Carbon;
@@ -29,11 +29,11 @@ $hash = hash_hmac('sha256', $httpRequestBody, $channelSecret, true);
 $signature = $_SERVER["HTTP_".\LINE\LINEBot\Constant\HTTPHeader::LINE_SIGNATURE];
 $body = file_get_contents('php://input');
 http_response_code( 200 ) ;
-$user = Models\User::create([
+/*$user = Models\User::create([
     'email' => 'test2@example.com'
-]);
+]);*/
 /*$groupID=$httpRequestBody['events']['source']['groupId'];*/
-$test=Models\User::find(1);
+/*$test=Models\User::find(1);*/
 echo $test['email'];
 /*$events = $bot->parseEventRequest($body, $signature);*/
 $textMessageBuilder = new \LINE\LINEBot\MessageBuilder\TextMessageBuilder('test');
@@ -125,10 +125,10 @@ $rotateNums = [1, 2, 3];
 $perWhat = [WEEK, WEEK, WEEK];
 
 
-for($i = 0; $i != count($itemNums); $i++){
+/*for($i = 0; $i != count($itemNums); $i++){
     $toubanTable[$i] = new toubanTable($itemNums[$i],$memberNums[$i],$rotateNums[$i],$perWhat[$i],getMJD());
     $toubanTable[$i]->output();
-}
+}*/
 
 
 $post_data = array(
