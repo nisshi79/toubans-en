@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="efe43d86-ccff-4ec1-957d-70c74f49e1e3" name="Default" comment="script.js">
+    <list default="true" id="efe43d86-ccff-4ec1-957d-70c74f49e1e3" name="Default" comment="一旦データーベースとの接続を解除">
+      <change afterPath="$PROJECT_DIR$/.htaccess" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -128,12 +128,13 @@
           <entry key="conf" value="2" />
           <entry key="css" value="94" />
           <entry key="env" value="39" />
+          <entry key="htaccess" value="21" />
           <entry key="html" value="1616" />
           <entry key="js" value="455" />
           <entry key="json" value="2" />
           <entry key="php" value="726" />
           <entry key="sql" value="8" />
-          <entry key="txt" value="151" />
+          <entry key="txt" value="167" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -144,9 +145,10 @@
           <entry key="JSON" value="2" />
           <entry key="JavaScript" value="464" />
           <entry key="PHP" value="726" />
-          <entry key="PLAIN_TEXT" value="181" />
+          <entry key="PLAIN_TEXT" value="197" />
           <entry key="Scratch" value="13" />
           <entry key="SmartyConfig" value="2" />
+          <entry key="htaccess" value="21" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -162,6 +164,7 @@
           <entry key="heroku-hhvm-apache2" value="2" />
           <entry key="heroku-hhvm-nginx" value="1" />
           <entry key="heroku-php-apache2" value="2" />
+          <entry key="htaccess" value="1" />
           <entry key="html" value="1" />
           <entry key="js" value="5" />
           <entry key="json" value="2" />
@@ -189,6 +192,7 @@
           <entry key="Scratch" value="2" />
           <entry key="SmartyConfig" value="1" />
           <entry key="TypeScript" value="1" />
+          <entry key="htaccess" value="1" />
         </counts>
       </usages-collector>
     </session>
@@ -198,11 +202,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="97" column="23" selection-start-line="97" selection-start-column="23" selection-end-line="97" selection-end-column="23" />
+              <folding>
+                <element signature="e#156#174#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.htaccess">
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="69">
-              <caret line="3" column="31" selection-start-line="3" selection-end-line="3" selection-end-column="33" />
+              <caret line="3" column="34" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -279,15 +295,6 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/liff-starter.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1079">
-              <caret line="4" selection-start-line="4" selection-end-line="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -351,6 +358,7 @@
         <option value="$PROJECT_DIR$/index.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/.htaccess" />
       </list>
     </option>
   </component>
@@ -497,7 +505,7 @@
       <workItem from="1531888243160" duration="10033000" />
       <workItem from="1532241707764" duration="14582000" />
       <workItem from="1532568116237" duration="2898000" />
-      <workItem from="1532581971930" duration="9040000" />
+      <workItem from="1532581971930" duration="9478000" />
     </task>
     <task id="LOCAL-00001" summary="前のコードを移植">
       <created>1528791971611</created>
@@ -688,11 +696,18 @@
       <option name="project" value="LOCAL" />
       <updated>1532592181124</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="一旦データーベースとの接続を解除">
+      <created>1532593078475</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1532593078475</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="105604000" />
+    <option name="totallyTimeSpent" value="106042000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -707,20 +722,20 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4678771" visible="true" weight="0.25158563" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.46774194" visible="true" weight="0.25158563" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.5147698" side_tool="true" weight="0.25218913" />
-      <window_info id="Database" order="3" sideWeight="0.5321229" side_tool="true" visible="true" weight="0.25158563" />
+      <window_info id="Database" order="3" sideWeight="0.5322581" side_tool="true" visible="true" weight="0.25158563" />
       <window_info anchor="bottom" id="PHP-CGI Server" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32891566" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.1373494" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.1373494" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32891566" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.3291262" />
-      <window_info anchor="bottom" id="Messages" order="8" weight="0.3288445" />
+      <window_info anchor="bottom" id="Messages" order="8" visible="true" weight="0.32771084" />
       <window_info anchor="bottom" id="Command Line Tools Console" order="9" sideWeight="0.49970675" weight="0.32771084" />
       <window_info anchor="bottom" id="Database Changes" order="10" weight="0.32891566" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.32891566" />
@@ -749,7 +764,8 @@
     <MESSAGE value="JS大好き&#10;メンバーリストと役割リストが良い感じにできた" />
     <MESSAGE value="index.html: ひとまず最低限は完成" />
     <MESSAGE value="script.js" />
-    <option name="LAST_COMMIT_MESSAGE" value="script.js" />
+    <MESSAGE value="一旦データーベースとの接続を解除" />
+    <option name="LAST_COMMIT_MESSAGE" value="一旦データーベースとの接続を解除" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/README.md">
@@ -942,8 +958,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="97" column="23" selection-start-line="97" selection-start-column="23" selection-end-line="97" selection-end-column="23" />
+          <folding>
+            <element signature="e#156#174#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="69">
-          <caret line="3" column="31" selection-start-line="3" selection-end-line="3" selection-end-column="33" />
+          <caret line="3" column="34" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="34" />
         </state>
       </provider>
     </entry>
