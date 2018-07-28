@@ -53,3 +53,15 @@ button {
 #notfication_timing_avsolute_value{
     display: none;
 }
+.roles{
+    display: inline-block;
+    vertical-align: top;
+}
+.members{
+    display: inline-block;
+    vertical-align: top;
+
+}
+.list_add_button{
+    text-align: right;
+}

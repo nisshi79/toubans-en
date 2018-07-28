@@ -7,11 +7,11 @@
 
 <body>
 
-<form name = "tableInfo" method = "POST" action="update.php">
-    <div>
+<form name = "tableInfo" method = "POST" action="input.php">
+    <div class="form">
         <label for="tablename">当番名:</label>
-        <input type="text" id="tablename"><br><br>
-        <div id = "roles members">
+        <input type="text" name="tablename" id="tablename"><br><br>
+        <div class = "roles">
             <a>役割</a><br>
             <ol id="roles_list"><!-- "id" attribute is required -->
                 <li class="roles_list_var"><!-- .(id)_var -->
@@ -19,8 +19,9 @@
                     <button class="roles_list_del">Delete</button><!-- .(id)_del -->
                 </li>
             </ol>
-            <input type="button" value="Add" class="roles_list_add"><!-- .(id)_add --><br><br>
-
+            <input type="button" value="Add" class="roles_list_add list_add_button"><!-- .(id)_add -->
+        </div>
+        <div class="members">
             <a>メンバー</a><br>
             <ol id="members_list"><!-- "id" attribute is required -->
                 <li class="members_list_var"><!-- .(id)_var -->
@@ -28,7 +29,7 @@
                     <button class="members_list_del">Delete</button><!-- .(id)_del -->
                 </li>
             </ol>
-            <input type="button" value="Add" class="members_list_add"><!-- .(id)_add --><br>
+            <input type="button" value="Add" class="members_list_add list_add_button"><!-- .(id)_add --><br>
         </div>
 
         <br>
