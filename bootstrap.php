@@ -13,7 +13,7 @@ $DATABASE_URL = parse_url(getenv("DATABASE_URL"));
 foreach ($DATABASE_URL as $D){
     echo $D;
 }
-echo $DATABASE_URL;
+
 $capsule = new Capsule;
 $capsule->addConnection([
     'driver'    => 'pgsql',

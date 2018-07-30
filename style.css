@@ -50,13 +50,16 @@ button {
 #avaliable_months_of_year{
     display: none;
 }
-#notfication_timing_avsolute_value{
+
+#notification_timing_avsolute_value{
     display: none;
 }
+
 .roles{
     display: inline-block;
     vertical-align: top;
 }
+
 .members{
     display: inline-block;
     vertical-align: top;

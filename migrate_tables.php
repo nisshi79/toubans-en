@@ -21,9 +21,11 @@ Capsule::schema()->create('tables', function (Blueprint $table) {
     $table->increments('id');
     $table->string('title');
     $table->integer('block_size');
+    $table->string('avaliable');
     $table->integer('notification_date');
     $table->time('notification_time');
-    $table->dateTime('last_notified');
+    $table->dateTime('last_notified')->nullable();
+    $table->string('group_id');
     $table->timestamps();
 });
 

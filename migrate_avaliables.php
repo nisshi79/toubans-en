@@ -6,7 +6,7 @@
  * Time: 15:06
  */
 require_once ('bootstrap.php');
-
+require_once ('Table.php');
 /*use Illuminate\Support\Facades\Schema;*/
 use Illuminate\Database\Schema\Blueprint;
 /*use Illuminate\Database\Migrations\Migration;*/
@@ -20,6 +20,7 @@ use Illuminate\Database\Capsule\Manager as Capsule;
 Capsule::schema()->create('avaliables', function (Blueprint $table) {
     $table->increments('id');
     $table->string('avaliable');
+    $table->unsignedBigInteger('table_id');
     $table->foreign('table_id')
         ->references('id')
         ->on('tables');

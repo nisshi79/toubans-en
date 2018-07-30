@@ -1,16 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="efe43d86-ccff-4ec1-957d-70c74f49e1e3" name="Default" comment="index.phpからsend.phpへ退避">
-      <change afterPath="$PROJECT_DIR$/migrate_avaliables.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrate_roles.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrate_tables.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migration_members.php" afterDir="false" />
+    <list default="true" id="efe43d86-ccff-4ec1-957d-70c74f49e1e3" name="Default" comment="migration files">
+      <change afterPath="$PROJECT_DIR$/Avaliable.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Member.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Role.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootstrap.php" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/input.php" beforeDir="false" afterPath="$PROJECT_DIR$/input.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrate_avaliables.php" beforeDir="false" afterPath="$PROJECT_DIR$/migrate_avaliables.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrate_roles.php" beforeDir="false" afterPath="$PROJECT_DIR$/migrate_roles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrate_tables.php" beforeDir="false" afterPath="$PROJECT_DIR$/migrate_tables.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrate_users.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migration_members.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/processing.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/send.php" beforeDir="false" afterPath="$PROJECT_DIR$/send.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/update.php" beforeDir="false" afterPath="$PROJECT_DIR$/input.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/users.php" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -94,14 +106,6 @@
         <item name="postgres: database" type="6d9b600a:PostgresImplModel$Database" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="postgres@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="postgres: database" type="6d9b600a:PostgresImplModel$Database" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="public: schema" type="a16502c0:PostgresImplModel$Schema" />
-      </path>
     </expand>
     <select />
   </component>
@@ -109,7 +113,7 @@
     <session id="-249441798">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="11" />
+          <entry key="project.closed" value="12" />
           <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.18" value="2" />
           <entry key="project.open.time.19" value="1" />
@@ -118,6 +122,7 @@
           <entry key="project.open.time.26" value="1" />
           <entry key="project.open.time.27" value="1" />
           <entry key="project.open.time.28" value="1" />
+          <entry key="project.open.time.32" value="1" />
           <entry key="project.open.time.33" value="1" />
           <entry key="project.open.time.34" value="1" />
           <entry key="project.open.time.37" value="1" />
@@ -125,7 +130,7 @@
           <entry key="project.open.time.43" value="1" />
           <entry key="project.open.time.51" value="1" />
           <entry key="project.open.time.85" value="1" />
-          <entry key="project.opened" value="16" />
+          <entry key="project.opened" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -134,29 +139,29 @@
           <entry key="Procfile" value="4" />
           <entry key="cell" value="5" />
           <entry key="conf" value="2" />
-          <entry key="css" value="207" />
+          <entry key="css" value="211" />
           <entry key="env" value="39" />
-          <entry key="htaccess" value="21" />
-          <entry key="html" value="1732" />
+          <entry key="htaccess" value="23" />
+          <entry key="html" value="1912" />
           <entry key="js" value="455" />
-          <entry key="json" value="2" />
-          <entry key="php" value="1114" />
+          <entry key="json" value="3" />
+          <entry key="php" value="2727" />
           <entry key="sql" value="8" />
-          <entry key="txt" value="223" />
+          <entry key="txt" value="457" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key=".env file" value="13" />
-          <entry key="CSS" value="207" />
-          <entry key="HTML" value="1732" />
-          <entry key="JSON" value="2" />
+          <entry key="CSS" value="211" />
+          <entry key="HTML" value="1912" />
+          <entry key="JSON" value="3" />
           <entry key="JavaScript" value="464" />
-          <entry key="PHP" value="1114" />
-          <entry key="PLAIN_TEXT" value="253" />
+          <entry key="PHP" value="2727" />
+          <entry key="PLAIN_TEXT" value="487" />
           <entry key="Scratch" value="13" />
           <entry key="SmartyConfig" value="2" />
-          <entry key="htaccess" value="21" />
+          <entry key="htaccess" value="23" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -166,20 +171,20 @@
           <entry key="aaeqwxtzyqohka" value="1" />
           <entry key="brin" value="1" />
           <entry key="conf" value="1" />
-          <entry key="css" value="2" />
+          <entry key="css" value="4" />
           <entry key="env" value="3" />
           <entry key="gitignore" value="2" />
           <entry key="heroku-hhvm-apache2" value="2" />
           <entry key="heroku-hhvm-nginx" value="1" />
           <entry key="heroku-php-apache2" value="2" />
           <entry key="htaccess" value="1" />
-          <entry key="html" value="1" />
+          <entry key="html" value="2" />
           <entry key="js" value="5" />
-          <entry key="json" value="2" />
+          <entry key="json" value="4" />
           <entry key="lock" value="1" />
           <entry key="pg_monitor" value="1" />
           <entry key="pg_read_all_stats" value="1" />
-          <entry key="php" value="14" />
+          <entry key="php" value="30" />
           <entry key="sql" value="2" />
           <entry key="toubantable" value="7" />
           <entry key="ts" value="1" />
@@ -189,12 +194,12 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key=".env file" value="2" />
-          <entry key="CSS" value="2" />
+          <entry key="CSS" value="4" />
           <entry key="Database Element" value="7" />
-          <entry key="HTML" value="1" />
-          <entry key="JSON" value="3" />
+          <entry key="HTML" value="2" />
+          <entry key="JSON" value="5" />
           <entry key="JavaScript" value="5" />
-          <entry key="PHP" value="14" />
+          <entry key="PHP" value="30" />
           <entry key="PLAIN_TEXT" value="11" />
           <entry key="SQL" value="6" />
           <entry key="Scratch" value="2" />
@@ -211,78 +216,28 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="69">
-              <caret line="3" column="33" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/input.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.htaccess">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/migrate_users.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="16" column="3" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
+            <state relative-caret-position="166">
+              <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/migrate_tables.php">
+        <entry file="file://$PROJECT_DIR$/send.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="254">
-              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="253">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/migrate_roles.php">
+        <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="529">
-              <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
-              <folding>
-                <element signature="e#162#203#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/migration_members.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="529">
-              <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
-              <folding>
-                <element signature="e#162#203#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/migrate_avaliables.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="575">
-              <caret line="25" column="3" lean-forward="true" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
-              <folding>
-                <element signature="e#162#203#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="23">
+              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
@@ -290,8 +245,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="9" column="52" selection-start-line="9" selection-start-column="52" selection-end-line="9" selection-end-column="52" />
+            <state relative-caret-position="123">
+              <caret line="18" column="60" lean-forward="true" selection-start-line="18" selection-start-column="60" selection-end-line="18" selection-end-column="60" />
             </state>
           </provider>
         </entry>
@@ -299,8 +254,62 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bootstrap.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
+            <state relative-caret-position="279">
+              <caret line="20" column="10" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret line="38" column="13" lean-forward="true" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/migrate_tables.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="621">
+              <caret line="27" column="31" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
+              <folding>
+                <element signature="e#162#203#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/utils.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/migrate_roles.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="235">
+              <caret line="23" selection-start-line="23" selection-end-line="24" />
+              <folding>
+                <element signature="e#162#203#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/migrate_members.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="261">
+              <caret line="23" column="38" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
+              <folding>
+                <element signature="e#162#203#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -317,30 +326,37 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>Listen</find>
+      <find>input</find>
+      <find>b</find>
     </findStrings>
   </component>
   <component name="FrameworkCommandLineHistory">
     <commandsHistory>
-      <command text="composer init" />
-      <command text="composer update" />
-      <command text="composer dumpautoload" />
-      <command text="composer update" />
-      <command text="composer require linecorp/line-bot-sdk" />
-      <command text="composer find slim" />
-      <command text="composer search slim" />
-      <command text="composer require slim/slim" />
-      <command text="composer update3" />
-      <command text="composer update" />
-      <command text="composer require monolog/monolog" />
-      <command text="composer search" />
-      <command text="composer search eloqent" />
-      <command text="composer search Eloquent" />
-      <command text="composer require illuminate/database" />
-      <command text="composer update.php" />
       <command text="composer update" />
       <command text="php artisan make:migration create_users_table --create=users" />
       <command text="php migrate_users.php" />
       <command text="migrate_tables.php" />
+      <command text="migrate_avaliables.php" />
+      <command text="php migrate_tables.php" />
+      <command text="php migrate_avaliables.php" />
+      <command text="php table.php" />
+      <command text="composer update" />
+      <command text="php table.php" />
+      <command text="composer search eloquent" />
+      <command text="composer update" />
+      <command text="php migrate_avaliables.php" />
+      <command text="php migrate_tables.php" />
+      <command text="php migrate_roles.php" />
+      <command text="php migrate_members.php" />
+      <command text="php migrate_roles.php" />
+      <command text="php migrate_members.php" />
+      <command text="php migrate_tables.php" />
+      <command text="php migrate_roles.php" />
+      <command text="php migrate_members.php" />
+      <command text="php migrate_roles.php" />
+      <command text="php migrate_tables.php" />
+      <command text="php migrate_roles.php" />
+      <command text="php migrate_members.php" />
     </commandsHistory>
   </component>
   <component name="Git.Settings">
@@ -358,26 +374,32 @@
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/ccdefd0d-1b0d-4d0e-893d-25ace906de12/console.sql" />
         <option value="$PROJECT_DIR$/Procfile" />
         <option value="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/_conf/apache2/httpd.conf" />
-        <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/.env" />
-        <option value="$PROJECT_DIR$/bootstrap.php" />
         <option value="$PROJECT_DIR$/test.php" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/6332d38e-f9ab-46fa-8cb2-d19516dc3d34/console.sql" />
         <option value="$PROJECT_DIR$/users.php" />
         <option value="$PROJECT_DIR$/liff-starter.js" />
         <option value="$PROJECT_DIR$/jquery.add-input-area.min.js" />
         <option value="$PROJECT_DIR$/index.js" />
-        <option value="$PROJECT_DIR$/.htaccess" />
-        <option value="$PROJECT_DIR$/send.php" />
+        <option value="$PROJECT_DIR$/migrate_users.php" />
         <option value="$PROJECT_DIR$/style.css" />
+        <option value="$PROJECT_DIR$/.htaccess" />
+        <option value="$PROJECT_DIR$/Table.php" />
+        <option value="$PROJECT_DIR$/Role.php" />
+        <option value="$PROJECT_DIR$/Member.php" />
+        <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/migrate_avaliables.php" />
+        <option value="$PROJECT_DIR$/Avaliable.php" />
+        <option value="$PROJECT_DIR$/bootstrap.php" />
+        <option value="$PROJECT_DIR$/migration_members.php" />
+        <option value="$PROJECT_DIR$/utils.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/input.php" />
-        <option value="$PROJECT_DIR$/migrate_users.php" />
         <option value="$PROJECT_DIR$/migrate_tables.php" />
-        <option value="$PROJECT_DIR$/migration_members.php" />
         <option value="$PROJECT_DIR$/migrate_roles.php" />
-        <option value="$PROJECT_DIR$/migrate_avaliables.php" />
+        <option value="$PROJECT_DIR$/migrate_members.php" />
+        <option value="$PROJECT_DIR$/input.php" />
+        <option value="$PROJECT_DIR$/send.php" />
       </list>
     </option>
   </component>
@@ -433,6 +455,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -440,15 +463,10 @@
               <item name="line-liff-starter" type="b2602c69:ProjectViewProjectNode" />
               <item name="line-liff-starter" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="line-liff-starter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -525,7 +543,8 @@
       <workItem from="1532241707764" duration="14582000" />
       <workItem from="1532568116237" duration="2898000" />
       <workItem from="1532581971930" duration="16588000" />
-      <workItem from="1532748967852" duration="1186000" />
+      <workItem from="1532748967852" duration="6230000" />
+      <workItem from="1532791743545" duration="28153000" />
     </task>
     <task id="LOCAL-00001" summary="前のコードを移植">
       <created>1528791971611</created>
@@ -744,11 +763,18 @@
       <option name="project" value="LOCAL" />
       <updated>1532599701250</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="migration files">
+      <created>1532752852356</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1532752852356</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="114338000" />
+    <option name="totallyTimeSpent" value="147535000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -763,10 +789,10 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.46594983" visible="true" weight="0.25158563" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4641577" visible="true" weight="0.25158563" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.5147698" side_tool="true" weight="0.25218913" />
-      <window_info id="Database" order="3" sideWeight="0.53405017" side_tool="true" visible="true" weight="0.25158563" />
+      <window_info id="Database" order="3" sideWeight="0.5358423" side_tool="true" visible="true" weight="0.25158563" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32891566" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -776,7 +802,7 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32891566" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.3291262" />
       <window_info anchor="bottom" id="Messages" order="8" weight="0.32771084" />
-      <window_info active="true" anchor="bottom" id="Command Line Tools Console" order="9" sideWeight="0.49970675" visible="true" weight="0.32771084" />
+      <window_info anchor="bottom" id="Command Line Tools Console" order="9" sideWeight="0.49970675" visible="true" weight="0.32771084" />
       <window_info anchor="bottom" id="Database Changes" order="10" weight="0.32891566" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.32891566" />
       <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.50029325" side_tool="true" weight="0.3288445" />
@@ -809,7 +835,15 @@
     <MESSAGE value=".htaccess" />
     <MESSAGE value=".htaccessを無効化" />
     <MESSAGE value="index.phpからsend.phpへ退避" />
-    <option name="LAST_COMMIT_MESSAGE" value="index.phpからsend.phpへ退避" />
+    <MESSAGE value="migration files" />
+    <option name="LAST_COMMIT_MESSAGE" value="migration files" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="JavascriptDebugType">
+        <watch expression="y" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/README.md">
@@ -838,9 +872,6 @@
     <entry file="file://$PROJECT_DIR$/LICENSE.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/composer.lock">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="723">
@@ -861,13 +892,6 @@
     <entry file="das://6332d38e-f9ab-46fa-8cb2-d19516dc3d34/role/pg_monitor" />
     <entry file="das://6332d38e-f9ab-46fa-8cb2-d19516dc3d34/role/pg_read_all_stats" />
     <entry file="das://6332d38e-f9ab-46fa-8cb2-d19516dc3d34/role/yui" />
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/_conf/apache2/httpd.conf">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3680">
@@ -927,13 +951,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/processing.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Procfile">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -955,29 +972,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="59" column="9" lean-forward="true" selection-start-line="59" selection-start-column="9" selection-end-line="59" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/send.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3737">
-          <caret line="166" column="2" selection-start-line="166" selection-start-column="2" selection-end-line="166" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="33" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.htaccess">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Role.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="13" column="32" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="366">
+          <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/migrate_users.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -986,61 +996,120 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="52" selection-start-line="9" selection-start-column="52" selection-end-line="9" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bootstrap.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/migrate_roles.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
-          <folding>
-            <element signature="e#162#203#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/migrate_avaliables.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="25" column="3" lean-forward="true" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
-          <folding>
-            <element signature="e#162#203#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="462">
+          <caret line="25" column="23" lean-forward="true" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/migration_members.php">
+    <entry file="file://$PROJECT_DIR$/Member.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
-          <folding>
-            <element signature="e#162#203#0#PHP" expanded="true" />
-          </folding>
+        <state>
+          <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/input.php">
+    <entry file="file://$PROJECT_DIR$/Table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="13" column="32" lean-forward="true" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/processing.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Avaliable.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <caret line="12" column="32" lean-forward="true" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="38" column="13" lean-forward="true" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/migrate_tables.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="621">
+          <caret line="27" column="31" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
+          <folding>
+            <element signature="e#162#203#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/migrate_roles.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="23" selection-start-line="23" selection-end-line="24" />
+          <folding>
+            <element signature="e#162#203#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/migrate_members.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="23" column="38" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
+          <folding>
+            <element signature="e#162#203#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="18" column="60" lean-forward="true" selection-start-line="18" selection-start-column="60" selection-end-line="18" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bootstrap.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="20" column="10" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/input.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/send.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>

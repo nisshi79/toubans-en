@@ -20,7 +20,12 @@ use Illuminate\Database\Capsule\Manager as Capsule;
 Capsule::schema()->create('roles', function (Blueprint $table) {
     $table->increments('id');
     $table->string('role');
+    $table->unsignedBigInteger('table_id');
+    $table->unsignedBigInteger('role_id');
+    $table->timestamps();
+
     $table->foreign('table_id')
         ->references('id')
-        ->on('tables');
+        ->on('tables')
+        ->onDelete('cascade');
 });
