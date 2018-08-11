@@ -12,4 +12,9 @@ use Illuminate\Database\Eloquent\Model as EloquentModel;
 class Role extends EloquentModel
 {
     protected $guarded = ['id'];
+
+    public function table()
+    {
+        return $this->belongsTo('Model\Table');
+    }
 }

@@ -16,7 +16,7 @@ use Carbon\Carbon;
 
 
 //Pre-Processing
-if($inputs['notification_timing_number_sign']=='-1') {
+if($inputs['notification_timing_number_sign']=='1') {
     $notification_timing_buffer = $inputs['notification_timing_avsolute_value'] * $inputs['notification_timing_number_sign'];
 }elseif($inputs['notification_timing_number_sign']=='0'){
     $notification_timing_buffer = $inputs['notification_timing_number_sign'];
@@ -41,10 +41,12 @@ switch ($inputs['block_size_radio']){
 $table = \Model\Table::create([
     'title' => $inputs['title'],
     'block_size' => $inputs['block_size_radio'],
-    'avaliable' => $avaliable_buffer,
+    'avaliable_term' => $avaliable_buffer,
     'notification_date' => $notification_timing_buffer,
     'notification_time' => $inputs['notification_time'],
-    'group_id' => $inputs['group_id']
+    'last_notified_at' => Carbon::now(),
+    'group_id' => $inputs['group_id'],
+    'sent_count' => '0'
 ]);
 
 $i = 0;
@@ -52,7 +54,7 @@ foreach ($inputs['roles_list'] as $roles_list){
     $i++;
     $role = \Model\Role::create([
         'role' => $roles_list,
-        'roles_id' => $i,
+        'role_id' => $i,
         'table_id' => $table['id']
     ]);
 }
@@ -66,3 +68,4 @@ foreach ($inputs['members_list'] as $members_list){
         'table_id' => $table['id']
     ]);
 }
+echo $table['notification_timing_avsolute_value'];

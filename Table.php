@@ -12,4 +12,12 @@ use Illuminate\Database\Eloquent\Model as EloquentModel;
 class Table extends EloquentModel
 {
     protected $guarded = ['id'];
+    public function member()
+    {
+        return $this->hasMany('Model\Member');
+    }
+    public function role()
+    {
+        return $this->hasMany('Model\Role');
+    }
 }
