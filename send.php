@@ -19,16 +19,15 @@ $tableArray = \Model\Table::all();
 
 foreach ($tableArray as $table ) {
     $dt = Carbon::now();
-    notify($table);
+    notify($table,$dt);
 }
-function notify($table)
-{
-    global $dt;
+function notify($table,$dt){
+
     switch ($table['block_size']) {
         case 0: //day
             $dt->addDays($table['notification_date']);
             $actual_date = $dt->dayOfWeek;
-            if (in_array("{$actual_date}", explode(',', $table['avaliable_term'])) && isTimeReady($table['notification_time'])) send($table);
+            if (in_array("{$actual_date}", explode(',', $table['avaliable_term'])) && isTimeReady($table['notification_time']) && isTimeReady($table['last_notified_at'],$table['$notification_time'])) send($table);
             // 週のうちの何日目か 0 (日曜)から 6 (土曜)
             break;
         case 1: //week
@@ -79,14 +78,13 @@ function generate($table){
     return $generated_message;
 }
 
-function isTimeReady(){
+function isTimeReady($startTime, $time = 0){
+     $notificationTimeCarbon = new Carbon($startTime);
+     if($time = 0){
+         $dt = Carbon::now();
+     }else{
+         $dt = new Carbon($time);
+     }
 
+     return $dt->gte($notificationTimeCarbon);
 }
-
-use LINE\LINEBot;
-use LINE\LINEBot\HTTPClient;
-
-/*$textMessageBuilder = new \LINE\LINEBot\MessageBuilder\TextMessageBuilder('test');
-$response = $bot->pushMessage(Ud93e55343ff0dfaa0bd51e382521e44d, $textMessageBuilder);*/
-/*Cd7e4374358e5fe9a2a25829af7742985*/
-/*echo $response->getHTTPStatus() . ' ' . $response->getRawBody();*/
