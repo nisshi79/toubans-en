@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="efe43d86-ccff-4ec1-957d-70c74f49e1e3" name="Default" comment="send.phpがほぼ完成&#10;あとは時間処理">
+    <list default="true" id="efe43d86-ccff-4ec1-957d-70c74f49e1e3" name="Default" comment="connection">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootstrap.php" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/input.php" beforeDir="false" afterPath="$PROJECT_DIR$/input.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -136,7 +134,7 @@
           <entry key="json" value="3" />
           <entry key="php" value="5883" />
           <entry key="sql" value="8" />
-          <entry key="txt" value="524" />
+          <entry key="txt" value="534" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -147,7 +145,7 @@
           <entry key="JSON" value="3" />
           <entry key="JavaScript" value="464" />
           <entry key="PHP" value="5883" />
-          <entry key="PLAIN_TEXT" value="554" />
+          <entry key="PLAIN_TEXT" value="564" />
           <entry key="Scratch" value="13" />
           <entry key="SmartyConfig" value="2" />
           <entry key="htaccess" value="30" />
@@ -161,7 +159,7 @@
           <entry key="brin" value="1" />
           <entry key="conf" value="1" />
           <entry key="css" value="5" />
-          <entry key="env" value="5" />
+          <entry key="env" value="6" />
           <entry key="gitignore" value="3" />
           <entry key="heroku-hhvm-apache2" value="2" />
           <entry key="heroku-hhvm-nginx" value="1" />
@@ -182,7 +180,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key=".env file" value="4" />
+          <entry key=".env file" value="5" />
           <entry key="CSS" value="5" />
           <entry key="Database Element" value="7" />
           <entry key="HTML" value="5" />
@@ -204,7 +202,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="92">
@@ -240,11 +238,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/bootstrap.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
+            <state relative-caret-position="437">
+              <caret line="24" column="37" lean-forward="true" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.env">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="230">
+              <caret line="10" column="46" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -275,15 +282,6 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.json">
           <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
-            </state>
-          </provider>
         </entry>
       </file>
     </leaf>
@@ -359,7 +357,6 @@
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/migrate_avaliables.php" />
         <option value="$PROJECT_DIR$/Avaliable.php" />
-        <option value="$PROJECT_DIR$/bootstrap.php" />
         <option value="$PROJECT_DIR$/migration_members.php" />
         <option value="$PROJECT_DIR$/utils.php" />
         <option value="$PROJECT_DIR$/migrate_roles.php" />
@@ -381,6 +378,7 @@
         <option value="$PROJECT_DIR$/style.css" />
         <option value="$PROJECT_DIR$/.htaccess" />
         <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/bootstrap.php" />
       </list>
     </option>
   </component>
@@ -453,7 +451,7 @@
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="postgresql" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="SearchEverywhereHistoryKey" value="in&#9;FILE&#9;file:///Users/yui/line-liff-starter/index.html&#10;s&#9;FILE&#9;file:///Users/yui/line-liff-starter/style.css&#10;ht&#9;FILE&#9;file:///Users/yui/line-liff-starter/index.html&#10;ind&#9;FILE&#9;file:///Users/yui/line-liff-starter/index.html&#10;css&#9;FILE&#9;file:///Users/yui/line-liff-starter/style.css&#10;IN&#9;FILE&#9;file:///Users/yui/line-liff-starter/index.html&#10;Pro&#9;FILE&#9;file:///Users/yui/line-liff-starter/Procfile&#10;sen&#9;FILE&#9;file:///Users/yui/line-liff-starter/send.php&#10;tes&#9;FILE&#9;file:///Users/yui/line-liff-starter/test.php&#10;inp&#9;FILE&#9;file:///Users/yui/line-liff-starter/input.php&#10;inde&#9;FILE&#9;file:///Users/yui/line-liff-starter/index.html&#10;input&#9;FILE&#9;file:///Users/yui/line-liff-starter/input.php&#10;inpu&#9;FILE&#9;file:///Users/yui/line-liff-starter/jquery.add-input-area.min.js&#10;en&#9;FILE&#9;file:///Users/yui/line-liff-starter/.env&#10;mig&#9;FILE&#9;file:///Users/yui/line-liff-starter/migrate_roles.php&#10;migrate&#9;FILE&#9;file:///Users/yui/line-liff-starter/migrate_tables.php&#10;migta&#9;FILE&#9;file:///Users/yui/line-liff-starter/migrate_tables.php&#10;se&#9;FILE&#9;file:///Users/yui/line-liff-starter/send.php&#10;migra&#9;FILE&#9;file:///Users/yui/line-liff-starter/migrate_tables.php&#10;de&#9;FILE&#9;file:///Users/yui/line-liff-starter/demo.php&#10;httpd.co&#9;FILE&#9;file:///Users/yui/line-liff-starter/vendor/heroku/heroku-buildpack-php/support/build/_conf/apache2/httpd.conf&#10;Listen 5000&#9;null&#9;null" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/yui/line-liff-starter/bootstrap.php&#10;in&#9;FILE&#9;file:///Users/yui/line-liff-starter/index.html&#10;s&#9;FILE&#9;file:///Users/yui/line-liff-starter/style.css&#10;ht&#9;FILE&#9;file:///Users/yui/line-liff-starter/index.html&#10;ind&#9;FILE&#9;file:///Users/yui/line-liff-starter/index.html&#10;css&#9;FILE&#9;file:///Users/yui/line-liff-starter/style.css&#10;IN&#9;FILE&#9;file:///Users/yui/line-liff-starter/index.html&#10;Pro&#9;FILE&#9;file:///Users/yui/line-liff-starter/Procfile&#10;sen&#9;FILE&#9;file:///Users/yui/line-liff-starter/send.php&#10;tes&#9;FILE&#9;file:///Users/yui/line-liff-starter/test.php&#10;inp&#9;FILE&#9;file:///Users/yui/line-liff-starter/input.php&#10;inde&#9;FILE&#9;file:///Users/yui/line-liff-starter/index.html&#10;input&#9;FILE&#9;file:///Users/yui/line-liff-starter/input.php&#10;inpu&#9;FILE&#9;file:///Users/yui/line-liff-starter/jquery.add-input-area.min.js&#10;en&#9;FILE&#9;file:///Users/yui/line-liff-starter/.env&#10;mig&#9;FILE&#9;file:///Users/yui/line-liff-starter/migrate_roles.php&#10;migrate&#9;FILE&#9;file:///Users/yui/line-liff-starter/migrate_tables.php&#10;migta&#9;FILE&#9;file:///Users/yui/line-liff-starter/migrate_tables.php&#10;se&#9;FILE&#9;file:///Users/yui/line-liff-starter/send.php&#10;migra&#9;FILE&#9;file:///Users/yui/line-liff-starter/migrate_tables.php&#10;de&#9;FILE&#9;file:///Users/yui/line-liff-starter/demo.php&#10;httpd.co&#9;FILE&#9;file:///Users/yui/line-liff-starter/vendor/heroku/heroku-buildpack-php/support/build/_conf/apache2/httpd.conf&#10;Listen 5000&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="PostgreSQL" />
     <property name="database.console.LAST_STATE" value="false" />
@@ -537,7 +535,7 @@
       <workItem from="1534170837622" duration="837000" />
       <workItem from="1534250469568" duration="1966000" />
       <workItem from="1534260501072" duration="12271000" />
-      <workItem from="1534596462236" duration="1405000" />
+      <workItem from="1534596462236" duration="2417000" />
     </task>
     <task id="LOCAL-00001" summary="前のコードを移植">
       <created>1528791971611</created>
@@ -784,11 +782,25 @@
       <option name="project" value="LOCAL" />
       <updated>1534169499767</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="send.phpがほぼ完成&#10;あとは時間処理">
+      <created>1534600685456</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1534600685456</updated>
+    </task>
+    <task id="LOCAL-00037" summary="connection">
+      <created>1534601267763</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1534601267763</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="212754000" />
+    <option name="totallyTimeSpent" value="213766000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -803,14 +815,14 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.44935805" visible="true" weight="0.18745595" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.44935805" visible="true" weight="0.18745595" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.5147698" side_tool="true" weight="0.25218913" />
       <window_info id="Database" order="3" sideWeight="0.55064195" side_tool="true" visible="true" weight="0.18745595" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32891566" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.15542169" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.15542169" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32891566" />
@@ -852,7 +864,8 @@
     <MESSAGE value="migration files" />
     <MESSAGE value="調整" />
     <MESSAGE value="send.phpがほぼ完成&#10;あとは時間処理" />
-    <option name="LAST_COMMIT_MESSAGE" value="send.phpがほぼ完成&#10;あとは時間処理" />
+    <MESSAGE value="connection" />
+    <option name="LAST_COMMIT_MESSAGE" value="connection" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -958,13 +971,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/demo.php" />
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="46" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_1.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2112">
@@ -1057,13 +1063,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
@@ -1078,8 +1077,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.json">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/liff-starter.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -1088,12 +1091,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bootstrap.php">
+    <entry file="file://$PROJECT_DIR$/jquery.add-input-area.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
+        <state>
+          <caret column="16" selection-start-column="16" selection-end-column="16" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.json">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/.htaccess">
       <provider selected="true" editor-type-id="text-editor" />
@@ -1105,17 +1118,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jquery.add-input-area.min.js">
+    <entry file="file://$PROJECT_DIR$/.env">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="16" selection-start-column="16" selection-end-column="16" />
+        <state relative-caret-position="230">
+          <caret line="10" column="46" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
+    <entry file="file://$PROJECT_DIR$/bootstrap.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        <state relative-caret-position="437">
+          <caret line="24" column="37" lean-forward="true" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
         </state>
       </provider>
     </entry>

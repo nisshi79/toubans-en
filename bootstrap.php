@@ -9,8 +9,8 @@
 require_once 'vendor/autoload.php';
 
 use Illuminate\Database\Capsule\Manager as Capsule;
-$DATABASE_URL = parse_url(getenv("DATABASE_URL"));
-/*foreach ($DATABASE_URL as $D){
+$DATABASE_URL = parse_url(getenv("HEROKU_POSTGRESQL_PUCE_URL"));/*
+foreach ($DATABASE_URL as $D){
     echo $D;
 }*/
 
