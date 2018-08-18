@@ -27,8 +27,14 @@ function notify($table,$dt){
         case 0: //day
             $dt->addDays($table['notification_date']);
             $actual_date = $dt->dayOfWeek;
+
+            echo $table['notification_time'];
+
+            echo $table['last_notified_at'];
+
             if (in_array("{$actual_date}", explode(',', $table['avaliable_term'])) && isTimeReady($table['notification_time']) && isTimeReady($table['last_notified_at'],$table['$notification_time'])) send($table);
             // 週のうちの何日目か 0 (日曜)から 6 (土曜)
+
             break;
         case 1: //week
             send($table);
