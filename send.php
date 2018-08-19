@@ -66,6 +66,8 @@ function send($table){
     $textMessageBuilder = new \LINE\LINEBot\MessageBuilder\TextMessageBuilder($push_message);
     $response = $bot->pushMessage($table['group_id'], $textMessageBuilder);
 
+    $table['last_notified_at'] = Carbon::now(new DateTimeZone('Asia/Tokyo'));
+
     echo $response->getHTTPStatus() . ' ' . $response->getRawBody();
 }
 
