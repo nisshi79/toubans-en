@@ -1,7 +1,7 @@
 window.onload = function (e) {
     liff.init(function (data) {
         initializeApp(data);
-        $('#group_id').val(data.context.userId);
+        document.getElementById('group_id').textContent = data.context.groupId;
     });
 
 };
