@@ -14,6 +14,7 @@ require_once ('Member.php');
 $inputs = filter_input_array(INPUT_POST);
 use Carbon\Carbon;
 
+var_dump($inputs);
 
 //Pre-Processing
 if($inputs['notification_timing_number_sign']=='1') {
