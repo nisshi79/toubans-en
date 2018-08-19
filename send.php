@@ -100,5 +100,7 @@ function isTimeReady($startTime){
 function isGreater($time1, $time2){
     $time2Buf = new Carbon($time2,'Asia/Tokyo');
     $time1Buf = new Carbon($time1,'Asia/Tokyo');
+    echo 'time1Buf is'.$time1Buf.'this';
+    echo 'time2Buf is'.$time2Buf.'this';
     return $time1Buf->lt($time2Buf);
 }
