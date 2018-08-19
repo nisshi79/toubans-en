@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="efe43d86-ccff-4ec1-957d-70c74f49e1e3" name="Default" comment="connection">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="efe43d86-ccff-4ec1-957d-70c74f49e1e3" name="Default" comment="if($time = 0)って何だよ">
       <change beforePath="$PROJECT_DIR$/input.php" beforeDir="false" afterPath="$PROJECT_DIR$/input.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/send.php" beforeDir="false" afterPath="$PROJECT_DIR$/send.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -129,23 +129,23 @@
           <entry key="css" value="433" />
           <entry key="env" value="130" />
           <entry key="htaccess" value="30" />
-          <entry key="html" value="2076" />
+          <entry key="html" value="2084" />
           <entry key="js" value="455" />
           <entry key="json" value="3" />
-          <entry key="php" value="6006" />
+          <entry key="php" value="6050" />
           <entry key="sql" value="8" />
-          <entry key="txt" value="534" />
+          <entry key="txt" value="553" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key=".env file" value="104" />
           <entry key="CSS" value="433" />
-          <entry key="HTML" value="2076" />
+          <entry key="HTML" value="2084" />
           <entry key="JSON" value="3" />
           <entry key="JavaScript" value="464" />
-          <entry key="PHP" value="6006" />
-          <entry key="PLAIN_TEXT" value="564" />
+          <entry key="PHP" value="6050" />
+          <entry key="PLAIN_TEXT" value="583" />
           <entry key="Scratch" value="13" />
           <entry key="SmartyConfig" value="2" />
           <entry key="htaccess" value="30" />
@@ -171,7 +171,7 @@
           <entry key="lock" value="2" />
           <entry key="pg_monitor" value="1" />
           <entry key="pg_read_all_stats" value="1" />
-          <entry key="php" value="63" />
+          <entry key="php" value="64" />
           <entry key="png" value="1" />
           <entry key="sql" value="2" />
           <entry key="toubantable" value="7" />
@@ -188,7 +188,7 @@
           <entry key="Image" value="1" />
           <entry key="JSON" value="9" />
           <entry key="JavaScript" value="10" />
-          <entry key="PHP" value="63" />
+          <entry key="PHP" value="64" />
           <entry key="PLAIN_TEXT" value="14" />
           <entry key="SQL" value="6" />
           <entry key="Scratch" value="2" />
@@ -216,8 +216,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bootstrap.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="575">
-              <caret line="30" column="47" selection-start-line="30" selection-start-column="47" selection-end-line="30" selection-end-column="47" />
+            <state relative-caret-position="240">
+              <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -225,7 +225,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/migrate_members.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
+            <state relative-caret-position="56">
               <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
             </state>
           </provider>
@@ -234,17 +234,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/send.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="371">
-              <caret line="33" selection-start-line="33" selection-end-line="33" />
+            <state relative-caret-position="332">
+              <caret line="87" column="16" selection-start-line="87" selection-start-column="16" selection-end-line="87" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/input.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-59">
-              <caret line="3" column="12" lean-forward="true" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+            <state relative-caret-position="266">
+              <caret line="39" column="45" selection-start-line="39" selection-start-column="45" selection-end-line="39" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="299">
+              <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -267,11 +276,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2208">
-              <caret line="96" column="29" selection-start-line="96" selection-start-column="25" selection-end-line="96" selection-end-column="29" />
+            <state relative-caret-position="368">
+              <caret line="16" column="58" selection-start-line="16" selection-start-column="58" selection-end-line="16" selection-end-column="58" />
             </state>
           </provider>
         </entry>
@@ -365,19 +374,19 @@
         <option value="$PROJECT_DIR$/demo.php" />
         <option value="$PROJECT_DIR$/migrate_tables.php" />
         <option value="$PROJECT_DIR$/Table.php" />
-        <option value="$PROJECT_DIR$/test.php" />
         <option value="$PROJECT_DIR$/update.php" />
         <option value="$PROJECT_DIR$/update.html" />
         <option value="$PROJECT_DIR$/notification.php" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/style.css" />
         <option value="$PROJECT_DIR$/.htaccess" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/.env" />
-        <option value="$PROJECT_DIR$/bootstrap.php" />
         <option value="$PROJECT_DIR$/migrate_members.php" />
-        <option value="$PROJECT_DIR$/send.php" />
         <option value="$PROJECT_DIR$/input.php" />
+        <option value="$PROJECT_DIR$/test.php" />
+        <option value="$PROJECT_DIR$/send.php" />
+        <option value="$PROJECT_DIR$/bootstrap.php" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -450,7 +459,7 @@
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="postgresql" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="SearchEverywhereHistoryKey" value="inde&#9;FILE&#9;file:///Users/yui/line-liff-starter/index.html&#10;inpu&#9;FILE&#9;file:///Users/yui/line-liff-starter/input.php&#10;migrate&#9;FILE&#9;file:///Users/yui/line-liff-starter/migrate_tables.php&#10;sen&#9;FILE&#9;file:///Users/yui/line-liff-starter/send.php&#10;send&#9;null&#9;null&#10;bo&#9;FILE&#9;file:///Users/yui/line-liff-starter/bootstrap.php&#10;in&#9;FILE&#9;file:///Users/yui/line-liff-starter/index.html&#10;s&#9;FILE&#9;file:///Users/yui/line-liff-starter/style.css&#10;ht&#9;FILE&#9;file:///Users/yui/line-liff-starter/index.html&#10;ind&#9;FILE&#9;file:///Users/yui/line-liff-starter/index.html&#10;css&#9;FILE&#9;file:///Users/yui/line-liff-starter/style.css&#10;IN&#9;FILE&#9;file:///Users/yui/line-liff-starter/index.html&#10;Pro&#9;FILE&#9;file:///Users/yui/line-liff-starter/Procfile&#10;tes&#9;FILE&#9;file:///Users/yui/line-liff-starter/test.php&#10;inp&#9;FILE&#9;file:///Users/yui/line-liff-starter/input.php&#10;input&#9;FILE&#9;file:///Users/yui/line-liff-starter/input.php&#10;en&#9;FILE&#9;file:///Users/yui/line-liff-starter/.env&#10;mig&#9;FILE&#9;file:///Users/yui/line-liff-starter/migrate_roles.php&#10;migta&#9;FILE&#9;file:///Users/yui/line-liff-starter/migrate_tables.php&#10;se&#9;FILE&#9;file:///Users/yui/line-liff-starter/send.php&#10;migra&#9;FILE&#9;file:///Users/yui/line-liff-starter/migrate_tables.php&#10;de&#9;FILE&#9;file:///Users/yui/line-liff-starter/demo.php&#10;httpd.co&#9;FILE&#9;file:///Users/yui/line-liff-starter/vendor/heroku/heroku-buildpack-php/support/build/_conf/apache2/httpd.conf&#10;Listen 5000&#9;null&#9;null" />
+    <property name="SearchEverywhereHistoryKey" value="boo&#9;FILE&#9;file:///Users/yui/line-liff-starter/bootstrap.php&#10;ind&#9;FILE&#9;file:///Users/yui/line-liff-starter/index.html&#10;test&#9;FILE&#9;file:///Users/yui/line-liff-starter/test.php&#10;inde&#9;FILE&#9;file:///Users/yui/line-liff-starter/index.html&#10;inpu&#9;FILE&#9;file:///Users/yui/line-liff-starter/input.php&#10;migrate&#9;FILE&#9;file:///Users/yui/line-liff-starter/migrate_tables.php&#10;sen&#9;FILE&#9;file:///Users/yui/line-liff-starter/send.php&#10;send&#9;null&#9;null&#10;bo&#9;FILE&#9;file:///Users/yui/line-liff-starter/bootstrap.php&#10;in&#9;FILE&#9;file:///Users/yui/line-liff-starter/index.html&#10;s&#9;FILE&#9;file:///Users/yui/line-liff-starter/style.css&#10;ht&#9;FILE&#9;file:///Users/yui/line-liff-starter/index.html&#10;css&#9;FILE&#9;file:///Users/yui/line-liff-starter/style.css&#10;IN&#9;FILE&#9;file:///Users/yui/line-liff-starter/index.html&#10;Pro&#9;FILE&#9;file:///Users/yui/line-liff-starter/Procfile&#10;tes&#9;FILE&#9;file:///Users/yui/line-liff-starter/test.php&#10;inp&#9;FILE&#9;file:///Users/yui/line-liff-starter/input.php&#10;input&#9;FILE&#9;file:///Users/yui/line-liff-starter/input.php&#10;en&#9;FILE&#9;file:///Users/yui/line-liff-starter/.env&#10;mig&#9;FILE&#9;file:///Users/yui/line-liff-starter/migrate_roles.php&#10;migta&#9;FILE&#9;file:///Users/yui/line-liff-starter/migrate_tables.php&#10;se&#9;FILE&#9;file:///Users/yui/line-liff-starter/send.php&#10;migra&#9;FILE&#9;file:///Users/yui/line-liff-starter/migrate_tables.php&#10;de&#9;FILE&#9;file:///Users/yui/line-liff-starter/demo.php&#10;httpd.co&#9;FILE&#9;file:///Users/yui/line-liff-starter/vendor/heroku/heroku-buildpack-php/support/build/_conf/apache2/httpd.conf&#10;Listen 5000&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="PostgreSQL" />
     <property name="database.console.LAST_STATE" value="false" />
@@ -535,7 +544,7 @@
       <workItem from="1534250469568" duration="1966000" />
       <workItem from="1534260501072" duration="12271000" />
       <workItem from="1534596462236" duration="7111000" />
-      <workItem from="1534667233851" duration="728000" />
+      <workItem from="1534667233851" duration="3073000" />
     </task>
     <task id="LOCAL-00001" summary="前のコードを移植">
       <created>1528791971611</created>
@@ -831,11 +840,18 @@
       <option name="project" value="LOCAL" />
       <updated>1534620021859</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="connection">
+      <created>1534675251544</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1534675251544</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="219188000" />
+    <option name="totallyTimeSpent" value="221533000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -850,10 +866,10 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.44819278" visible="true" weight="0.18745595" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.44793153" visible="true" weight="0.18745595" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.5147698" side_tool="true" weight="0.25218913" />
-      <window_info id="Database" order="3" sideWeight="0.5518072" side_tool="true" visible="true" weight="0.18745595" />
+      <window_info id="Database" order="3" sideWeight="0.5520685" side_tool="true" visible="true" weight="0.18745595" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32891566" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -1019,13 +1035,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/update.php" />
     <entry file="file://$PROJECT_DIR$/update.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -1117,31 +1126,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bootstrap.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="30" column="47" selection-start-line="30" selection-start-column="47" selection-end-line="30" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/migrate_members.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.env">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="69">
           <caret line="3" column="67" selection-start-line="3" selection-start-column="67" selection-end-line="3" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2208">
-          <caret line="96" column="29" selection-start-line="96" selection-start-column="25" selection-end-line="96" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -1155,17 +1143,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/send.php">
+    <entry file="file://$PROJECT_DIR$/test.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        <state relative-caret-position="299">
+          <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/input.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-59">
-          <caret line="3" column="12" lean-forward="true" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+        <state relative-caret-position="266">
+          <caret line="39" column="45" selection-start-line="39" selection-start-column="45" selection-end-line="39" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/migrate_members.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/send.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="87" column="16" selection-start-line="87" selection-start-column="16" selection-end-line="87" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bootstrap.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="16" column="58" selection-start-line="16" selection-start-column="58" selection-end-line="16" selection-end-column="58" />
         </state>
       </provider>
     </entry>

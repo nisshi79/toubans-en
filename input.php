@@ -37,13 +37,13 @@ switch ($inputs['block_size_radio']){
     default:
         break;
 }
-echo $inputs['notification_time'];
+
 $table = \Model\Table::create([
     'title' => $inputs['title'],
     'block_size' => $inputs['block_size_radio'],
     'avaliable_term' => $avaliable_buffer,
     'notification_date' => $notification_timing_buffer,
-    'notification_time' => date('H:i',$inputs['notification_time']),
+    'notification_time' => $inputs['notification_time'],
     'last_notified_at' => Carbon::now(),
     'group_id' => $inputs['group_id'],
     'sent_count' => '0'

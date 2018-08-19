@@ -15,12 +15,11 @@ require_once ('Table.php');
 use Carbon\Carbon;
 $tableArray = \Model\Table::all();
 
-
-
 foreach ($tableArray as $table ) {
     $dt = Carbon::now();
     notify($table,$dt);
 }
+
 function notify($table,$dt){
 
     switch ($table['block_size']) {
@@ -86,7 +85,7 @@ function generate($table){
 
 function isTimeReady($startTime, $time = 0){
      $notificationTimeCarbon = new Carbon($startTime);
-     if($time = 0){
+     if($time == 0){
          $dt = Carbon::now();
      }else{
          $dt = new Carbon($time);
