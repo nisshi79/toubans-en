@@ -1,6 +1,7 @@
 window.onload = function (e) {
     liff.init(function (data) {
         initializeApp(data);
+        $('#group_id').val(data.context.userId);
     });
 
 };
