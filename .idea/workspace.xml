@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="efe43d86-ccff-4ec1-957d-70c74f49e1e3" name="Default" comment="sent_count実装">
+    <list default="true" id="efe43d86-ccff-4ec1-957d-70c74f49e1e3" name="Default" comment="last_notified_at実装">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/send.php" beforeDir="false" afterPath="$PROJECT_DIR$/send.php" afterDir="false" />
     </list>
@@ -132,10 +132,10 @@
           <entry key="html" value="2135" />
           <entry key="js" value="498" />
           <entry key="json" value="3" />
-          <entry key="php" value="6281" />
+          <entry key="php" value="6331" />
           <entry key="sh" value="27" />
           <entry key="sql" value="8" />
-          <entry key="txt" value="620" />
+          <entry key="txt" value="638" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -145,8 +145,8 @@
           <entry key="HTML" value="2135" />
           <entry key="JSON" value="3" />
           <entry key="JavaScript" value="507" />
-          <entry key="PHP" value="6281" />
-          <entry key="PLAIN_TEXT" value="677" />
+          <entry key="PHP" value="6331" />
+          <entry key="PLAIN_TEXT" value="695" />
           <entry key="Scratch" value="13" />
           <entry key="SmartyConfig" value="2" />
           <entry key="htaccess" value="30" />
@@ -218,7 +218,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/migrate_members.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="56">
+            <state relative-caret-position="185">
               <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
             </state>
           </provider>
@@ -227,8 +227,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/send.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="278">
-              <caret line="62" column="69" lean-forward="true" selection-start-line="62" selection-start-column="69" selection-end-line="62" selection-end-column="69" />
+            <state relative-caret-position="548">
+              <caret line="98" column="13" selection-start-line="98" selection-start-column="13" selection-end-line="98" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -557,21 +557,7 @@
       <workItem from="1534250469568" duration="1966000" />
       <workItem from="1534260501072" duration="12271000" />
       <workItem from="1534596462236" duration="7111000" />
-      <workItem from="1534667233851" duration="9515000" />
-    </task>
-    <task id="LOCAL-00008" summary="Merge branch 'master' of https://github.com/nisshi79/line-liff-starter&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;index.php">
-      <created>1529384447874</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1529384447874</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Merge branch 'master' of https://github.com/nisshi79/line-liff-starter&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;index.php">
-      <created>1529384727110</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1529384727110</updated>
+      <workItem from="1534667233851" duration="10269000" />
     </task>
     <task id="LOCAL-00010" summary="Merge branch 'master' of https://github.com/nisshi79/line-liff-starter&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;index.php">
       <created>1529385487350</created>
@@ -902,11 +888,25 @@
       <option name="project" value="LOCAL" />
       <updated>1534699982001</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="sent_count実装">
+      <created>1534700336922</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1534700336922</updated>
+    </task>
+    <task id="LOCAL-00058" summary="last_notified_at実装">
+      <created>1534700637258</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1534700637259</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="227975000" />
+    <option name="totallyTimeSpent" value="228729000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1002,7 +1002,8 @@
     <MESSAGE value="認証" />
     <MESSAGE value="group_idの修正" />
     <MESSAGE value="sent_count実装" />
-    <option name="LAST_COMMIT_MESSAGE" value="sent_count実装" />
+    <MESSAGE value="last_notified_at実装" />
+    <option name="LAST_COMMIT_MESSAGE" value="last_notified_at実装" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -1200,13 +1201,6 @@
     <entry file="file://$PROJECT_DIR$/.htaccess">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/migrate_members.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bootstrap.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -1270,10 +1264,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/migrate_members.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/send.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="62" column="69" lean-forward="true" selection-start-line="62" selection-start-column="69" selection-end-line="62" selection-end-column="69" />
+        <state relative-caret-position="548">
+          <caret line="98" column="13" selection-start-line="98" selection-start-column="13" selection-end-line="98" selection-end-column="13" />
         </state>
       </provider>
     </entry>
