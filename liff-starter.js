@@ -1,7 +1,7 @@
 window.onload = function (e) {
     liff.init(function (data) {
         initializeApp(data);
-        $('group_id').val(data.context.groupId);
+
     });
 
 };
@@ -14,7 +14,7 @@ function initializeApp(data) {
     document.getElementById('utouidfield').textContent = data.context.utouId;
     document.getElementById('roomidfield').textContent = data.context.roomId;
     document.getElementById('groupidfield').textContent = data.context.groupId;
-
+    $('#group_id').val(data.context.groupId);
     // openWindow call
     document.getElementById('openwindowbutton').addEventListener('click', function () {
         liff.openWindow({
