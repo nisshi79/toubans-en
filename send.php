@@ -32,7 +32,7 @@ function notify($table,$dt){
 
             echo $table['last_notified_at'];
 
-            if (in_array("{$actual_date}", explode(',', $table['avaliable_term'])) && isTimeReady($table['notification_time']) && isTimeReady($table['last_notified_at'],$table['$notification_time'])) send($table);
+            if (in_array("{$actual_date}", explode(',', $table['avaliable_term'])) && isTimeReady($table['notification_time']) && isGreater($table['last_notified_at'], $table['notification_time'])) send($table);
             // 週のうちの何日目か 0 (日曜)から 6 (土曜)
 
             break;
@@ -89,13 +89,16 @@ function generate($table){
     return $generated_message;
 }
 
-function isTimeReady($startTime, $time = 0){
+function isTimeReady($startTime){
      $notificationTimeCarbon = new Carbon($startTime,'Asia/Tokyo');
-     if($time == 0){
-         $dt = Carbon::now(new DateTimeZone('Asia/Tokyo'));
-     }else{
-         $dt = new Carbon($time,'Asia/Tokyo');
-     }
-    echo 'koregaaa'.$dt;
-     return $dt->gte($notificationTimeCarbon);
+
+     $dt = Carbon::now(new DateTimeZone('Asia/Tokyo'));
+
+    echo 'koregaaa'.$dt.'soredaa';
+    return $dt->gte($notificationTimeCarbon);
+}
+function isGreater($time1, $time2){
+    $time2Buf = new Carbon($time2,'Asia/Tokyo');
+    $time1Buf = new Carbon($time1,'Asia/Tokyo');
+    return $time2Buf->gt($time1Buf);
 }
