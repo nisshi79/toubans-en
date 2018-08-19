@@ -103,6 +103,7 @@
           <entry key="project.open.time.26" value="1" />
           <entry key="project.open.time.27" value="1" />
           <entry key="project.open.time.28" value="2" />
+          <entry key="project.open.time.29" value="1" />
           <entry key="project.open.time.31" value="1" />
           <entry key="project.open.time.32" value="1" />
           <entry key="project.open.time.33" value="3" />
@@ -116,7 +117,7 @@
           <entry key="project.open.time.51" value="1" />
           <entry key="project.open.time.60" value="1" />
           <entry key="project.open.time.85" value="1" />
-          <entry key="project.opened" value="28" />
+          <entry key="project.opened" value="29" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -131,7 +132,7 @@
           <entry key="html" value="2076" />
           <entry key="js" value="455" />
           <entry key="json" value="3" />
-          <entry key="php" value="5992" />
+          <entry key="php" value="6006" />
           <entry key="sql" value="8" />
           <entry key="txt" value="534" />
         </counts>
@@ -143,7 +144,7 @@
           <entry key="HTML" value="2076" />
           <entry key="JSON" value="3" />
           <entry key="JavaScript" value="464" />
-          <entry key="PHP" value="5992" />
+          <entry key="PHP" value="6006" />
           <entry key="PLAIN_TEXT" value="564" />
           <entry key="Scratch" value="13" />
           <entry key="SmartyConfig" value="2" />
@@ -171,6 +172,7 @@
           <entry key="pg_monitor" value="1" />
           <entry key="pg_read_all_stats" value="1" />
           <entry key="php" value="63" />
+          <entry key="png" value="1" />
           <entry key="sql" value="2" />
           <entry key="toubantable" value="7" />
           <entry key="ts" value="1" />
@@ -183,6 +185,7 @@
           <entry key="CSS" value="5" />
           <entry key="Database Element" value="7" />
           <entry key="HTML" value="5" />
+          <entry key="Image" value="1" />
           <entry key="JSON" value="9" />
           <entry key="JavaScript" value="10" />
           <entry key="PHP" value="63" />
@@ -213,8 +216,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bootstrap.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="269">
-              <caret line="30" column="47" lean-forward="true" selection-start-line="30" selection-start-column="47" selection-end-line="30" selection-end-column="47" />
+            <state relative-caret-position="575">
+              <caret line="30" column="47" selection-start-line="30" selection-start-column="47" selection-end-line="30" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -222,7 +225,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/migrate_members.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
+            <state relative-caret-position="230">
               <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
             </state>
           </provider>
@@ -240,8 +243,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/input.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="501">
-              <caret line="45" column="69" selection-start-line="45" selection-start-column="69" selection-end-line="45" selection-end-column="69" />
+            <state relative-caret-position="-59">
+              <caret line="3" column="12" lean-forward="true" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -249,8 +252,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/migrate_tables.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="25" column="25" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
+            <state relative-caret-position="345">
+              <caret line="18" column="7" lean-forward="true" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -267,7 +270,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
+            <state relative-caret-position="2208">
               <caret line="96" column="29" selection-start-line="96" selection-start-column="25" selection-end-line="96" selection-end-column="29" />
             </state>
           </provider>
@@ -275,11 +278,6 @@
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.htaccess">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app.json">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
@@ -423,7 +421,7 @@
       <path value="$PROJECT_DIR$/vendor/illuminate/support" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
     <option name="width" value="1440" />
     <option name="height" value="900" />
   </component>
@@ -536,7 +534,8 @@
       <workItem from="1534170837622" duration="837000" />
       <workItem from="1534250469568" duration="1966000" />
       <workItem from="1534260501072" duration="12271000" />
-      <workItem from="1534596462236" duration="5477000" />
+      <workItem from="1534596462236" duration="7111000" />
+      <workItem from="1534667233851" duration="728000" />
     </task>
     <task id="LOCAL-00001" summary="前のコードを移植">
       <created>1528791971611</created>
@@ -825,11 +824,18 @@
       <option name="project" value="LOCAL" />
       <updated>1534617786682</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="connection">
+      <created>1534620021857</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1534620021859</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="216826000" />
+    <option name="totallyTimeSpent" value="219188000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -844,14 +850,14 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.44935805" visible="true" weight="0.18745595" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.44819278" visible="true" weight="0.18745595" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.5147698" side_tool="true" weight="0.25218913" />
-      <window_info id="Database" order="3" sideWeight="0.55064195" side_tool="true" visible="true" weight="0.18745595" />
+      <window_info id="Database" order="3" sideWeight="0.5518072" side_tool="true" visible="true" weight="0.18745595" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32891566" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.15542169" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.15542169" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32891566" />
@@ -904,7 +910,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="das://ccdefd0d-1b0d-4d0e-893d-25ace906de12/role/aaensdrdqgreyc" />
     <entry file="das://ccdefd0d-1b0d-4d0e-893d-25ace906de12/role/aaeqwxtzyqohka" />
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -1102,12 +1107,8 @@
     <entry file="file://$PROJECT_DIR$/app.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="67" selection-start-line="3" selection-start-column="67" selection-end-line="3" selection-end-column="67" />
-        </state>
-      </provider>
+    <entry file="file://$USER_HOME$/Downloads/4cc9a3ad-fb74-402a-9547-224cc1297e4b.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/script.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -1118,20 +1119,41 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/bootstrap.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="30" column="47" lean-forward="true" selection-start-line="30" selection-start-column="47" selection-end-line="30" selection-end-column="47" />
+        <state relative-caret-position="575">
+          <caret line="30" column="47" selection-start-line="30" selection-start-column="47" selection-end-line="30" selection-end-column="47" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/migrate_members.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
+        <state relative-caret-position="230">
           <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="67" selection-start-line="3" selection-start-column="67" selection-end-line="3" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2208">
+          <caret line="96" column="29" selection-start-line="96" selection-start-column="25" selection-end-line="96" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.htaccess">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/migrate_tables.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="18" column="7" lean-forward="true" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/send.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -1140,24 +1162,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/migrate_tables.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="25" column="25" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="96" column="29" selection-start-line="96" selection-start-column="25" selection-end-line="96" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/input.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="501">
-          <caret line="45" column="69" selection-start-line="45" selection-start-column="69" selection-end-line="45" selection-end-column="69" />
+        <state relative-caret-position="-59">
+          <caret line="3" column="12" lean-forward="true" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
         </state>
       </provider>
     </entry>
