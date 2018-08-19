@@ -67,7 +67,7 @@ function send($table){
     $response = $bot->pushMessage($table['group_id'], $textMessageBuilder);
 
     $table->update([
-        'sent_count' => $table['sent_count']+1
+        'sent_count' => '2'
             /*Carbon::now(new DateTimeZone('Asia/Tokyo')*/
     ]);
 
