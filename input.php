@@ -45,7 +45,7 @@ $table = \Model\Table::create([
     'avaliable_term' => $avaliable_buffer,
     'notification_date' => $notification_timing_buffer,
     'notification_time' => $inputs['notification_time'],
-    'last_notified_at' => Carbon::now(),
+    'last_notified_at' => Carbon::now(new DateTimeZone('Asia/Tokyo')),
     'group_id' => $inputs['group_id'],
     'sent_count' => '0'
 ]);

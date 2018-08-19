@@ -16,7 +16,7 @@ use Carbon\Carbon;
 $tableArray = \Model\Table::all();
 
 foreach ($tableArray as $table ) {
-    $dt = Carbon::now();
+    $dt = Carbon::now(new DateTimeZone('Asia/Tokyo'));
     notify($table,$dt);
     echo $table['group_id'];
 }
@@ -85,11 +85,11 @@ function generate($table){
 }
 
 function isTimeReady($startTime, $time = 0){
-     $notificationTimeCarbon = new Carbon($startTime);
+     $notificationTimeCarbon = new Carbon($startTime,'Asia/Tokyo');
      if($time == 0){
-         $dt = Carbon::now();
+         $dt = Carbon::now(new DateTimeZone('Asia/Tokyo'));
      }else{
-         $dt = new Carbon($time);
+         $dt = new Carbon($time,'Asia/Tokyo');
      }
 
      return $dt->gte($notificationTimeCarbon);
