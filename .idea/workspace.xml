@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="efe43d86-ccff-4ec1-957d-70c74f49e1e3" name="Default" comment="group_idの修正">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/input.php" beforeDir="false" afterPath="$PROJECT_DIR$/input.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/liff-starter.js" beforeDir="false" afterPath="$PROJECT_DIR$/liff-starter.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -130,8 +130,8 @@
           <entry key="css" value="433" />
           <entry key="env" value="130" />
           <entry key="htaccess" value="30" />
-          <entry key="html" value="2084" />
-          <entry key="js" value="456" />
+          <entry key="html" value="2100" />
+          <entry key="js" value="487" />
           <entry key="json" value="3" />
           <entry key="php" value="6072" />
           <entry key="sh" value="27" />
@@ -143,9 +143,9 @@
         <counts>
           <entry key=".env file" value="104" />
           <entry key="CSS" value="433" />
-          <entry key="HTML" value="2084" />
+          <entry key="HTML" value="2100" />
           <entry key="JSON" value="3" />
-          <entry key="JavaScript" value="465" />
+          <entry key="JavaScript" value="496" />
           <entry key="PHP" value="6072" />
           <entry key="PLAIN_TEXT" value="648" />
           <entry key="Scratch" value="13" />
@@ -279,20 +279,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="608">
-              <caret line="126" column="6" selection-start-line="126" selection-start-column="6" selection-end-line="126" selection-end-column="6" />
+            <state relative-caret-position="-977">
+              <caret line="13" column="42" lean-forward="true" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/liff-starter.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="69">
-              <caret line="3" column="48" selection-start-line="3" selection-start-column="48" selection-end-line="3" selection-end-column="48" />
+              <caret line="3" column="48" lean-forward="true" selection-start-line="3" selection-start-column="48" selection-end-line="3" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -394,8 +394,8 @@
         <option value="$PROJECT_DIR$/sh/send.sh" />
         <option value="$PROJECT_DIR$/send.php" />
         <option value="$PROJECT_DIR$/.env" />
-        <option value="$PROJECT_DIR$/liff-starter.js" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/liff-starter.js" />
       </list>
     </option>
   </component>
@@ -553,14 +553,7 @@
       <workItem from="1534250469568" duration="1966000" />
       <workItem from="1534260501072" duration="12271000" />
       <workItem from="1534596462236" duration="7111000" />
-      <workItem from="1534667233851" duration="4688000" />
-    </task>
-    <task id="LOCAL-00001" summary="前のコードを移植">
-      <created>1528791971611</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1528791971612</updated>
+      <workItem from="1534667233851" duration="5432000" />
     </task>
     <task id="LOCAL-00002" summary="Messeging API SDK Installed">
       <created>1529052813766</created>
@@ -891,11 +884,25 @@
       <option name="project" value="LOCAL" />
       <updated>1534680228543</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="group_idの修正">
+      <created>1534681579156</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1534681579157</updated>
+    </task>
+    <task id="LOCAL-00050" summary="group_idの修正">
+      <created>1534681964755</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1534681964761</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="223148000" />
+    <option name="totallyTimeSpent" value="223892000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1226,17 +1233,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/liff-starter.js">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="48" selection-start-line="3" selection-start-column="48" selection-end-line="3" selection-end-column="48" />
+        <state relative-caret-position="-977">
+          <caret line="13" column="42" lean-forward="true" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/liff-starter.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="608">
-          <caret line="126" column="6" selection-start-line="126" selection-start-column="6" selection-end-line="126" selection-end-column="6" />
+        <state relative-caret-position="69">
+          <caret line="3" column="48" lean-forward="true" selection-start-line="3" selection-start-column="48" selection-end-line="3" selection-end-column="48" />
         </state>
       </provider>
     </entry>
