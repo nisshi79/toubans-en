@@ -18,6 +18,7 @@ $tableArray = \Model\Table::all();
 foreach ($tableArray as $table ) {
     $dt = Carbon::now();
     notify($table,$dt);
+    echo $table['group_id'];
 }
 
 function notify($table,$dt){
