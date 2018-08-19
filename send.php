@@ -96,6 +96,6 @@ function isTimeReady($startTime, $time = 0){
      }else{
          $dt = new Carbon($time,'Asia/Tokyo');
      }
-    echo $dt;
+    echo 'koregaaa'.$dt;
      return $dt->gte($notificationTimeCarbon);
 }
