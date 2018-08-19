@@ -60,8 +60,8 @@ function send($table){
     $push_message.="「$table[title]」のお知らせ\n";
     $push_message.=generate($table);
 
-    $httpClient = new \LINE\LINEBot\HTTPClient\CurlHTTPClient(getenv('OSHIRASE_TOUBAN_BOT_CHANNEL_ACCESS_TOKEN'));
-    $bot = new \LINE\LINEBot($httpClient, ['channelSecret' => getenv('OSHIRASE_TOUBAN_BOT_CHANNEL_SECRET')]);
+    $httpClient = new \LINE\LINEBot\HTTPClient\CurlHTTPClient(getenv('TOUBAN_BOT_CHANNEL_ACCESS_TOKEN'));
+    $bot = new \LINE\LINEBot($httpClient, ['channelSecret' => getenv('TOUBAN_BOT_CHANNEL_SECRET')]);
 
     $textMessageBuilder = new \LINE\LINEBot\MessageBuilder\TextMessageBuilder($push_message);
     $response = $bot->pushMessage($table['group_id'], $textMessageBuilder);
