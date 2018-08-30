@@ -19,4 +19,12 @@ $(function () {
             $('#notfication_timing_avsolute_value').fadeOut();
         }
     });
+
+        //最初は全てのパネルを非表示に
+        $('.touban_container').hide();
+        $('.touban_button')
+            .click(function(e){
+                //選択したパネルを開く
+                $('.touban_container').slideToggle(500);
+            })
 });

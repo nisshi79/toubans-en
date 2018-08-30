@@ -17,15 +17,19 @@ use Carbon\Carbon;
 var_dump($inputs);
 
 //Pre-Processing
-if($inputs['notification_timing_number_sign']=='1') {
-    $notification_timing_buffer = $inputs['notification_timing_avsolute_value'] * $inputs['notification_timing_number_sign'];
-}elseif($inputs['notification_timing_number_sign']=='0'){
-    $notification_timing_buffer = $inputs['notification_timing_number_sign'];
-}
+
+
+
 
 switch ($inputs['block_size_radio']){
     case 0:
         $avaliable_buffer = implode(',',$inputs['avaliable_days_of_week']);
+
+        if($inputs['notification_timing_number_sign']=='1') {
+            $notification_timing_buffer = $inputs['notification_timing_avsolute_value'] * $inputs['notification_timing_number_sign'];
+        }elseif($inputs['notification_timing_number_sign']=='0'){
+            $notification_timing_buffer = $inputs['notification_timing_number_sign'];
+        }
         break;
 
     case 1:

@@ -36,9 +36,11 @@ function notify($table,$dt){
             // 週のうちの何日目か 0 (日曜)から 6 (土曜)
 
             break;
+
         case 1: //week
-            send($table);
+            if(isTimeReady($table['notification_time']) && isGreater($table['last_notified_at'], $table['notification_time']))send($table);
             break;
+
         case 2: //month
             if($table['notification_number']>=0){
                 $dt->addDays($table['notification_date']);
