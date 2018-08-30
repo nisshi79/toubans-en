@@ -51,7 +51,8 @@ $table = \Model\Table::create([
     'notification_time' => $inputs['notification_time'],
     'last_notified_at' => Carbon::now(new DateTimeZone('Asia/Tokyo')),
     'group_id' => $inputs['group_id'],
-    'sent_count' => '0'
+    'sent_count' => '0',
+    'text_area_below' => $inputs['text_area_below']
 ]);
 
 $i = 0;

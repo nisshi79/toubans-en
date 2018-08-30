@@ -44,17 +44,19 @@ button {
     margin: 4px;
 }
 
-#avaliable_days_of_week{
+#avaliable_for_day{
     display: none;
 }
-#avaliable_months_of_year{
+#avaliable_for_month{
     display: none;
 }
 
 #notification_timing_avsolute_value{
     display: none;
 }
-
+#notification_week_number{
+    display: none;
+}
 .roles{
     display: inline-block;
     vertical-align: top;
@@ -92,11 +94,15 @@ body{
     background: -webkit-linear-gradient(0deg, #EE795D, #C769A3);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-weight: bold;
 }
 a{
     color: #ffffff;
-
 }
+.button{
+    color: white;
+}
+
 label{
     color: #ffffff;
 }
@@ -121,6 +127,7 @@ a.touban_button{
     color: white;
     background: -webkit-linear-gradient(0deg, #EE795D, #C769A3);
     border-radius: 7px;
+    padding: 1em;
 }
 .touban_background > label, .touban_background > a{
     color: #ffffff;
@@ -129,4 +136,7 @@ a.touban_button{
     width:100%;
     height: 10em;
     border-radius: 7px;
+}
+.gradation_button{
+    padding: 1em;
 }

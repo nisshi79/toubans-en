@@ -20,6 +20,7 @@ use Illuminate\Database\Capsule\Manager as Capsule;
 Capsule::schema()->create('tables', function (Blueprint $table) {
     $table->increments('id');
     $table->string('title');
+    $table->string('text_area_below');
     $table->integer('block_size');
     $table->string('avaliable_term');
     $table->integer('notification_date');
@@ -28,5 +29,6 @@ Capsule::schema()->create('tables', function (Blueprint $table) {
     $table->unsignedBigInteger('sent_count');
     $table->string('group_id');
     $table->timestamps();
+
 });
 

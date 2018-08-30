@@ -1,30 +1,51 @@
 $(function () {
     $('[name="block_size_radio"]:radio').change( function() {
         if($('#block_size_day').prop('checked')){
-            $('#avaliable_months_of_year').hide();
-            $('#avaliable_days_of_week').fadeIn();
+            $('#avaliable_for_month').css("visibility","hidden");
+            $('#avaliable_for_month').slideUp();
+            $('#avaliable_for_day').css("visibility","visible");
+            $('#avaliable_for_day').slideDown();
+
+            $('.notification_for_day').fadeIn();
+            $('.notification_for_week').hide();
+            $('.notification_for_month').hide();
+
         } else if ($('#block_size_week').prop('checked')) {
-            $('#avaliable_days_of_week').fadeOut();
-            $('#avaliable_months_of_year').fadeOut();
+            $('#avaliable_for_day').slideUp();
+            $('#avaliable_for_month').slideUp();
+
+            $('.notification_for_day').hide();
+            $('.notification_for_week').fadeIn();
+            $('.notification_for_month').hide();
+
         } else if ($('#block_size_month').prop('checked')) {
-            $('#avaliable_days_of_week').hide();
-            $('#avaliable_months_of_year').fadeIn();
+            $('#avaliable_for_day').css("visibility","hidden");
+            $('#avaliable_for_day').slideUp();
+            $('#avaliable_for_month').css("visibility","visible");
+            $('#avaliable_for_month').slideDown();
+
+
+            $('.notification_for_day').hide();
+            $('.notification_for_week').hide();
+            $('.notification_for_month').fadeIn();
         }
     });
-    $('[name=notfication_timing_number_sign]').on('change', function() {
+
+    $('[name=notfication_timing_number_sign]').change( function() {
         var selectVal = $('[name=notfication_timing_number_sign]').val();
-        if(selectVal == -1){
+        if(selectVal == '-1'){
             $('#notfication_timing_avsolute_value').fadeIn();
         } else {
             $('#notfication_timing_avsolute_value').fadeOut();
         }
     });
 
-        //最初は全てのパネルを非表示に
-        $('.touban_container').hide();
-        $('.touban_button')
-            .click(function(e){
+    //最初は全てのパネルを非表示に
+    $('.notification_for_month').hide();
+    $('.notification_for_week').hide();
+
+    /*$('[name="block_size_radio"]:radio').change( function(){
                 //選択したパネルを開く
-                $('.touban_container').slideToggle(500);
-            })
+                $('.notification_date_container').show();
+    })*/
 });
