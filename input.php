@@ -17,37 +17,33 @@ use Carbon\Carbon;
 var_dump($inputs);
 
 //Pre-Processing
-
-
-
-
 switch ($inputs['block_size_radio']){
     case 0:
         $avaliable_buffer = implode(',',$inputs['avaliable_days_of_week']);
 
-        if($inputs['notification_timing_number_sign']=='1') {
-            $notification_timing_buffer = $inputs['notification_timing_avsolute_value'] * $inputs['notification_timing_number_sign'];
-        }elseif($inputs['notification_timing_number_sign']=='0'){
-            $notification_timing_buffer = $inputs['notification_timing_number_sign'];
-        }
+        $notification_date_buf=$inputs['notification_day'];
+
         break;
 
     case 1:
+        $notification_date_buf=['notification_days_week'];
         break;
 
     case 2:
         $avaliable_buffer = implode(',',$inputs['avaliable_months_of_year']);
+        $notification_date_buf = ['notification_month'];
         break;
 
     default:
         break;
 }
 
+
 $table = \Model\Table::create([
     'title' => $inputs['title'],
     'block_size' => $inputs['block_size_radio'],
     'avaliable_term' => $avaliable_buffer,
-    'notification_date' => $notification_timing_buffer,
+    'notification_date' => $notification_date_buf,
     'notification_time' => $inputs['notification_time'],
     'last_notified_at' => Carbon::now(new DateTimeZone('Asia/Tokyo')),
     'group_id' => $inputs['group_id'],

@@ -48,4 +48,23 @@ $(function () {
                 //選択したパネルを開く
                 $('.notification_date_container').show();
     })*/
+
+    $(".text_area").height(30);//init
+    $(".text_area").css("lineHeight","20px");//init
+
+    $(".text_area").on("input",function(evt){
+        if(evt.target.scrollHeight > evt.target.offsetHeight){
+            $(evt.target).height(evt.target.scrollHeight);
+        }else{
+            var lineHeight = Number($(evt.target).css("lineHeight").split("px")[0]);
+            while (true){
+                $(evt.target).height($(evt.target).height() - lineHeight);
+                if(evt.target.scrollHeight > evt.target.offsetHeight){
+                    $(evt.target).height(evt.target.scrollHeight);
+                    break;
+                }
+            }
+        }
+    });
+
 });
