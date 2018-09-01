@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="efe43d86-ccff-4ec1-957d-70c74f49e1e3" name="Default" comment="debug">
+    <list default="true" id="efe43d86-ccff-4ec1-957d-70c74f49e1e3" name="Default" comment="pairs_num戻した">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/send.php" beforeDir="false" afterPath="$PROJECT_DIR$/send.php" afterDir="false" />
     </list>
@@ -136,10 +136,10 @@
           <entry key="html" value="4192" />
           <entry key="js" value="766" />
           <entry key="json" value="4" />
-          <entry key="php" value="7460" />
+          <entry key="php" value="7462" />
           <entry key="sh" value="28" />
           <entry key="sql" value="8" />
-          <entry key="txt" value="880" />
+          <entry key="txt" value="892" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -150,8 +150,8 @@
           <entry key="HTML" value="4192" />
           <entry key="JSON" value="4" />
           <entry key="JavaScript" value="775" />
-          <entry key="PHP" value="7460" />
-          <entry key="PLAIN_TEXT" value="961" />
+          <entry key="PHP" value="7462" />
+          <entry key="PLAIN_TEXT" value="973" />
           <entry key="Scratch" value="13" />
           <entry key="SmartyConfig" value="2" />
           <entry key="htaccess" value="30" />
@@ -229,8 +229,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/send.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="271">
-              <caret line="97" column="43" selection-start-line="97" selection-start-column="43" selection-end-line="97" selection-end-column="43" />
+            <state relative-caret-position="251">
+              <caret line="93" column="37" selection-start-line="93" selection-start-column="37" selection-end-line="93" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -583,21 +583,7 @@
       <workItem from="1535438507372" duration="305000" />
       <workItem from="1535525113348" duration="15000" />
       <workItem from="1535525169735" duration="1397000" />
-      <workItem from="1535615097712" duration="42233000" />
-    </task>
-    <task id="LOCAL-00033" summary="調整">
-      <created>1532966052039</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1532966052039</updated>
-    </task>
-    <task id="LOCAL-00034" summary="send.phpがほぼ完成&#10;あとは時間処理">
-      <created>1533983437895</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1533983437895</updated>
+      <workItem from="1535615097712" duration="43057000" />
     </task>
     <task id="LOCAL-00035" summary="send.phpがほぼ完成&#10;あとは時間処理">
       <created>1534169499767</created>
@@ -928,11 +914,25 @@
       <option name="project" value="LOCAL" />
       <updated>1535810150923</updated>
     </task>
-    <option name="localTasksCounter" value="82" />
+    <task id="LOCAL-00082" summary="pairs_num戻した">
+      <created>1535810483951</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1535810483952</updated>
+    </task>
+    <task id="LOCAL-00083" summary="pairs_num戻した">
+      <created>1535811001381</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1535811001381</updated>
+    </task>
+    <option name="localTasksCounter" value="84" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="289889000" />
+    <option name="totallyTimeSpent" value="290713000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1004,7 +1004,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="migration files" />
     <MESSAGE value="調整" />
     <MESSAGE value="send.phpがほぼ完成&#10;あとは時間処理" />
     <MESSAGE value="connection" />
@@ -1029,7 +1028,8 @@
     <MESSAGE value="sent_count書き忘れ" />
     <MESSAGE value="pairs_num修正" />
     <MESSAGE value="debug" />
-    <option name="LAST_COMMIT_MESSAGE" value="debug" />
+    <MESSAGE value="pairs_num戻した" />
+    <option name="LAST_COMMIT_MESSAGE" value="pairs_num戻した" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -1317,8 +1317,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/send.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="97" column="43" selection-start-line="97" selection-start-column="43" selection-end-line="97" selection-end-column="43" />
+        <state relative-caret-position="251">
+          <caret line="93" column="37" selection-start-line="93" selection-start-column="37" selection-end-line="93" selection-end-column="37" />
         </state>
       </provider>
     </entry>

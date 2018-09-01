@@ -91,6 +91,7 @@ function generate($table){
             $memberId = ($i-$currentState) % $number_of_states;
             if($memberId<0)$memberId += $number_of_states;
             echo $roles[$i]['role'];
+            echo $members[$memberId];
             $generated_message .= $roles[$i]['role'].'の担当は'.$members[$memberId]['member']."\n";
         }
 
