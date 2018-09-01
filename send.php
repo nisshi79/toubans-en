@@ -74,7 +74,7 @@ function send($table){
 }
 
 function generate($table){
-    $roles= $table->role;
+    $roles = $table->role;
     $members=$table->member;
 
     $generated_message ='';
@@ -82,18 +82,21 @@ function generate($table){
     $number_of_states = max(count($roles),count($members));
 
     $pairs_num = min(count($roles),count($members));
+
     $currentState = $table['sent_count'] % $number_of_states;
 
     if(count($roles) <= count($members)){
         for($i = 1; $i <= $pairs_num; $i++){
             $memberId = ($i-$currentState) % $number_of_states;
             if($memberId<=0)$memberId += $number_of_states;
+            echo $roles[$i]['role'];
             $generated_message .= $roles[$i]['role'].'の担当は'.$members[$memberId]['member']."\n";
         }
 
     }elseif(count($roles) > count($members)){
         for($i = 1; $i <= $pairs_num; $i++){
             $rolesId = ($i + $currentState) % $number_of_states;
+            echo $roles[$rolesId]['role'];
             $generated_message .= $roles[$rolesId]['role'].'の担当は'.$members[$i]['member']."\n";
         }
     }
