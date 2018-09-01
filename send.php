@@ -19,6 +19,7 @@ foreach ($tableArray as $table ) {
     $dt = Carbon::now(new DateTimeZone('Asia/Tokyo'));
     notify($table,$dt);
     echo $table['group_id'];
+    var_dump($table);
 }
 
 function notify($table,$dt){
