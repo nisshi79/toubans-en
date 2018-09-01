@@ -81,8 +81,8 @@ function generate($table){
 
     $number_of_states = max(count($roles),count($members));
 
-    $pairs_num=min(count($roles),count($members));
-    $currentState = 2 % $number_of_states;
+    $pairs_num = min(count($roles),count($members));
+    $currentState = $table['sent_count'] % $number_of_states;
 
     if(count($roles) <= count($members)){
         for($i = 1; $i < $pairs_num; $i++){
