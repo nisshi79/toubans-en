@@ -86,7 +86,7 @@ function generate($table){
 
     if(count($roles) <= count($members)){
         for($i = 0; $i < $pairs_num; $i++){
-            $memberId = ($i-$currentState) % $number_of_states;
+            $memberId = ($i+$currentState) % $number_of_states;
             if($memberId<0)$memberId += $number_of_states;
             echo $roles[$i]['role'];
             echo $members[$memberId];
@@ -97,7 +97,8 @@ function generate($table){
     }
     elseif(count($roles) > count($members)){
         for($i = 0; $i < $pairs_num; $i++){
-            $rolesId = ($i + $currentState) % $number_of_states;
+            $rolesId = ($i - $currentState) % $number_of_states;
+            if($rolesId<0)$rolesId += $number_of_states;
             echo $roles[$rolesId]['role'];
             $generated_message .= $roles[$rolesId]['role'].'の担当は'.$members[$i]['member']."\n";
         }
