@@ -85,14 +85,14 @@ function generate($table){
     $currentState = $table['sent_count'] % $number_of_states;
 
     if(count($roles) <= count($members)){
-        for($i = 1; $i < $pairs_num; $i++){
+        for($i = 1; $i <= $pairs_num; $i++){
             $memberId = ($i-$currentState) % $number_of_states;
             if($memberId<=0)$memberId += $number_of_states;
             $generated_message .= $roles[$i]['role'].'の担当は'.$members[$memberId]['member']."\n";
         }
 
     }elseif(count($roles) > count($members)){
-        for($i = 1; $i < $pairs_num; $i++){
+        for($i = 1; $i <= $pairs_num; $i++){
             $rolesId = ($i + $currentState) % $number_of_states;
             $generated_message .= $roles[$rolesId]['role'].'の担当は'.$members[$i]['member']."\n";
         }
