@@ -106,7 +106,6 @@ function isTimeReady($startTime){
 
      $dt = Carbon::now(new DateTimeZone('Asia/Tokyo'));
 
-    echo 'koregaaa'.$dt.'soredaa';
     return $dt->gte($notificationTimeCarbon);
 }
 function isGreater($time1, $time2){
