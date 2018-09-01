@@ -25,7 +25,7 @@ switch ($inputs['notification_span']){
         break;
     //週
     case 1:
-        $notification_date_buf = implode(',', $inputs['notification_doM']);
+        $notification_date_buf = $inputs['notification_doM'];
 
         break;
 

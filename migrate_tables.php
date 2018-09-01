@@ -21,7 +21,7 @@ Capsule::schema()->create('tables', function (Blueprint $table) {
     $table->increments('id');
     $table->string('top_textarea');
     $table->string('lower_textarea');
-    $table->integer('notification_date');
+    $table->string('notification_date');
     $table->time('notification_time');
     $table->dateTime('last_notified_at');
     $table->unsignedBigInteger('sent_count');

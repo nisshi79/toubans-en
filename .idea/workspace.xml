@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="efe43d86-ccff-4ec1-957d-70c74f49e1e3" name="Default" comment="notification主体でまとめた">
+    <list default="true" id="efe43d86-ccff-4ec1-957d-70c74f49e1e3" name="Default" comment="DB接続先修正">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bootstrap.php" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/input.php" beforeDir="false" afterPath="$PROJECT_DIR$/input.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrate_tables.php" beforeDir="false" afterPath="$PROJECT_DIR$/migrate_tables.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -133,13 +136,13 @@
           <entry key="dummy" value="24" />
           <entry key="env" value="130" />
           <entry key="htaccess" value="30" />
-          <entry key="html" value="4170" />
+          <entry key="html" value="4192" />
           <entry key="js" value="766" />
           <entry key="json" value="3" />
-          <entry key="php" value="7077" />
+          <entry key="php" value="7080" />
           <entry key="sh" value="28" />
           <entry key="sql" value="8" />
-          <entry key="txt" value="736" />
+          <entry key="txt" value="764" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -147,11 +150,11 @@
           <entry key=".env file" value="104" />
           <entry key="Bash" value="1" />
           <entry key="CSS" value="740" />
-          <entry key="HTML" value="4170" />
+          <entry key="HTML" value="4192" />
           <entry key="JSON" value="3" />
           <entry key="JavaScript" value="775" />
-          <entry key="PHP" value="7077" />
-          <entry key="PLAIN_TEXT" value="817" />
+          <entry key="PHP" value="7080" />
+          <entry key="PLAIN_TEXT" value="845" />
           <entry key="Scratch" value="13" />
           <entry key="SmartyConfig" value="2" />
           <entry key="htaccess" value="30" />
@@ -217,11 +220,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bootstrap.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="21" column="22" lean-forward="true" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+            <state relative-caret-position="460">
+              <caret line="25" column="3" lean-forward="true" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -259,11 +262,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/input.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="41" column="18" lean-forward="true" selection-start-line="41" selection-start-column="18" selection-end-line="41" selection-end-column="18" />
+            <state relative-caret-position="178">
+              <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -298,8 +301,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/migrate_tables.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="645">
-              <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+            <state relative-caret-position="253">
+              <caret line="19" column="46" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -307,8 +310,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="538">
-              <caret line="71" column="52" selection-start-line="71" selection-start-column="52" selection-end-line="71" selection-end-column="52" />
+            <state relative-caret-position="168">
+              <caret line="60" column="14" lean-forward="true" selection-start-line="60" selection-start-column="14" selection-end-line="60" selection-end-column="14" />
               <folding>
                 <element signature="n#head#0;n#!!top" />
                 <element signature="n#div#0;n#div#0;n#form#0;n#body#0;n#!!top" />
@@ -363,9 +366,6 @@
   </component>
   <component name="FrameworkCommandLineHistory">
     <commandsHistory>
-      <command text="php table.php" />
-      <command text="composer update" />
-      <command text="php table.php" />
       <command text="composer search eloquent" />
       <command text="composer update" />
       <command text="php migrate_avaliables.php" />
@@ -388,10 +388,16 @@
       <command text="php migrate_members.php" />
       <command text="php migrate_roles.php" />
       <command text="composer update" />
+      <command text="php migrate_tables.php" />
+      <command text="php migrate_roles.php" />
+      <command text="php migrate_members.php" />
     </commandsHistory>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Dummy.txt" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -431,11 +437,11 @@
         <option value="$PROJECT_DIR$/sh/send.sh" />
         <option value="$PROJECT_DIR$/send.php" />
         <option value="$PROJECT_DIR$/style.css" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/script.js" />
-        <option value="$PROJECT_DIR$/input.php" />
-        <option value="$PROJECT_DIR$/migrate_tables.php" />
         <option value="$PROJECT_DIR$/bootstrap.php" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/migrate_tables.php" />
+        <option value="$PROJECT_DIR$/input.php" />
       </list>
     </option>
   </component>
@@ -586,14 +592,7 @@
       <workItem from="1535438507372" duration="305000" />
       <workItem from="1535525113348" duration="15000" />
       <workItem from="1535525169735" duration="1397000" />
-      <workItem from="1535615097712" duration="32550000" />
-    </task>
-    <task id="LOCAL-00020" summary="trying to send to test">
-      <created>1529751188839</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1529751188839</updated>
+      <workItem from="1535615097712" duration="33757000" />
     </task>
     <task id="LOCAL-00021" summary="trying to send to test">
       <created>1529751284195</created>
@@ -931,11 +930,18 @@
       <option name="project" value="LOCAL" />
       <updated>1535785289778</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL-00069" summary="DB接続先修正">
+      <created>1535787120491</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1535787120491</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="280206000" />
+    <option name="totallyTimeSpent" value="281413000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -963,7 +969,7 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32891566" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.3291262" />
       <window_info anchor="bottom" id="Messages" order="8" weight="0.32771084" />
-      <window_info anchor="bottom" id="Command Line Tools Console" order="9" sideWeight="0.49970675" weight="0.32771084" />
+      <window_info active="true" anchor="bottom" id="Command Line Tools Console" order="9" sideWeight="0.49970675" visible="true" weight="0.32771084" />
       <window_info anchor="bottom" id="Database Changes" order="10" weight="0.32891566" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.32891566" />
       <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.50029325" side_tool="true" weight="0.3288445" />
@@ -1007,7 +1013,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="データベース出来た！" />
     <MESSAGE value="JS大好き&#10;メンバーリストと役割リストが良い感じにできた" />
     <MESSAGE value="index.html: ひとまず最低限は完成" />
     <MESSAGE value="script.js" />
@@ -1032,7 +1037,8 @@
     <MESSAGE value="avaliable_temp" />
     <MESSAGE value="rotation_radio_temp" />
     <MESSAGE value="notification主体でまとめた" />
-    <option name="LAST_COMMIT_MESSAGE" value="notification主体でまとめた" />
+    <MESSAGE value="DB接続先修正" />
+    <option name="LAST_COMMIT_MESSAGE" value="DB接続先修正" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1246,25 +1252,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="538">
-          <caret line="71" column="52" selection-start-line="71" selection-start-column="52" selection-end-line="71" selection-end-column="52" />
-          <folding>
-            <element signature="n#head#0;n#!!top" />
-            <element signature="n#div#0;n#div#0;n#form#0;n#body#0;n#!!top" />
-            <element signature="n#div#0;n#div#1;n#form#0;n#body#0;n#!!top" />
-            <element signature="n#select#0;n#div#0;n#div#1;n#form#0;n#body#0;n#!!top" />
-            <element signature="n#div#0;n#div#0;n#div#1;n#form#0;n#body#0;n#!!top" />
-            <element signature="e#4335#5359#0" />
-            <element signature="n#div#2;n#div#0;n#div#1;n#form#0;n#body#0;n#!!top" />
-            <element signature="e#5666#7380#0" />
-            <element signature="n#select#1;n#div#2;n#div#1;n#form#0;n#body#0;n#!!top" />
-            <element signature="n#div#0;n#body#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/migrate_members.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
@@ -1292,13 +1279,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/input.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="41" column="18" lean-forward="true" selection-start-line="41" selection-start-column="18" selection-end-line="41" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="530">
@@ -1320,17 +1300,43 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/migrate_tables.php">
+    <entry file="file://$PROJECT_DIR$/bootstrap.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+        <state relative-caret-position="460">
+          <caret line="25" column="3" lean-forward="true" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bootstrap.php">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="21" column="22" lean-forward="true" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+        <state relative-caret-position="168">
+          <caret line="60" column="14" lean-forward="true" selection-start-line="60" selection-start-column="14" selection-end-line="60" selection-end-column="14" />
+          <folding>
+            <element signature="n#head#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#form#0;n#body#0;n#!!top" />
+            <element signature="n#div#0;n#div#1;n#form#0;n#body#0;n#!!top" />
+            <element signature="n#select#0;n#div#0;n#div#1;n#form#0;n#body#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#div#1;n#form#0;n#body#0;n#!!top" />
+            <element signature="e#4335#5359#0" />
+            <element signature="n#div#2;n#div#0;n#div#1;n#form#0;n#body#0;n#!!top" />
+            <element signature="e#5666#7380#0" />
+            <element signature="n#select#1;n#div#2;n#div#1;n#form#0;n#body#0;n#!!top" />
+            <element signature="n#div#0;n#body#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/migrate_tables.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="19" column="46" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/input.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
         </state>
       </provider>
     </entry>
