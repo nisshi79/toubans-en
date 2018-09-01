@@ -23,33 +23,27 @@ foreach ($tableArray as $table ) {
 
 function notify($table,$dt){
 
-    switch ($table['block_size']) {
-        case 0: //day
-            $dt->addDays($table['notification_date']);
-            $actual_date = $dt->dayOfWeek;
+    switch ($table['notification_span']) {
+        case 0: //dsoW
+            $doW = $dt->dayOfWeek;
 
             echo $table['notification_time'];
 
             echo $table['last_notified_at'];
 
-            if (in_array("{$actual_date}", explode(',', $table['avaliable_term'])) && isTimeReady($table['notification_time']) && isGreater($table['last_notified_at'], $table['notification_time'])) send($table);
+            if (in_array("{$doW}", explode(',', $table['notification_date'])) && isTimeReady($table['notification_time']) && isGreater($table['last_notified_at'], $table['notification_time'])) send($table);
             // 週のうちの何日目か 0 (日曜)から 6 (土曜)
 
             break;
 
-        case 1: //week
-            if(isTimeReady($table['notification_time']) && isGreater($table['last_notified_at'], $table['notification_time']))send($table);
+        case 1: //doM
+            $doM = $dt->day;
+
+            if (in_array("{$doM}", min($table['notification_date'], $dt->daysInMonth)) && isTimeReady($table['notification_time']) && isGreater($table['last_notified_at'], $table['notification_time'])) send($table);
+
+
             break;
-
-        case 2: //month
-            if($table['notification_number']>=0){
-                $dt->addDays($table['notification_date']);
-            }else{
-                $dt->subDays($table['notification_date']);
-            }
-
-            $actual_month = $dt->month;
-            if (in_array("{$actual_month}", explode(',', $table['avaliable_term']))) send($table);
+        default:
             break;
     }
 }
@@ -80,13 +74,26 @@ function send($table){
 function generate($table){
     $roles= $table->role;
     $members=$table->member;
-    $generated_message ='';
-    $number_of_states = max(count($roles),count($members));
-    $currentState = $table['sent_count'] % $number_of_states;
 
-    for($i = 0;$i < $number_of_states;$i++){
-        $memberId=($i-$currentState)%$number_of_states;
-        $generated_message .= $roles[$i]['role'].'の担当は'.$members[$memberId]['member'];
+    $generated_message ='';
+
+    $number_of_states = max(count($roles),count($members));
+
+    $pairs_num=min(count($roles),count($members));
+    $currentState = 2 % $number_of_states;
+
+    if(count($roles) <= count($members)){
+        for($i = 0; $i < $pairs_num; $i++){
+            $memberId = ($i-$currentState) % $number_of_states;
+            if($memberId<0)$memberId += $number_of_states;
+            $generated_message .= $roles[$i].'の担当は'.$members[$memberId]."\n";
+        }
+
+    }elseif(count($roles) > count($members)){
+        for($i = 0; $i < $pairs_num; $i++){
+            $rolesId = ($i + $currentState) % $number_of_states;
+            $generated_message .= $roles[$rolesId].'の担当は'.$members[$i]."\n";
+        }
     }
 
     return $generated_message;
