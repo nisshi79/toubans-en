@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="efe43d86-ccff-4ec1-957d-70c74f49e1e3" name="Default" comment="完成と信じたい">
+    <list default="true" id="efe43d86-ccff-4ec1-957d-70c74f49e1e3" name="Default" comment="DBのrole,memberの読み出しを修正">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bootstrap.php" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/send.php" beforeDir="false" afterPath="$PROJECT_DIR$/send.php" afterDir="false" />
@@ -137,10 +137,10 @@
           <entry key="html" value="4192" />
           <entry key="js" value="766" />
           <entry key="json" value="4" />
-          <entry key="php" value="7335" />
+          <entry key="php" value="7374" />
           <entry key="sh" value="28" />
           <entry key="sql" value="8" />
-          <entry key="txt" value="813" />
+          <entry key="txt" value="836" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -151,8 +151,8 @@
           <entry key="HTML" value="4192" />
           <entry key="JSON" value="4" />
           <entry key="JavaScript" value="775" />
-          <entry key="PHP" value="7335" />
-          <entry key="PLAIN_TEXT" value="894" />
+          <entry key="PHP" value="7374" />
+          <entry key="PLAIN_TEXT" value="917" />
           <entry key="Scratch" value="13" />
           <entry key="SmartyConfig" value="2" />
           <entry key="htaccess" value="30" />
@@ -230,8 +230,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/send.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
+            <state relative-caret-position="123">
+              <caret line="89" column="26" selection-start-line="89" selection-start-column="26" selection-end-line="89" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -590,21 +590,7 @@
       <workItem from="1535438507372" duration="305000" />
       <workItem from="1535525113348" duration="15000" />
       <workItem from="1535525169735" duration="1397000" />
-      <workItem from="1535615097712" duration="38587000" />
-    </task>
-    <task id="LOCAL-00024" summary="データベース出来た！">
-      <created>1532244600634</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1532244600635</updated>
-    </task>
-    <task id="LOCAL-00025" summary="JS大好き&#10;メンバーリストと役割リストが良い感じにできた">
-      <created>1532581849746</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1532581849746</updated>
+      <workItem from="1535615097712" duration="39241000" />
     </task>
     <task id="LOCAL-00026" summary="index.html: ひとまず最低限は完成">
       <created>1532591699125</created>
@@ -935,11 +921,25 @@
       <option name="project" value="LOCAL" />
       <updated>1535804461869</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <task id="LOCAL-00073" summary="完成と信じたい">
+      <created>1535805557421</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1535805557426</updated>
+    </task>
+    <task id="LOCAL-00074" summary="DBのrole,memberの読み出しを修正">
+      <created>1535805981738</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1535805981741</updated>
+    </task>
+    <option name="localTasksCounter" value="75" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="286243000" />
+    <option name="totallyTimeSpent" value="286897000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1011,7 +1011,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="一旦データーベースとの接続を解除" />
     <MESSAGE value=".htaccess" />
     <MESSAGE value=".htaccessを無効化" />
     <MESSAGE value="index.phpからsend.phpへ退避" />
@@ -1036,7 +1035,8 @@
     <MESSAGE value="細かい修正&#10;Inputまで行けた" />
     <MESSAGE value="完成...?" />
     <MESSAGE value="完成と信じたい" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成と信じたい" />
+    <MESSAGE value="DBのrole,memberの読み出しを修正" />
+    <option name="LAST_COMMIT_MESSAGE" value="DBのrole,memberの読み出しを修正" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -1324,8 +1324,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/send.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
+        <state relative-caret-position="123">
+          <caret line="89" column="26" selection-start-line="89" selection-start-column="26" selection-end-line="89" selection-end-column="26" />
         </state>
       </provider>
     </entry>
