@@ -19,16 +19,14 @@ use Illuminate\Database\Capsule\Manager as Capsule;
      */
 Capsule::schema()->create('tables', function (Blueprint $table) {
     $table->increments('id');
-    $table->string('title');
-    $table->string('text_area_below');
-    $table->integer('block_size');
-    $table->string('avaliable_term');
+    $table->string('top_textarea');
+    $table->string('lower_textarea');
     $table->integer('notification_date');
     $table->time('notification_time');
     $table->dateTime('last_notified_at');
     $table->unsignedBigInteger('sent_count');
     $table->string('group_id');
     $table->timestamps();
-
+    $table->integer('notification_span');
 });
 

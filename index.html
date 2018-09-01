@@ -51,10 +51,10 @@
 
                 <br>
 
-                <a>回し方</a><br>
+                <!--<a>回し方</a><br>
                 <input type="radio" id="block_size_day" name="block_size_radio" value="0" checked><label for="block_size_day">日</label>
                 <input type="radio" id="block_size_week" name="block_size_radio" value="1"><label for="block_size_week">週</label>
-                <input type="radio" id="block_size_month" name="block_size_radio" value="2"><label for="block_size_month">月</label><br>
+                <input type="radio" id="block_size_month" name="block_size_radio" value="2"><label for="block_size_month">月</label><br>-->
 
                 <br>
             </div>
@@ -71,9 +71,12 @@
 
             <div class="notification_date_container">
                 <h2 class="gradation">通知の設定</h2><br>
-
-                <!--日を選んだときの通知設定-->
-                <div class="notification_for_day">
+                <select name="notification_span" id="notification_span">
+                    <option value="0">通知する曜日を選択</option>
+                    <option value="1">毎月何日に通知するかを選択</option>
+                </select>
+                <!--曜日を選んだときの通知設定-->
+                <div class="notification_dsoW">
                     <a>通知を行う曜日を選択して下さい(複数選択可)</a><br>
                     <input type="checkbox" id="checkbox_sunday" name="notification_dsoW[]" value="0"><label for="checkbox_sunday">日</label>
                     <input type="checkbox" id="checkbox_monday" name="notification_dsoW[]" value="1" checked><label for="checkbox_monday">月</label>
@@ -85,7 +88,7 @@
                 </div>
 
                 <!--週を選んだときの通知設定-->
-                <div class="notification_for_week">
+                <!--<div class="notification_for_week">
                     <a>通知を行う曜日を選択して下さい</a><br>
                     <input type="radio" id="radio_sunday" name="notification_doW" value="0"><label for="radio_sunday">日</label>
                     <input type="radio" id="radio_monday" name="notification_doW" value="1"><label for="radio_monday">月</label>
@@ -94,11 +97,11 @@
                     <input type="radio" id="radio_thursday" name="notification_doW" value="4"><label for="radio_thursday">木</label>
                     <input type="radio" id="radio_friday" name="notification_doW" value="5"><label for="radio_friday">金</label>
                     <input type="radio" id="radio_saturday" name="notification_doW" value="6"><label for="radio_saturday">土</label>
-                </div>
+                </div>-->
 
                 <!--月を選んだときの通知設定-->
-                <div class="notification_for_month">
-                        <a>通知する月を選択して下さい</a><br>
+                <div class="notification_doM">
+                        <!--<a>通知する月を選択して下さい</a><br>
                         <input type="checkbox" id="january" name="notification_months[]" value="1" checked><label for="january">1月</label>
                         <input type="checkbox" id="february" name="notification_months[]" value="2" checked><label for="february">2月</label>
                         <input type="checkbox" id="march" name="notification_months[]" value="3" checked><label for="march">3月</label>
@@ -111,7 +114,7 @@
                         <input type="checkbox" id="october" name="notification_months[]" value="10" checked><label for="october">10月</label>
                         <input type="checkbox" id="november" name="notification_months[]" value="11" checked><label for="november">11月</label>
                         <input type="checkbox" id="december" name="notification_months[]" value="12" checked><label for="december">12月</label>
-                    <a>の</a>
+                    <a>の</a>-->
                     <select name="notification_doM" id="notification_doM">
                         <option value="1">1日</option>
                         <option value="2">2日</option>

@@ -17,21 +17,16 @@ use Carbon\Carbon;
 var_dump($inputs);
 
 //Pre-Processing
-switch ($inputs['block_size_radio']){
+switch ($inputs['notification_span']){
     //日
     case 0:
-       $notification_date_buf = implode(',',$inputs['notification_dsoW']);
+        $notification_date_buf = implode(',',$inputs['notification_dsoW']);
 
         break;
     //週
     case 1:
-        $notification_date_buf = $inputs['notification_doW'];
+        $notification_date_buf = implode(',', $inputs['notification_doM']);
 
-        break;
-    //月
-    case 2:
-        $notification_date_buf = $inputs['notification_doM'];
-            implode(',',$inputs['notification_months']);
         break;
 
     default:
@@ -40,15 +35,14 @@ switch ($inputs['block_size_radio']){
 
 
 $table = \Model\Table::create([
-    'title' => $inputs['title'],
-    'block_size' => $inputs['block_size_radio'],
-    'avaliable_term' => $avaliable_buffer,
+    'top_textarea' => $inputs['top_textarea'],
+    'notification_span'=> $inputs['notification_span'],
     'notification_date' => $notification_date_buf,
     'notification_time' => $inputs['notification_time'],
     'last_notified_at' => Carbon::now(new DateTimeZone('Asia/Tokyo')),
     'group_id' => $inputs['group_id'],
     'sent_count' => '0',
-    'text_area_below' => $inputs['text_area_below']
+    'lower_textarea' => $inputs['lower_textarea']
 ]);
 
 $i = 0;
