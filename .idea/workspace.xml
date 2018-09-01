@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="efe43d86-ccff-4ec1-957d-70c74f49e1e3" name="Default" comment="とりまUIできた">
+    <list default="true" id="efe43d86-ccff-4ec1-957d-70c74f49e1e3" name="Default" comment="avaliable_temp">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap.php" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/input.php" beforeDir="false" afterPath="$PROJECT_DIR$/input.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -137,13 +135,13 @@
           <entry key="dummy" value="24" />
           <entry key="env" value="130" />
           <entry key="htaccess" value="30" />
-          <entry key="html" value="3839" />
+          <entry key="html" value="4030" />
           <entry key="js" value="702" />
           <entry key="json" value="3" />
-          <entry key="php" value="6736" />
+          <entry key="php" value="6877" />
           <entry key="sh" value="28" />
           <entry key="sql" value="8" />
-          <entry key="txt" value="665" />
+          <entry key="txt" value="686" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -151,11 +149,11 @@
           <entry key=".env file" value="104" />
           <entry key="Bash" value="1" />
           <entry key="CSS" value="740" />
-          <entry key="HTML" value="3839" />
+          <entry key="HTML" value="4030" />
           <entry key="JSON" value="3" />
           <entry key="JavaScript" value="711" />
-          <entry key="PHP" value="6736" />
-          <entry key="PLAIN_TEXT" value="746" />
+          <entry key="PHP" value="6877" />
+          <entry key="PLAIN_TEXT" value="767" />
           <entry key="Scratch" value="13" />
           <entry key="SmartyConfig" value="2" />
           <entry key="htaccess" value="30" />
@@ -242,7 +240,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/send.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2193">
+            <state relative-caret-position="2231">
               <caret line="102" column="35" lean-forward="true" selection-start-line="102" selection-start-column="35" selection-end-line="102" selection-end-column="35" />
             </state>
           </provider>
@@ -251,8 +249,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="54" column="17" selection-start-line="54" selection-start-column="17" selection-end-line="54" selection-end-column="17" />
+            <state relative-caret-position="447">
+              <caret line="61" column="33" lean-forward="true" selection-start-line="61" selection-start-column="33" selection-end-line="61" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -260,8 +258,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/input.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="452">
-              <caret line="32" column="77" lean-forward="true" selection-start-line="32" selection-start-column="77" selection-end-line="32" selection-end-column="77" />
+            <state relative-caret-position="427">
+              <caret line="32" column="31" selection-start-line="32" selection-start-column="31" selection-end-line="32" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -305,14 +303,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="167" column="51" selection-start-line="167" selection-start-column="51" selection-end-line="167" selection-end-column="51" />
+            <state relative-caret-position="210">
+              <caret line="99" selection-start-line="99" selection-end-line="99" />
               <folding>
                 <element signature="n#head#0;n#!!top" />
-                <element signature="n#div#0;n#div#2;n#div#0;n#form#0;n#body#0;n#!!top" />
-                <element signature="e#3222#3937#0" />
+                <element signature="n#div#0;n#div#0;n#div#1;n#form#0;n#body#0;n#!!top" />
                 <element signature="n#div#1;n#div#3;n#div#0;n#form#0;n#body#0;n#!!top" />
-                <element signature="n#select#0;n#div#2;n#div#1;n#form#0;n#body#0;n#!!top" />
+                <element signature="n#div#2;n#div#0;n#div#1;n#form#0;n#body#0;n#!!top" />
                 <element signature="n#select#1;n#div#2;n#div#1;n#form#0;n#body#0;n#!!top" />
                 <element signature="n#div#0;n#body#0;n#!!top" />
               </folding>
@@ -426,10 +423,10 @@
         <option value="$PROJECT_DIR$/migrate_tables.php" />
         <option value="$PROJECT_DIR$/sh/send.sh" />
         <option value="$PROJECT_DIR$/send.php" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/bootstrap.php" />
         <option value="$PROJECT_DIR$/style.css" />
         <option value="$PROJECT_DIR$/script.js" />
+        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/input.php" />
       </list>
     </option>
@@ -581,14 +578,7 @@
       <workItem from="1535438507372" duration="305000" />
       <workItem from="1535525113348" duration="15000" />
       <workItem from="1535525169735" duration="1397000" />
-      <workItem from="1535615097712" duration="20349000" />
-    </task>
-    <task id="LOCAL-00017" summary="trying to send to test">
-      <created>1529731218758</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1529731218758</updated>
+      <workItem from="1535615097712" duration="27710000" />
     </task>
     <task id="LOCAL-00018" summary="trying to send to test">
       <created>1529746962345</created>
@@ -926,11 +916,18 @@
       <option name="project" value="LOCAL" />
       <updated>1535648261127</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="avaliable_temp">
+      <created>1535725619904</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1535725619911</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="268005000" />
+    <option name="totallyTimeSpent" value="275366000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1002,7 +999,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="log" />
     <MESSAGE value=" Unlog" />
     <MESSAGE value="trying to send to test" />
     <MESSAGE value="データベース出来た！" />
@@ -1027,7 +1023,8 @@
     <MESSAGE value="debug" />
     <MESSAGE value="取り敢えず雑にLINE風UI" />
     <MESSAGE value="とりまUIできた" />
-    <option name="LAST_COMMIT_MESSAGE" value="とりまUIできた" />
+    <MESSAGE value="avaliable_temp" />
+    <option name="LAST_COMMIT_MESSAGE" value="avaliable_temp" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1255,26 +1252,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sh/send.sh">
+    <entry file="file://$PROJECT_DIR$/migrate_tables.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="167" column="51" selection-start-line="167" selection-start-column="51" selection-end-line="167" selection-end-column="51" />
-          <folding>
-            <element signature="n#head#0;n#!!top" />
-            <element signature="n#div#0;n#div#2;n#div#0;n#form#0;n#body#0;n#!!top" />
-            <element signature="e#3222#3937#0" />
-            <element signature="n#div#1;n#div#3;n#div#0;n#form#0;n#body#0;n#!!top" />
-            <element signature="n#select#0;n#div#2;n#div#1;n#form#0;n#body#0;n#!!top" />
-            <element signature="n#select#1;n#div#2;n#div#1;n#form#0;n#body#0;n#!!top" />
-            <element signature="n#div#0;n#body#0;n#!!top" />
-          </folding>
+        <state relative-caret-position="286">
+          <caret line="22" column="38" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
         </state>
       </provider>
     </entry>
@@ -1285,10 +1266,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/migrate_tables.php">
+    <entry file="file://$PROJECT_DIR$/sh/send.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="22" column="38" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
+        <state relative-caret-position="184">
+          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -1301,22 +1282,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="54" column="17" selection-start-line="54" selection-start-column="17" selection-end-line="54" selection-end-column="17" />
+        <state relative-caret-position="447">
+          <caret line="61" column="33" lean-forward="true" selection-start-line="61" selection-start-column="33" selection-end-line="61" selection-end-column="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/send.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2193">
+        <state relative-caret-position="2231">
           <caret line="102" column="35" lean-forward="true" selection-start-line="102" selection-start-column="35" selection-end-line="102" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="99" selection-start-line="99" selection-end-line="99" />
+          <folding>
+            <element signature="n#head#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#div#1;n#form#0;n#body#0;n#!!top" />
+            <element signature="n#div#1;n#div#3;n#div#0;n#form#0;n#body#0;n#!!top" />
+            <element signature="n#div#2;n#div#0;n#div#1;n#form#0;n#body#0;n#!!top" />
+            <element signature="n#select#1;n#div#2;n#div#1;n#form#0;n#body#0;n#!!top" />
+            <element signature="n#div#0;n#body#0;n#!!top" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/input.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="452">
-          <caret line="32" column="77" lean-forward="true" selection-start-line="32" selection-start-column="77" selection-end-line="32" selection-end-column="77" />
+        <state relative-caret-position="427">
+          <caret line="32" column="31" selection-start-line="32" selection-start-column="31" selection-end-line="32" selection-end-column="31" />
         </state>
       </provider>
     </entry>

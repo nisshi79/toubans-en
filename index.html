@@ -57,46 +57,6 @@
                 <input type="radio" id="block_size_month" name="block_size_radio" value="2"><label for="block_size_month">月</label><br>
 
                 <br>
-
-                <div class="avaliable_period">
-                    <!--日選択時-->
-                    <div id="avaliable_for_day">
-                        <a>当番がある曜日を選択して下さい</a><br>
-                        <input type="checkbox" id="avaliable_sunday" name="avaliable_days_of_week" value="0"><label for="avaliable_sunday">日</label>
-                        <input type="checkbox" id="avaliable_monday" name="avaliable_days_of_week" value="1"><label for="avaliable_monday">月</label>
-                        <input type="checkbox" id="avaliable_tuesday" name="avaliable_days_of_week" value="2"><label for="avaliable_tuesday">火</label>
-                        <input type="checkbox" id="avaliable_wednesday" name="avaliable_days_of_week" value="3"><label for="avaliable_wednesday">水</label>
-                        <input type="checkbox" id="avaliable_thursday" name="avaliable_days_of_week" value="4"><label for="avaliable_thursday">木</label>
-                        <input type="checkbox" id="avaliable_friday" name="avaliable_days_of_week" value="5"><label for="avaliable_friday">金</label>
-                        <input type="checkbox" id="avaliable_saturday" name="avaliable_days_of_week" value="6"><label for="avaliable_saturday">土</label>
-                    </div>
-
-                    <!--<div id="avaliable_weeks_of_month">
-                    <input type="checkbox" id="avaliable_1st_week" name="avaliable_weeks_of_month" value="1">第1週
-                    <input type="checkbox" id="avaliable_2nd_week" name="avaliable_weeks_of_month" value="2">第2週
-                    <input type="checkbox" id="avaliable_3rd_week" name="avaliable_weeks_of_month" value="3">第3週
-                    <input type="checkbox" id="avaliable_4th_week" name="avaliable_weeks_of_month" value="4">第4週
-                    <input type="checkbox" id="avaliable_5th_week" name="avaliable_weeks_of_month" value="5">第5週
-                    <input type="checkbox" id="avaliable_6th_week" name="avaliable_weeks_of_month" value="6">第6週
-                </div>-->
-
-                    <!--月選択時-->
-                    <div id="avaliable_for_month">
-                        <a>当番がある月を選択して下さい</a><br>
-                        <input type="checkbox" id="avaliable_month_1" name="avaliable_months_of_year" value="1"><label for="avaliable_month_1">1月</label>
-                        <input type="checkbox" id="avaliable_month_2" name="avaliable_months_of_year" value="2"><label for="avaliable_month_2">2月</label>
-                        <input type="checkbox" id="avaliable_month_3" name="avaliable_months_of_year" value="3"><label for="avaliable_month_3">3月</label>
-                        <input type="checkbox" id="avaliable_month_4" name="avaliable_months_of_year" value="4"><label for="avaliable_month_4">4月</label>
-                        <input type="checkbox" id="avaliable_month_5" name="avaliable_months_of_year" value="5"><label for="avaliable_month_5">5月</label>
-                        <input type="checkbox" id="avaliable_month_6" name="avaliable_months_of_year" value="6"><label for="avaliable_month_6">6月</label>
-                        <input type="checkbox" id="avaliable_month_7" name="avaliable_months_of_year" value="7"><label for="avaliable_month_7">7月</label>
-                        <input type="checkbox" id="avaliable_month_8" name="avaliable_months_of_year" value="8"><label for="avaliable_month_8">8月</label>
-                        <input type="checkbox" id="avaliable_month_9" name="avaliable_months_of_year" value="9"><label for="avaliable_month_9">9月</label>
-                        <input type="checkbox" id="avaliable_month_10" name="avaliable_months_of_year" value="10"><label for="avaliable_month_10">10月</label>
-                        <input type="checkbox" id="avaliable_month_11" name="avaliable_months_of_year" value="11"><label for="avaliable_month_11">11月</label>
-                        <input type="checkbox" id="avaliable_month_12" name="avaliable_months_of_year" value="12"><label for="avaliable_month_12">12月</label>
-                    </div>
-                </div>
             </div>
         </div>
 
@@ -114,58 +74,45 @@
 
                 <!--日を選んだときの通知設定-->
                 <div class="notification_for_day">
-                    <select name="notification_day" id="notification_day">
-                        <option value="0">当日</option>
-                        <option value="1">1日前</option>
-                        <option value="2">2日前</option>
-                        <option value="3">3日前</option>
-                        <option value="4">4日前</option>
-                        <option value="5">5日前</option>
-                        <option value="6">6日前</option>
-                        <option value="7">7日前</option>
-                        <option value="8">8日前</option>
-                        <option value="9">9日前</option>
-                        <option value="10">10日前</option>
-                        <option value="11">11日前</option>
-                        <option value="12">12日前</option>
-                        <option value="13">13日前</option>
-                        <option value="14">14日前</option>
-                        <option value="15">15日前</option>
-                        <option value="16">16日前</option>
-                        <option value="17">17日前</option>
-                        <option value="18">18日前</option>
-                        <option value="19">19日前</option>
-                        <option value="20">20日前</option>
-                        <option value="21">21日前</option>
-                        <option value="22">22日前</option>
-                        <option value="23">23日前</option>
-                        <option value="24">24日前</option>
-                        <option value="25">25日前</option>
-                    </select>
+                    <a>通知を行う曜日を選択して下さい(複数選択可)</a><br>
+                    <input type="checkbox" id="checkbox_sunday" name="notification_dsoW[]" value="0"><label for="checkbox_sunday">日</label>
+                    <input type="checkbox" id="checkbox_monday" name="notification_dsoW[]" value="1" checked><label for="checkbox_monday">月</label>
+                    <input type="checkbox" id="checkbox_tuesday" name="notification_dsoW[]" value="2" checked><label for="checkbox_tuesday">火</label>
+                    <input type="checkbox" id="checkbox_wednesday" name="notification_dsoW[]" value="3" checked><label for="checkbox_wednesday">水</label>
+                    <input type="checkbox" id="checkbox_thursday" name="notification_dsoW[]" value="4" checked><label for="checkbox_thursday">木</label>
+                    <input type="checkbox" id="checkbox_friday" name="notification_dsoW[]" value="5" checked><label for="checkbox_friday">金</label>
+                    <input type="checkbox" id="checkbox_saturday" name="notification_dsoW[]" value="6"><label for="checkbox_saturday">土</label>
                 </div>
 
                 <!--週を選んだときの通知設定-->
                 <div class="notification_for_week">
-                    <select id="notification_week" name="notification_week">
-                        <option value="0">その週</option>
-                        <option value="1">前の週</option>
-                    </select><a>の</a><br>
-                    <input type="radio" id="notification_days_week0" name="notification_days_week" value="0"><label for="notification_days_week0">日</label>
-                    <input type="radio" id="notification_days_week1" name="notification_days_week" value="1"><label for="notification_days_week1">月</label>
-                    <input type="radio" id="notification_days_week2" name="notification_days_week" value="2"><label for="notification_days_week2">火</label>
-                    <input type="radio" id="notification_days_week3" name="notification_days_week" value="3"><label for="notification_days_week3">水</label>
-                    <input type="radio" id="notification_days_week4" name="notification_days_week" value="4"><label for="notification_days_week4">木</label>
-                    <input type="radio" id="notification_days_week5" name="notification_days_week" value="5"><label for="notification_days_week5">金</label>
-                    <input type="radio" id="notification_days_week6" name="notification_days_week" value="6"><label for="notification_days_week6">土</label>
+                    <a>通知を行う曜日を選択して下さい</a><br>
+                    <input type="radio" id="radio_sunday" name="notification_doW" value="0"><label for="radio_sunday">日</label>
+                    <input type="radio" id="radio_monday" name="notification_doW" value="1"><label for="radio_monday">月</label>
+                    <input type="radio" id="radio_tuesday" name="notification_doW" value="2"><label for="radio_tuesday">火</label>
+                    <input type="radio" id="radio_wednesday" name="notification_doW" value="3"><label for="radio_wednesday">水</label>
+                    <input type="radio" id="radio_thursday" name="notification_doW" value="4"><label for="radio_thursday">木</label>
+                    <input type="radio" id="radio_friday" name="notification_doW" value="5"><label for="radio_friday">金</label>
+                    <input type="radio" id="radio_saturday" name="notification_doW" value="6"><label for="radio_saturday">土</label>
                 </div>
 
                 <!--月を選んだときの通知設定-->
                 <div class="notification_for_month">
-                    <select id="notification_month" name="notification_month">
-                        <option value="0">当番がある月</option>
-                        <option value="1">前の月</option>
-                    </select><a>の</a>
-                    <select name="notification_dayOfMonth" id="notification_dayOfMonth">
+                        <a>通知する月を選択して下さい</a><br>
+                        <input type="checkbox" id="january" name="notification_months[]" value="1" checked><label for="january">1月</label>
+                        <input type="checkbox" id="february" name="notification_months[]" value="2" checked><label for="february">2月</label>
+                        <input type="checkbox" id="march" name="notification_months[]" value="3" checked><label for="march">3月</label>
+                        <input type="checkbox" id="april" name="notification_months[]" value="4" checked><label for="april">4月</label>
+                        <input type="checkbox" id="may" name="notification_months[]" value="5" checked><label for="may">5月</label>
+                        <input type="checkbox" id="june" name="notification_months[]" value="6" checked><label for="june">6月</label>
+                        <input type="checkbox" id="july" name="notification_months[]" value="7" checked><label for="july">7月</label>
+                        <input type="checkbox" id="august" name="notification_months[]" value="8" checked><label for="august">8月</label>
+                        <input type="checkbox" id="september" name="notification_months[]" value="9" checked><label for="september">9月</label>
+                        <input type="checkbox" id="october" name="notification_months[]" value="10" checked><label for="october">10月</label>
+                        <input type="checkbox" id="november" name="notification_months[]" value="11" checked><label for="november">11月</label>
+                        <input type="checkbox" id="december" name="notification_months[]" value="12" checked><label for="december">12月</label>
+                    <a>の</a>
+                    <select name="notification_doM" id="notification_doM">
                         <option value="1">1日</option>
                         <option value="2">2日</option>
                         <option value="3">3日</option>
@@ -198,12 +145,16 @@
                         <option value="30">30日</option>
                         <option value="31">31日</option>
                     </select><br>
-                    <a>※30日までしかない月など、その月にはない日にちが指定されていた場合、自動的に月末となります。</a>
+                    <a>
+                        ※6月における31日など、その月にはない日にちが指定されていた場合、自動的に月末となります。<br>
+                        例)31日を指定した場合、6月は30日に通知が行われる
+                    </a>
                 </div>
 
                 <br><a>の</a>
 
                 <input type="time" id="notification_time" name="notification_time">
+
             </div>
         </div><br>
 

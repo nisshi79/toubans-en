@@ -18,20 +18,20 @@ var_dump($inputs);
 
 //Pre-Processing
 switch ($inputs['block_size_radio']){
+    //日
     case 0:
-        $avaliable_buffer = implode(',',$inputs['avaliable_days_of_week']);
-
-        $notification_date_buf=$inputs['notification_day'];
+       $notification_date_buf = implode(',',$inputs['notification_dsoW']);
 
         break;
-
+    //週
     case 1:
-        $notification_date_buf=['notification_days_week'];
-        break;
+        $notification_date_buf = $inputs['notification_doW'];
 
+        break;
+    //月
     case 2:
-        $avaliable_buffer = implode(',',$inputs['avaliable_months_of_year']);
-        $notification_date_buf = ['notification_month'];
+        $notification_date_buf = $inputs['notification_doM'];
+            implode(',',$inputs['notification_months']);
         break;
 
     default:

@@ -49,7 +49,7 @@ $(function () {
                 $('.notification_date_container').show();
     })*/
 
-    $(".text_area").height(30);//init
+   /* $(".text_area").height(30);//init
     $(".text_area").css("lineHeight","20px");//init
 
     $(".text_area").on("input",function(evt){
@@ -66,5 +66,5 @@ $(function () {
             }
         }
     });
-
+*/
 });
