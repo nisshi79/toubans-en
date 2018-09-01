@@ -136,7 +136,7 @@
           <entry key="html" value="4192" />
           <entry key="js" value="766" />
           <entry key="json" value="4" />
-          <entry key="php" value="7440" />
+          <entry key="php" value="7460" />
           <entry key="sh" value="28" />
           <entry key="sql" value="8" />
           <entry key="txt" value="880" />
@@ -150,7 +150,7 @@
           <entry key="HTML" value="4192" />
           <entry key="JSON" value="4" />
           <entry key="JavaScript" value="775" />
-          <entry key="PHP" value="7440" />
+          <entry key="PHP" value="7460" />
           <entry key="PLAIN_TEXT" value="961" />
           <entry key="Scratch" value="13" />
           <entry key="SmartyConfig" value="2" />
@@ -220,8 +220,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bootstrap.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
+            <state relative-caret-position="304">
+              <caret line="26" column="25" lean-forward="true" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -229,8 +229,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/send.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
+            <state relative-caret-position="271">
+              <caret line="97" column="43" selection-start-line="97" selection-start-column="43" selection-end-line="97" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -427,11 +427,11 @@
         <option value="$PROJECT_DIR$/sh/send.sh" />
         <option value="$PROJECT_DIR$/style.css" />
         <option value="$PROJECT_DIR$/script.js" />
-        <option value="$PROJECT_DIR$/bootstrap.php" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/migrate_tables.php" />
         <option value="$PROJECT_DIR$/input.php" />
         <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/bootstrap.php" />
         <option value="$PROJECT_DIR$/send.php" />
       </list>
     </option>
@@ -583,28 +583,7 @@
       <workItem from="1535438507372" duration="305000" />
       <workItem from="1535525113348" duration="15000" />
       <workItem from="1535525169735" duration="1397000" />
-      <workItem from="1535615097712" duration="41700000" />
-    </task>
-    <task id="LOCAL-00030" summary=".htaccessを無効化">
-      <created>1532593933284</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1532593933284</updated>
-    </task>
-    <task id="LOCAL-00031" summary="index.phpからsend.phpへ退避">
-      <created>1532599701250</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1532599701250</updated>
-    </task>
-    <task id="LOCAL-00032" summary="migration files">
-      <created>1532752852356</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1532752852356</updated>
+      <workItem from="1535615097712" duration="42233000" />
     </task>
     <task id="LOCAL-00033" summary="調整">
       <created>1532966052039</created>
@@ -928,11 +907,32 @@
       <option name="project" value="LOCAL" />
       <updated>1535809303931</updated>
     </task>
-    <option name="localTasksCounter" value="79" />
+    <task id="LOCAL-00079" summary="debug">
+      <created>1535809803358</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1535809803358</updated>
+    </task>
+    <task id="LOCAL-00080" summary="debug">
+      <created>1535809821456</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1535809821456</updated>
+    </task>
+    <task id="LOCAL-00081" summary="debug">
+      <created>1535810150922</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1535810150923</updated>
+    </task>
+    <option name="localTasksCounter" value="82" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="289356000" />
+    <option name="totallyTimeSpent" value="289889000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1280,13 +1280,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bootstrap.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test.php">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1315,10 +1308,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/bootstrap.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="26" column="25" lean-forward="true" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/send.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
+        <state relative-caret-position="271">
+          <caret line="97" column="43" selection-start-line="97" selection-start-column="43" selection-end-line="97" selection-end-column="43" />
         </state>
       </provider>
     </entry>
