@@ -19,7 +19,6 @@ foreach ($tableArray as $table ) {
     $dt = Carbon::now(new DateTimeZone('Asia/Tokyo'));
     notify($table,$dt);
     echo $table['group_id'];
-    var_dump($table);
 }
 
 function notify($table,$dt){
@@ -77,7 +76,8 @@ function send($table){
 function generate($table){
     $roles = $table->role;
     $members=$table->member;
-
+    var_dump($roles);
+    var_dump($members);
     $generated_message ='';
 
     $number_of_states = max(count($roles),count($members));
