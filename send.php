@@ -55,9 +55,7 @@ function send($table){
     $push_message ='';
     $push_message.="「$table[top_textarea]」のお知らせ\n";
     $push_message.=generate($table);
-    $push_message.="$table[lower_textarea]\n";
-
-    $push_message=substr($push_message,0,-1);
+    $push_message.="$table[lower_textarea]";
 
     $httpClient = new \LINE\LINEBot\HTTPClient\CurlHTTPClient(getenv('TOUBAN_BOT_CHANNEL_ACCESS_TOKEN'));
     $bot = new \LINE\LINEBot($httpClient, ['channelSecret' => getenv('TOUBAN_BOT_CHANNEL_SECRET')]);
@@ -75,7 +73,7 @@ function send($table){
 
 function generate($table){
     $roles = $table->role;
-    $members=$table->member;
+    $members = $table->member;
     var_dump($roles);
     var_dump($members);
     $generated_message ='';
@@ -95,7 +93,8 @@ function generate($table){
             $generated_message .= $roles[$i]['role'].'の担当は'.$members[$memberId]['member']."\n";
         }
 
-    }elseif(count($roles) > count($members)){
+    }
+    elseif(count($roles) > count($members)){
         for($i = 0; $i < $pairs_num; $i++){
             $rolesId = ($i + $currentState) % $number_of_states;
             echo $roles[$rolesId]['role'];
