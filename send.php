@@ -53,9 +53,11 @@ function send($table){
 
 
     $push_message ='';
-    $push_message.="「$table[title]」のお知らせ\n";
+    $push_message.="「$table[top_textarea]」のお知らせ\n";
     $push_message.=generate($table);
-    $push_message.="$table[text_area_below]";
+    $push_message.="$table[lower_textarea]\n";
+
+    $push_message=substr($push_message,0,-1);
 
     $httpClient = new \LINE\LINEBot\HTTPClient\CurlHTTPClient(getenv('TOUBAN_BOT_CHANNEL_ACCESS_TOKEN'));
     $bot = new \LINE\LINEBot($httpClient, ['channelSecret' => getenv('TOUBAN_BOT_CHANNEL_SECRET')]);
