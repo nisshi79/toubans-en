@@ -1,3 +1,4 @@
+@import url("chat_line_css/style.css");
 
 html{
     font-size: 11px;
@@ -58,12 +59,13 @@ button {
     display: none;
 }
 .roles{
-    display: inline-block;
+    display: block;
     vertical-align: top;
+    text-align: center;
 }
 
 .members{
-    display: inline-block;
+    display: block;
     vertical-align: top;
 
 }
@@ -89,7 +91,7 @@ body{
 }
 .gradation{
     text-align: center;
-    margin: 50px;
+    margin: 1em;
     color: #FF8C00;
     background: -webkit-linear-gradient(0deg, #EE795D, #C769A3);
     -webkit-background-clip: text;
@@ -125,7 +127,6 @@ a.touban_button{
 }
 .touban_background{
     color: white;
-    background: -webkit-linear-gradient(0deg, #EE795D, #C769A3);
     border-radius: 7px;
     padding: 1em;
 }
@@ -139,4 +140,13 @@ a.touban_button{
 }
 .gradation_button{
     padding: 1em;
+}
+.btn{
+    padding: 1em;
+    border-radius: 7px;
+    background: -webkit-linear-gradient(0deg, #EE795D, #C769A3);
+    color: white;
+}
+.touban_form{
+    display: flex;
 }

@@ -63,4 +63,7 @@ typings/
 # mac files
 *DS_Store
 
+# DB
+bootstrap.php
+
 /vendor/

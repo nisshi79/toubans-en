@@ -12,56 +12,81 @@
 </head>
 
 <body>
-<h1 class="gradation">初期設定</h1>
+<h1><a class="gradation">Toubans! 初期設定</a></h1>
 
 <form name = "tableInfo" method = "POST" action="input.php">
     <input type="hidden" id="group_id" value="" name="group_id">
 
-    <h2 class="gradation">メッセージ・当番の設定</h2><br>
+    <h2><a class="gradation">1. メッセージの設定</a></h2>
 
-    <div class="form babble">
-        <label for="top_textarea" class="gradation">上部メッセージ</label><br>
-        <input type="text" name="top_textarea" id="top_textarea" class="text_area" placeholder="例）今日の当番のお知らせです"><br><br>
+    <!-- ▼LINE風ここから -->
+    <div class="line__container">
+        <!-- タイトル -->
+        <!--<div class="line__title">
+            メッセージのイメージ
+        </div>-->
+        <div class="form line__contents">
+            <div class="line__left">
+                <figure>
+                    <img src="pic/icon.png" />
+                </figure>
+                <div class="line__left-text">
+                    <div class="name">当番お知らせBot</div>
 
-        <div class="touban_background">
-            <a class="touban_button">当番部分を設定</a>
+                    <div class="text">
+                        <h3><label for="top_textarea" class="gradation">1. 挨拶文（導入文）を入力</label></h3>
+                        <input type="text" name="top_textarea" id="top_textarea" class="text_area" placeholder="例）今日の当番のお知らせです"><br><br>
 
-            <div class="touban_container">
-                <div class = "roles">
-                    <a>役割</a><br>
-                    <ol id="roles_list"><!-- "id" attribute is required -->
-                        <li class="roles_list_var"><!-- .(id)_var -->
-                            <input type="text" data-name-format="roles_list[]" name="roles_list[]" id="roles_list_0">
-                            <button class="roles_list_del">Delete</button><!-- .(id)_del -->
-                        </li>
-                    </ol>
-                    <input type="button" value="Add" class="roles_list_add list_add_button"><!-- .(id)_add -->
+                        <div class="touban_form">
+                            <h3><a class="gradation">2. 役割を入力</a></h3>
+
+                            <div class = "roles">
+                                <a>役割</a><br>
+                                <ol id="roles_list"><!-- "id" attribute is required -->
+                                    <li class="roles_list_var"><!-- .(id)_var -->
+                                        <div class="touban_form">
+                                            <input type="text" data-name-format="roles_list[]" name="roles_list[]" id="roles_list_0" class="text_area">
+                                            <button class="roles_list_del btn">削除</button><!-- .(id)_del -->
+                                        </div>
+                                    </li>
+                                </ol>
+                                <a href="javascript:void(0)" class="roles_list_add btn roles_add_btn">役割を追加</a>
+                            </div>
+
+                            <br>
+
+                            <h3><a class="gradation">3. メンバーを入力</a></h3>
+
+                            <div class="members">
+                                <a>メンバー</a><br>
+                                <ol id="members_list"><!-- "id" attribute is required -->
+                                    <li class="members_list_var"><!-- .(id)_var -->
+                                        <div class="touban_form">
+                                            <input type="text" data-name-format="members_list[]" name="members_list[]" id="members_list_0" class="text_area">
+                                            <button class="members_list_del btn">削除</button><!-- .(id)_del -->
+                                        </div>
+                                    </li>
+                                </ol>
+                                <a href="javascript:void(0)" class="members_list_add btn members_add_btn">メンバーを追加</a>
+                            </div>
+
+                            <br>
+                            
+                            <a class="gradation">※メンバーの番号順に当番が回ります</a>
+                        </div>
+
+                        <!--<a>回し方</a><br>
+                        <input type="radio" id="block_size_day" name="block_size_radio" value="0" checked><label for="block_size_day">日</label>
+                        <input type="radio" id="block_size_week" name="block_size_radio" value="1"><label for="block_size_week">週</label>
+                        <input type="radio" id="block_size_month" name="block_size_radio" value="2"><label for="block_size_month">月</label><br>-->
+                        <h3><label for="lower_textarea" class="gradation">4. 締めの文を入力</label></h3>
+                        <input type="text" name="lower_textarea" id="lower_textarea" class="text_area" placeholder="例）よろしくお願いします">
+                    </div>
+
+                    <br>
                 </div>
-
-                <div class="members">
-                    <a>メンバー</a><br>
-                    <ol id="members_list"><!-- "id" attribute is required -->
-                        <li class="members_list_var"><!-- .(id)_var -->
-                            <input type="text" data-name-format="members_list[]" name="members_list[]" id="members_list_0">
-                            <button class="members_list_del">Delete</button><!-- .(id)_del -->
-                        </li>
-                    </ol>
-                    <input type="button" value="Add" class="members_list_add list_add_button"><!-- .(id)_add --><br>
-                </div>
-
-                <br>
-                <a>※1回通知する毎に、「メンバー」側が1つずつ上にずれて行きます（1番上だった「メンバー」は1番下にいきます）</a>
-                <!--<a>回し方</a><br>
-                <input type="radio" id="block_size_day" name="block_size_radio" value="0" checked><label for="block_size_day">日</label>
-                <input type="radio" id="block_size_week" name="block_size_radio" value="1"><label for="block_size_week">週</label>
-                <input type="radio" id="block_size_month" name="block_size_radio" value="2"><label for="block_size_month">月</label><br>-->
-
-                <br>
             </div>
         </div>
-
-        <br><label for="lower_textarea" class="gradation">下部メッセージ</label><br>
-        <input type="text" name="lower_textarea" id="lower_textarea" class="text_area" placeholder="例）よろしくお願いします">
     </div>
 
     <br>
@@ -70,7 +95,8 @@
 
 
             <div class="notification_date_container">
-                <h2 class="gradation">通知の設定</h2><br>
+                <h2><a class="gradation">2. 通知の設定</a></h2><br>
+                <h3><a class="gradation">1. 通知する日を設定</a></h3>
                 <select name="notification_span" id="notification_span">
                     <option value="0">通知する曜日を選択</option>
                     <option value="1">毎月何日に通知するかを選択</option>
@@ -154,7 +180,7 @@
                     </a>
                 </div>
 
-                <br><a>の</a>
+                <h3><a class="gradation">2. 通知する時間を設定</a></h3>
 
                 <input type="time" id="notification_time" name="notification_time">
 
@@ -162,7 +188,7 @@
         </div><br>
 
         <div class="gradation_button" id="submit-button">
-            <button type="submit" class="button"><a>送信</a></button>
+            <button type="submit" class="button"><a>設定完了</a></button>
         </div>
 
 </form>
