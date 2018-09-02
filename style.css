@@ -58,17 +58,12 @@ button {
 #notification_week_number{
     display: none;
 }
-.roles{
+.roles,.members{
     display: block;
     vertical-align: top;
     text-align: center;
 }
 
-.members{
-    display: block;
-    vertical-align: top;
-
-}
 .list_add_button{
     text-align: right;
 }
@@ -149,4 +144,11 @@ a.touban_button{
 }
 .touban_form{
     display: flex;
+}
+.nowrap{
+    white-space: nowrap;
+}
+.vertical_slim{
+    padding-top: 0em;
+    padding-bottom: 0em;
 }

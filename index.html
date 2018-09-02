@@ -9,6 +9,7 @@
     <title>LIFF Starter</title>
 
     <link rel="stylesheet" href="style.css?<?php echo date('Ymd-Hi'); ?>" type="text/css">
+    <link rel="stylesheet" href="modaal.css" type="text/css">
 </head>
 
 <body>
@@ -36,8 +37,9 @@
                     <div class="text">
                         <h3><label for="top_textarea" class="gradation">1. 挨拶文（導入文）を入力</label></h3>
                         <input type="text" name="top_textarea" id="top_textarea" class="text_area" placeholder="例）今日の当番のお知らせです"><br><br>
+                        <a href="#touban_modal" class="modal btn">当番を設定</a>
 
-                        <div class="touban_form">
+                        <div id="touban_modal" class="touban_container" style="display: none;">
                             <h3><a class="gradation">2. 役割を入力</a></h3>
 
                             <div class = "roles">
@@ -46,7 +48,7 @@
                                     <li class="roles_list_var"><!-- .(id)_var -->
                                         <div class="touban_form">
                                             <input type="text" data-name-format="roles_list[]" name="roles_list[]" id="roles_list_0" class="text_area">
-                                            <button class="roles_list_del btn">削除</button><!-- .(id)_del -->
+                                            <button class="roles_list_del btn nowrap vertical_slim"><a class="nowrap">削除</a></button><!-- .(id)_del -->
                                         </div>
                                     </li>
                                 </ol>
@@ -63,7 +65,7 @@
                                     <li class="members_list_var"><!-- .(id)_var -->
                                         <div class="touban_form">
                                             <input type="text" data-name-format="members_list[]" name="members_list[]" id="members_list_0" class="text_area">
-                                            <button class="members_list_del btn">削除</button><!-- .(id)_del -->
+                                            <button class="members_list_del btn vertical_slim"><a class="nowrap">削除</a></button><!-- .(id)_del -->
                                         </div>
                                     </li>
                                 </ol>
@@ -71,8 +73,8 @@
                             </div>
 
                             <br>
-                            
-                            <a class="gradation">※メンバーの番号順に当番が回ります</a>
+
+                            <a class="gradation">※メンバーの番号順に当番が回ります</a><br>
                         </div>
 
                         <!--<a>回し方</a><br>
@@ -226,9 +228,10 @@
 <!--scripts-->
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/jquery.add-input-area@4.11.0/dist/jquery.add-input-area.min.js"></script>
+
+<script src="script.js"></script>
 <script src="https://d.line-scdn.net/liff/1.0/sdk.js"></script>
 <script src="liff-starter.js"></script>
-
-    <script src="script.js"></script>
-    <script src="jquery.add-input-area.min.js"></script>
+<script src="modaal.min.js"></script>
+<script src="jquery.add-input-area.min.js"></script>
 </body>

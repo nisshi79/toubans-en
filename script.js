@@ -1,3 +1,5 @@
+
+
 $(function () {
     $('[name="notification_span"]').change( function() {
 
@@ -34,7 +36,7 @@ $(function () {
     //最初は全てのパネルを非表示に
     $('.notification_doM').hide();
 
-
+    $('.modal').modaal();
     /*$('[name="block_size_radio"]:radio').change( function(){
                 //選択したパネルを開く
                 $('.notification_date_container').show();
