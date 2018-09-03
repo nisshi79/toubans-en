@@ -106,15 +106,22 @@
                     <option value="1">毎月何日に通知するかを選択</option>
                 </select>
                 <!--曜日を選んだときの通知設定-->
+                <br><a>通知を行う曜日を選択して下さい(複数選択可)</a><br>
                 <div class="notification_dsoW">
-                    <a>通知を行う曜日を選択して下さい(複数選択可)</a><br>
-                    <input type="checkbox" id="checkbox_sunday" name="notification_dsoW[]" value="0"><label for="checkbox_sunday">日</label>
-                    <input type="checkbox" id="checkbox_monday" name="notification_dsoW[]" value="1" checked><label for="checkbox_monday">月</label>
-                    <input type="checkbox" id="checkbox_tuesday" name="notification_dsoW[]" value="2" checked><label for="checkbox_tuesday">火</label>
-                    <input type="checkbox" id="checkbox_wednesday" name="notification_dsoW[]" value="3" checked><label for="checkbox_wednesday">水</label>
-                    <input type="checkbox" id="checkbox_thursday" name="notification_dsoW[]" value="4" checked><label for="checkbox_thursday">木</label>
-                    <input type="checkbox" id="checkbox_friday" name="notification_dsoW[]" value="5" checked><label for="checkbox_friday">金</label>
-                    <input type="checkbox" id="checkbox_saturday" name="notification_dsoW[]" value="6"><label for="checkbox_saturday">土</label>
+                    <input type="checkbox" id="checkbox_sunday" name="notification_dsoW[]" class="checkbox transition" value="0">
+                        <label class="checkbox_label" for="checkbox_sunday">日</label>
+                    <input type="checkbox" id="checkbox_monday" name="notification_dsoW[]" value="1" class="checkbox transition" checked>
+                        <label class="checkbox_label" for="checkbox_monday">月</label>
+                    <input type="checkbox" id="checkbox_tuesday" name="notification_dsoW[]" value="2" class="checkbox transition" checked>
+                        <label class="checkbox_label" for="checkbox_tuesday">火</label>
+                    <input type="checkbox" id="checkbox_wednesday" name="notification_dsoW[]" value="3" class="checkbox transition" checked>
+                        <label class="checkbox_label" for="checkbox_wednesday">水</label>
+                    <input type="checkbox" id="checkbox_thursday" name="notification_dsoW[]" value="4" class="checkbox transition" checked>
+                        <label class="checkbox_label" for="checkbox_thursday">木</label>
+                    <input type="checkbox" id="checkbox_friday" name="notification_dsoW[]" value="5" class="checkbox transition" checked>
+                        <label class="checkbox_label" for="checkbox_friday">金</label>
+                    <input type="checkbox" id="checkbox_saturday" name="notification_dsoW[]" class="checkbox transition" value="6">
+                        <label class="checkbox_label" for="checkbox_saturday">土</label>
                 </div>
 
                 <!--週を選んだときの通知設定-->
