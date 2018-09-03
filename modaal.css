@@ -53,16 +53,13 @@
 }
 
 .modaal-wrapper .modaal-close {
-    position: relative;
+    position: fixed;
 	border: none;
 	background: transparent;
 	padding: 0;
 	-webkit-appearance: none;
 }
-.modaal-close{
-    position: sticky;
 
-}
 .modaal-wrapper.modaal-start_none {
 	display: none;
 	opacity: 1;

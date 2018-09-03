@@ -18,7 +18,7 @@
 <form name = "tableInfo" method = "POST" action="input.php">
     <input type="hidden" id="group_id" value="" name="group_id">
 
-    <h2><a class="gradation">1. メッセージの設定</a></h2>
+    <h2><a class="gradation">1. まず、通知内容を設定します。</a></h2>
 
     <!-- ▼LINE風ここから -->
     <div class="line__container">
@@ -37,10 +37,11 @@
                     <div class="text">
                         <h3><label for="top_textarea" class="gradation">1. 挨拶文（導入文）を入力</label></h3>
                         <input type="text" name="top_textarea" id="top_textarea" class="text_area" placeholder="例）今日の当番のお知らせです"><br><br>
-                        <a href="#touban_modal" class="modal btn">当番を設定</a>
+                        <h3><a class="gradation">2.当番を設定する</a></h3>
+                        <a href="#touban_modal" class="modal btn">当番設定画面へ</a>
 
                         <div id="touban_modal" class="touban_container" style="display: none;">
-                            <h3><a class="gradation">2. 役割を入力</a></h3>
+                            <h3 class="no-margin-bottom"><a class="gradation">1. 役割を入力</a></h3>
 
                             <div class = "roles">
                                 <a>役割</a><br>
@@ -55,9 +56,9 @@
                                 <a href="javascript:void(0)" class="roles_list_add btn roles_add_btn">役割を追加</a>
                             </div>
 
-                            <br>
+                            <br><br>
 
-                            <h3><a class="gradation">3. メンバーを入力</a></h3>
+                            <h3 class="no-margin-bottom"><a class="gradation">2. メンバーを入力</a></h3>
 
                             <div class="members">
                                 <a>メンバー</a><br>
@@ -72,16 +73,17 @@
                                 <a href="javascript:void(0)" class="members_list_add btn members_add_btn">メンバーを追加</a>
                             </div>
 
-                            <br>
+                            <br><br>
 
                             <a class="gradation">※メンバーの番号順に当番が回ります</a><br>
+                            <h3><a href="javascript:void(0)" class="button" id="modaal_close">完了</a></h3>
                         </div>
 
                         <!--<a>回し方</a><br>
                         <input type="radio" id="block_size_day" name="block_size_radio" value="0" checked><label for="block_size_day">日</label>
                         <input type="radio" id="block_size_week" name="block_size_radio" value="1"><label for="block_size_week">週</label>
                         <input type="radio" id="block_size_month" name="block_size_radio" value="2"><label for="block_size_month">月</label><br>-->
-                        <h3><label for="lower_textarea" class="gradation">4. 締めの文を入力</label></h3>
+                        <br><br><h3><label for="lower_textarea" class="gradation">4. 締めの文を入力</label></h3>
                         <input type="text" name="lower_textarea" id="lower_textarea" class="text_area" placeholder="例）よろしくお願いします">
                     </div>
 

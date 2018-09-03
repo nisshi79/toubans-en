@@ -36,7 +36,12 @@ $(function () {
     //最初は全てのパネルを非表示に
     $('.notification_doM').hide();
 
-    $('.modal').modaal();
+    $('.modal').modaal({
+        hide_close: 'true'
+    });
+    $('#modaal_close').on('click',function () {
+        $('.modal').modaal('close');
+    })
     /*$('[name="block_size_radio"]:radio').change( function(){
                 //選択したパネルを開く
                 $('.notification_date_container').show();
