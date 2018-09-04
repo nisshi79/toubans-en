@@ -226,3 +226,7 @@ input[type="checkbox"].checkbox:checked + label{
 .notification_dsoW{
     display: flex;
 }
+
+h1{
+    margin-top: 2em;
+}
