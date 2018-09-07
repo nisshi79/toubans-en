@@ -14,8 +14,6 @@ require_once ('Member.php');
 $inputs = filter_input_array(INPUT_POST);
 use Carbon\Carbon;
 
-var_dump($inputs);
-
 //Pre-Processing
 switch ($inputs['notification_span']){
     //日
@@ -65,3 +63,23 @@ foreach ($inputs['members_list'] as $members_list){
     ]);
 }
 echo $table['notification_timing_avsolute_value'];
+?>
+<head>
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+
+    <meta http-equiv="content-type" charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css?<?php echo date('Ymd-Hi'); ?>" type="text/css">
+</head>
+
+<body>
+    <div class="screen_center">
+        <div class="inner">
+            <h1><a>Complete!</a></h1>
+            <a>おめでとうございます！これで設定は完了です！右上の×ボタンから、この画面を閉じて下さい。</a>
+        </div>
+    </div>
+
+</body>

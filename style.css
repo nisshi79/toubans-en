@@ -159,7 +159,7 @@ a.touban_button{
 }
 
 .modaal-content-container h3{
-    text-align: center;
+    /*text-align: center;*/
 }
 
 .no-margin-bottom{
@@ -229,4 +229,26 @@ input[type="checkbox"].checkbox:checked + label{
 
 h1{
     margin-top: 2em;
+}
+
+.screen_center{
+
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    margin: auto;
+    text-align: center;
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.inner{
+
+    text-align: center;
+    height: 10em;
+    vertical-align: middle;
 }
