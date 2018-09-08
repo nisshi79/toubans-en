@@ -62,7 +62,6 @@ foreach ($inputs['members_list'] as $members_list){
         'table_id' => $table['id']
     ]);
 }
-echo $table['notification_timing_avsolute_value'];
 ?>
 <head>
     <meta http-equiv="Pragma" content="no-cache">
