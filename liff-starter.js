@@ -1,7 +1,6 @@
 window.onload = function (e) {
     liff.init(function (data) {
         initializeApp(data);
-
     });
 
 };
@@ -14,7 +13,21 @@ function initializeApp(data) {
     document.getElementById('utouidfield').textContent = data.context.utouId;
     document.getElementById('roomidfield').textContent = data.context.roomId;
     document.getElementById('groupidfield').textContent = data.context.groupId;
-    $('#group_id').val(data.context.groupId);
+    //$('#group_id').val(data.context.groupId);
+
+    fetch('/checkId.php?group_id=' + data.context.group_id)
+        .then(function (response) {
+            return response.text(); // ReadableStream -> String への変換
+        })
+        .then(function (json) {
+            const result = JSON.parse(json); // json は String 型
+            console.log(result);
+            // <form name = "tableInfo" method = "POST" action="input.php">
+            // ↑これを、
+            // <form name = "tableInfo" method = "POST" action="update.php">
+            // ↑こうする
+            $('form[name="tableInfo"]').attr('action', 'update.php');
+        });
     // openWindow call
     document.getElementById('openwindowbutton').addEventListener('click', function () {
         liff.openWindow({

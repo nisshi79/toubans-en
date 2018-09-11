@@ -51,9 +51,8 @@ function notify($table,$dt){
 function send($table){
     $spent_blocks = $table['sent_count'];
 
-
     $push_message ='';
-    $push_message.="「$table[top_textarea]」のお知らせ\n";
+    $push_message.="$table[top_textarea]\n";
     $push_message.=generate($table);
     $push_message.="$table[lower_textarea]";
 
