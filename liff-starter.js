@@ -1,4 +1,4 @@
-window.onload = function (e) {
+window.onload = function (data) {
     liff.init(function (data) {
         initializeApp(data);
     });
@@ -13,7 +13,8 @@ window.onload = function (e) {
     if(isset(data.context.groupId))lineId=data.context.groupId;
     if(isset(data.context.roomId))lineId=data.context.roomId;
     if(isset(data.context.utouId))lineId=data.context.utouId;
-
+    console.log(lineId);
+    $('#group_id').val(lineId);
 
     fetch('checkId.php?groupId=' + lineId/*data.context.group_id*/)
         .then(response => {
@@ -84,7 +85,7 @@ function initializeApp(data) {
     document.getElementById('utouidfield').textContent = data.context.utouId;
     document.getElementById('roomidfield').textContent = data.context.roomId;
     document.getElementById('groupidfield').textContent = data.context.groupId;
-    $('#group_id').val(data.context.groupId);
+
 
 
     console.log('continue');
