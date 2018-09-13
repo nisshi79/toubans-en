@@ -2,9 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="efe43d86-ccff-4ec1-957d-70c74f49e1e3" name="Default" comment="デザイン調整">
+      <change afterPath="$PROJECT_DIR$/.idea/phpRuntime.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/checkId.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/update.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/update.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/line-liff-starter.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/line-liff-starter.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bootstrap.php" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input.php" beforeDir="false" afterPath="$PROJECT_DIR$/input.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jquery.add-input-area.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/jquery.add-input-area.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/liff-starter.js" beforeDir="false" afterPath="$PROJECT_DIR$/liff-starter.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,6 +24,7 @@
   </component>
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <executablePath>composer</executablePath>
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -95,11 +106,12 @@
     <session id="-249441798">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="30" />
-          <entry key="project.open.time.10" value="1" />
+          <entry key="project.closed" value="36" />
+          <entry key="project.open.time.10" value="2" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.110" value="1" />
           <entry key="project.open.time.15" value="1" />
+          <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.18" value="2" />
           <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.20" value="1" />
@@ -123,8 +135,8 @@
           <entry key="project.open.time.51" value="1" />
           <entry key="project.open.time.60" value="1" />
           <entry key="project.open.time.85" value="1" />
-          <entry key="project.open.time.9" value="2" />
-          <entry key="project.opened" value="39" />
+          <entry key="project.open.time.9" value="6" />
+          <entry key="project.opened" value="45" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -134,17 +146,17 @@
           <entry key="cell" value="5" />
           <entry key="conf" value="2" />
           <entry key="css" value="1828" />
-          <entry key="dummy" value="24" />
+          <entry key="dummy" value="34" />
           <entry key="env" value="130" />
-          <entry key="gitignore" value="26" />
+          <entry key="gitignore" value="38" />
           <entry key="htaccess" value="30" />
-          <entry key="html" value="5349" />
-          <entry key="js" value="920" />
-          <entry key="json" value="4" />
-          <entry key="php" value="7659" />
+          <entry key="html" value="5477" />
+          <entry key="js" value="3059" />
+          <entry key="json" value="11" />
+          <entry key="php" value="8695" />
           <entry key="sh" value="28" />
           <entry key="sql" value="8" />
-          <entry key="txt" value="953" />
+          <entry key="txt" value="1006" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -152,11 +164,11 @@
           <entry key=".env file" value="104" />
           <entry key="Bash" value="1" />
           <entry key="CSS" value="1828" />
-          <entry key="HTML" value="5349" />
-          <entry key="JSON" value="4" />
-          <entry key="JavaScript" value="929" />
-          <entry key="PHP" value="7659" />
-          <entry key="PLAIN_TEXT" value="1060" />
+          <entry key="HTML" value="5477" />
+          <entry key="JSON" value="11" />
+          <entry key="JavaScript" value="3068" />
+          <entry key="PHP" value="8695" />
+          <entry key="PLAIN_TEXT" value="1135" />
           <entry key="Scratch" value="13" />
           <entry key="SmartyConfig" value="2" />
           <entry key="htaccess" value="30" />
@@ -171,19 +183,19 @@
           <entry key="conf" value="1" />
           <entry key="css" value="15" />
           <entry key="env" value="7" />
-          <entry key="gitignore" value="5" />
+          <entry key="gitignore" value="6" />
           <entry key="heroku-hhvm-apache2" value="2" />
           <entry key="heroku-hhvm-nginx" value="1" />
           <entry key="heroku-php-apache2" value="2" />
           <entry key="htaccess" value="2" />
-          <entry key="html" value="9" />
+          <entry key="html" value="13" />
           <entry key="jpg" value="1" />
-          <entry key="js" value="19" />
-          <entry key="json" value="9" />
+          <entry key="js" value="31" />
+          <entry key="json" value="10" />
           <entry key="lock" value="2" />
           <entry key="pg_monitor" value="1" />
           <entry key="pg_read_all_stats" value="1" />
-          <entry key="php" value="76" />
+          <entry key="php" value="93" />
           <entry key="png" value="47" />
           <entry key="scss" value="2" />
           <entry key="sh" value="1" />
@@ -198,12 +210,12 @@
           <entry key=".env file" value="6" />
           <entry key="CSS" value="15" />
           <entry key="Database Element" value="7" />
-          <entry key="HTML" value="9" />
+          <entry key="HTML" value="13" />
           <entry key="Image" value="48" />
-          <entry key="JSON" value="11" />
-          <entry key="JavaScript" value="19" />
-          <entry key="PHP" value="76" />
-          <entry key="PLAIN_TEXT" value="17" />
+          <entry key="JSON" value="12" />
+          <entry key="JavaScript" value="31" />
+          <entry key="PHP" value="93" />
+          <entry key="PLAIN_TEXT" value="18" />
           <entry key="SCSS" value="2" />
           <entry key="SQL" value="6" />
           <entry key="Scratch" value="2" />
@@ -217,7 +229,12 @@
       <usages-collector id="statistics.php.new.test" />
       <usages-collector id="statistics.php.rename.constructor" />
       <usages-collector id="statistics.php.composer.command.options" />
-      <usages-collector id="statistics.php.composer.actions" />
+      <usages-collector id="statistics.php.composer.actions">
+        <counts>
+          <entry key="addDependencyDialog_from_MainMenu" value="1" />
+          <entry key="install_from_MainMenu" value="4" />
+        </counts>
+      </usages-collector>
     </session>
   </component>
   <component name="FavoritesManager">
@@ -226,85 +243,78 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="464">
-              <caret line="244" column="28" selection-start-line="244" selection-start-column="28" selection-end-line="244" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chat_line_css/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
-              <caret line="26" column="19" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="46">
-              <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-112">
-              <caret line="11" column="61" lean-forward="true" selection-start-line="11" selection-start-column="61" selection-end-line="11" selection-end-column="61" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#form#0;n#body#0;n#!!top" expanded="true" />
-                <element signature="n#select#0;n#div#0;n#div#1;n#form#0;n#body#0;n#!!top" />
-                <element signature="n#div#1;n#div#0;n#div#1;n#form#0;n#body#0;n#!!top" />
-                <element signature="n#select#0;n#div#1;n#div#0;n#div#1;n#form#0;n#body#0;n#!!top" />
-                <element signature="n#div#0;n#body#0;n#!!top" />
-              </folding>
+            <state relative-caret-position="3495">
+              <caret line="240" lean-forward="true" selection-start-line="240" selection-end-line="240" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/composer.json">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="763">
-              <caret line="56" column="61" selection-start-line="56" selection-start-column="61" selection-end-line="56" selection-end-column="61" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modaal.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="763">
-              <caret line="55" column="20" selection-start-line="55" selection-start-column="20" selection-end-line="55" selection-end-column="20" />
+            <state relative-caret-position="161">
+              <caret line="7" column="21" lean-forward="true" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/input.php">
+        <entry file="file://$PROJECT_DIR$/liff-starter.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1472">
-              <caret line="64" selection-start-line="64" selection-end-line="64" />
+            <state relative-caret-position="141">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bootstrap.php">
+        <entry file="file://$PROJECT_DIR$/update.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="659">
-              <caret line="34" column="19" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
+            <state relative-caret-position="372">
+              <caret line="53" column="7" lean-forward="true" selection-start-line="53" selection-start-column="7" selection-end-line="53" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jquery.add-input-area.min.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="23">
+              <caret line="1" column="32" selection-start-line="1" selection-start-column="32" selection-end-line="1" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/checkId.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="161">
+              <caret line="7" column="37" lean-forward="true" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/send.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1126">
+              <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Role.php">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/input.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="63" column="1" lean-forward="true" selection-start-line="55" selection-end-line="63" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -314,8 +324,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -347,6 +357,7 @@
       <find>form</find>
       <find>close</find>
       <find>line__contents</find>
+      <find>checked</find>
     </findStrings>
   </component>
   <component name="FrameworkCommandLineHistory">
@@ -403,30 +414,32 @@
         <option value="$PROJECT_DIR$/demo.html" />
         <option value="$PROJECT_DIR$/demo.php" />
         <option value="$PROJECT_DIR$/Table.php" />
-        <option value="$PROJECT_DIR$/update.php" />
         <option value="$PROJECT_DIR$/notification.php" />
         <option value="$PROJECT_DIR$/.htaccess" />
         <option value="$PROJECT_DIR$/migrate_members.php" />
         <option value="$PROJECT_DIR$/sh/tweets_notifier_resident.sh" />
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/test.php" />
-        <option value="$PROJECT_DIR$/liff-starter.js" />
         <option value="$PROJECT_DIR$/placeholder.php" />
         <option value="$PROJECT_DIR$/sh/send.sh" />
         <option value="$PROJECT_DIR$/migrate_tables.php" />
-        <option value="$PROJECT_DIR$/composer.json" />
-        <option value="$PROJECT_DIR$/send.php" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/jquery.add-input-area.min.js" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/modaal.css" />
         <option value="$PROJECT_DIR$/script.js" />
         <option value="$PROJECT_DIR$/chat_line_css/style.css" />
-        <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/update.html" />
         <option value="$PROJECT_DIR$/style.css" />
-        <option value="$PROJECT_DIR$/bootstrap.php" />
         <option value="$PROJECT_DIR$/input.php" />
+        <option value="$PROJECT_DIR$/update.js" />
+        <option value="$PROJECT_DIR$/update.html" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/bootstrap.php" />
+        <option value="$PROJECT_DIR$/checkId.php" />
+        <option value="$PROJECT_DIR$/send.php" />
+        <option value="$PROJECT_DIR$/update.php" />
+        <option value="$PROJECT_DIR$/jquery.add-input-area.min.js" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/liff-starter.js" />
       </list>
     </option>
   </component>
@@ -447,16 +460,9 @@
       <path value="$PROJECT_DIR$/vendor/nesbot/carbon" />
       <path value="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php" />
       <path value="$PROJECT_DIR$/vendor/linecorp/line-bot-sdk" />
-      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" />
-      <path value="$PROJECT_DIR$/vendor/symfony/http-foundation" />
-      <path value="$PROJECT_DIR$/vendor/symfony/routing" />
       <path value="$PROJECT_DIR$/vendor/psr/container" />
       <path value="$PROJECT_DIR$/vendor/psr/log" />
-      <path value="$PROJECT_DIR$/vendor/silex/silex" />
       <path value="$PROJECT_DIR$/vendor/pimple/pimple" />
-      <path value="$PROJECT_DIR$/vendor/symfony/debug" />
-      <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher" />
-      <path value="$PROJECT_DIR$/vendor/symfony/http-kernel" />
       <path value="$PROJECT_DIR$/vendor/psr/http-message" />
       <path value="$PROJECT_DIR$/vendor/slim/slim" />
       <path value="$PROJECT_DIR$/vendor/nikic/fast-route" />
@@ -471,10 +477,8 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="x" value="-1920" />
-    <option name="y" value="-757" />
-    <option name="width" value="1920" />
-    <option name="height" value="1080" />
+    <option name="width" value="1680" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -493,22 +497,6 @@
             </path>
             <path>
               <item name="line-liff-starter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="line-liff-starter" type="462c0819:PsiDirectoryNode" />
-              <item name="chat_line_css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="line-liff-starter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="line-liff-starter" type="462c0819:PsiDirectoryNode" />
-              <item name="chat_line_css" type="462c0819:PsiDirectoryNode" />
-              <item name="style.scss" type="620a8d5e:NestingTreeNode" />
-            </path>
-            <path>
-              <item name="line-liff-starter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="line-liff-starter" type="462c0819:PsiDirectoryNode" />
-              <item name="pic" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="line-liff-starter" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
             </path>
           </expand>
@@ -521,7 +509,7 @@
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="postgresql" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="SearchEverywhereHistoryKey" value="boo&#9;FILE&#9;file:///Users/yui/line-liff-starter/vendor/symfony/polyfill-ctype/bootstrap.php&#10;bootstrap&#9;FILE&#9;file:///Users/yui/line-liff-starter/vendor/symfony/polyfill-ctype/bootstrap.php&#10;modaal&#9;FILE&#9;file:///Users/yui/line-liff-starter/modaal.css&#10;s&#9;FILE&#9;file:///Users/yui/line-liff-starter/script.js&#10;script.&#9;FILE&#9;file:///Users/yui/line-liff-starter/script.js&#10;.gitignore&#9;FILE&#9;file:///Users/yui/line-liff-starter/.gitignore&#10;css&#9;FILE&#9;file:///Users/yui/line-liff-starter/style.css&#10;Table&#9;FILE&#9;file:///Users/yui/line-liff-starter/Table.php&#10;json&#9;FILE&#9;file:///Users/yui/line-liff-starter/composer.json&#10;in&#9;FILE&#9;file:///Users/yui/line-liff-starter/index.html&#10;send&#9;FILE&#9;file:///Users/yui/line-liff-starter/send.php&#10;sen&#9;FILE&#9;file:///Users/yui/line-liff-starter/sh/send.sh&#10;migra&#9;FILE&#9;file:///Users/yui/line-liff-starter/migrate_tables.php&#10;cs&#9;FILE&#9;file:///Users/yui/line-liff-starter/style.css&#10;inde&#9;FILE&#9;file:///Users/yui/line-liff-starter/index.html&#10;sc&#9;FILE&#9;file:///Users/yui/line-liff-starter/script.js&#10;js&#9;FILE&#9;file:///Users/yui/line-liff-starter/script.js&#10;inpu&#9;FILE&#9;file:///Users/yui/line-liff-starter/input.php&#10;send.php&#9;FILE&#9;file:///Users/yui/line-liff-starter/send.php&#10;ind&#9;FILE&#9;file:///Users/yui/line-liff-starter/index.html&#10;index&#9;FILE&#9;file:///Users/yui/line-liff-starter/index.html&#10;Carbon&#9;null&#9;null&#10;en&#9;FILE&#9;file:///Users/yui/line-liff-starter/.env&#10;mi&#9;FILE&#9;file:///Users/yui/line-liff-starter/migrate_tables.php&#10;test&#9;FILE&#9;file:///Users/yui/line-liff-starter/test.php&#10;migrate&#9;FILE&#9;file:///Users/yui/line-liff-starter/migrate_tables.php&#10;bo&#9;FILE&#9;file:///Users/yui/line-liff-starter/bootstrap.php&#10;ht&#9;FILE&#9;file:///Users/yui/line-liff-starter/index.html&#10;IN&#9;FILE&#9;file:///Users/yui/line-liff-starter/index.html&#10;Pro&#9;FILE&#9;file:///Users/yui/line-liff-starter/Procfile&#10;tes&#9;FILE&#9;file:///Users/yui/line-liff-starter/test.php&#10;inp&#9;FILE&#9;file:///Users/yui/line-liff-starter/input.php&#10;input&#9;FILE&#9;file:///Users/yui/line-liff-starter/input.php&#10;mig&#9;FILE&#9;file:///Users/yui/line-liff-starter/migrate_roles.php&#10;migta&#9;FILE&#9;file:///Users/yui/line-liff-starter/migrate_tables.php&#10;se&#9;FILE&#9;file:///Users/yui/line-liff-starter/send.php&#10;de&#9;FILE&#9;file:///Users/yui/line-liff-starter/demo.php&#10;httpd.co&#9;FILE&#9;file:///Users/yui/line-liff-starter/vendor/heroku/heroku-buildpack-php/support/build/_conf/apache2/httpd.conf&#10;Listen 5000&#9;null&#9;null" />
+    <property name="SearchEverywhereHistoryKey" value="lif&#9;FILE&#9;file:///Users/yui/line-liff-starter/liff-starter.js&#10;inde&#9;FILE&#9;file:///Users/yui/line-liff-starter/index.html&#10;upda&#9;FILE&#9;file:///Users/yui/line-liff-starter/update.php&#10;inpu&#9;FILE&#9;file:///Users/yui/line-liff-starter/input.php&#10;inpj&#9;FILE&#9;file:///Users/yui/line-liff-starter/jquery.add-input-area.min.js&#10;update&#9;FILE&#9;file:///Users/yui/line-liff-starter/update.php&#10;ind&#9;FILE&#9;file:///Users/yui/line-liff-starter/index.html&#10;send&#9;FILE&#9;file:///Users/yui/line-liff-starter/send.php&#10;add&#9;FILE&#9;file:///Users/yui/line-liff-starter/jquery.add-input-area.min.js&#10;liff&#9;FILE&#9;file:///Users/yui/line-liff-starter/liff-starter.js&#10;boot&#9;FILE&#9;file:///Users/yui/line-liff-starter/bootstrap.php&#10;sen&#9;FILE&#9;file:///Users/yui/line-liff-starter/send.php&#10;in&#9;FILE&#9;file:///Users/yui/line-liff-starter/input.php&#10;boo&#9;FILE&#9;file:///Users/yui/line-liff-starter/vendor/symfony/polyfill-ctype/bootstrap.php&#10;bootstrap&#9;FILE&#9;file:///Users/yui/line-liff-starter/vendor/symfony/polyfill-ctype/bootstrap.php&#10;modaal&#9;FILE&#9;file:///Users/yui/line-liff-starter/modaal.css&#10;s&#9;FILE&#9;file:///Users/yui/line-liff-starter/script.js&#10;script.&#9;FILE&#9;file:///Users/yui/line-liff-starter/script.js&#10;.gitignore&#9;FILE&#9;file:///Users/yui/line-liff-starter/.gitignore&#10;css&#9;FILE&#9;file:///Users/yui/line-liff-starter/style.css&#10;Table&#9;FILE&#9;file:///Users/yui/line-liff-starter/Table.php&#10;json&#9;FILE&#9;file:///Users/yui/line-liff-starter/composer.json&#10;migra&#9;FILE&#9;file:///Users/yui/line-liff-starter/migrate_tables.php&#10;cs&#9;FILE&#9;file:///Users/yui/line-liff-starter/style.css&#10;sc&#9;FILE&#9;file:///Users/yui/line-liff-starter/script.js&#10;js&#9;FILE&#9;file:///Users/yui/line-liff-starter/script.js&#10;send.php&#9;FILE&#9;file:///Users/yui/line-liff-starter/send.php&#10;index&#9;FILE&#9;file:///Users/yui/line-liff-starter/index.html&#10;Carbon&#9;null&#9;null&#10;en&#9;FILE&#9;file:///Users/yui/line-liff-starter/.env&#10;mi&#9;FILE&#9;file:///Users/yui/line-liff-starter/migrate_tables.php&#10;test&#9;FILE&#9;file:///Users/yui/line-liff-starter/test.php&#10;migrate&#9;FILE&#9;file:///Users/yui/line-liff-starter/migrate_tables.php&#10;bo&#9;FILE&#9;file:///Users/yui/line-liff-starter/bootstrap.php&#10;ht&#9;FILE&#9;file:///Users/yui/line-liff-starter/index.html&#10;IN&#9;FILE&#9;file:///Users/yui/line-liff-starter/index.html&#10;Pro&#9;FILE&#9;file:///Users/yui/line-liff-starter/Procfile&#10;tes&#9;FILE&#9;file:///Users/yui/line-liff-starter/test.php&#10;inp&#9;FILE&#9;file:///Users/yui/line-liff-starter/input.php&#10;input&#9;FILE&#9;file:///Users/yui/line-liff-starter/input.php&#10;mig&#9;FILE&#9;file:///Users/yui/line-liff-starter/migrate_roles.php&#10;migta&#9;FILE&#9;file:///Users/yui/line-liff-starter/migrate_tables.php&#10;se&#9;FILE&#9;file:///Users/yui/line-liff-starter/send.php&#10;de&#9;FILE&#9;file:///Users/yui/line-liff-starter/demo.php&#10;httpd.co&#9;FILE&#9;file:///Users/yui/line-liff-starter/vendor/heroku/heroku-buildpack-php/support/build/_conf/apache2/httpd.conf&#10;Listen 5000&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="PostgreSQL" />
     <property name="database.console.LAST_STATE" value="false" />
@@ -529,7 +517,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="watcher.settings" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.composer" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -548,10 +536,23 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="PHP Built-in Web Server.php">
     <configuration name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/line-liff-starter/index.html">
       <method v="2" />
     </configuration>
+    <configuration name="php JavaScript" type="JavascriptDebugType" factoryName="JavaScript Debug" uri="http://localhost:7000">
+      <method v="2" />
+    </configuration>
+    <configuration name="php" type="PhpBuiltInWebServerConfigurationType" factoryName="PHP Built-in Web Server" document_root="$PROJECT_DIR$" port="7000">
+      <method v="2">
+        <option name="LaunchBrowser.Before.Run" url="http://localhost:7000" withDebugger="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="PHP Built-in Web Server.php" />
+      <item itemvalue="JavaScript Debug.php JavaScript" />
+      <item itemvalue="JavaScript Debug.index.html" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="JavaScript Debug.index.html" />
@@ -622,21 +623,13 @@
       <workItem from="1535940446209" duration="16971000" />
       <workItem from="1536122521491" duration="3127000" />
       <workItem from="1536230769810" duration="7123000" />
-      <workItem from="1536403534323" duration="875000" />
-    </task>
-    <task id="LOCAL-00047" summary="認証">
-      <created>1534679766236</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1534679766237</updated>
-    </task>
-    <task id="LOCAL-00048" summary="group_idの修正">
-      <created>1534680228543</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1534680228543</updated>
+      <workItem from="1536403534323" duration="12762000" />
+      <workItem from="1536550075149" duration="8093000" />
+      <workItem from="1536599896506" duration="7039000" />
+      <workItem from="1536673686833" duration="2142000" />
+      <workItem from="1536676983598" duration="263000" />
+      <workItem from="1536677347948" duration="11797000" />
+      <workItem from="1536768544945" duration="6151000" />
     </task>
     <task id="LOCAL-00049" summary="group_idの修正">
       <created>1534681579156</created>
@@ -967,11 +960,25 @@
       <option name="project" value="LOCAL" />
       <updated>1536316516498</updated>
     </task>
-    <option name="localTasksCounter" value="96" />
+    <task id="LOCAL-00096" summary="Complete画面">
+      <created>1536404501200</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1536404501201</updated>
+    </task>
+    <task id="LOCAL-00097" summary="デザイン調整">
+      <created>1536637926811</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1536637926813</updated>
+    </task>
+    <option name="localTasksCounter" value="98" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="333391000" />
+    <option name="totallyTimeSpent" value="380763000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -983,26 +990,26 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1920" y="-757" width="1920" height="1080" extended-state="0" />
+    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.44623655" visible="true" weight="0.13954712" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.44623655" visible="true" weight="0.16335142" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.5147698" side_tool="true" weight="0.25218913" />
       <window_info id="Database" order="3" sideWeight="0.55376345" side_tool="true" weight="0.18745595" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32891566" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49668476" weight="0.19285715" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49608198" visible="true" weight="0.23571429" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49125978" weight="0.20612244" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32891566" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50331527" side_tool="true" visible="true" weight="0.15247525" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50610477" side_tool="true" weight="0.17445256" />
       <window_info anchor="bottom" id="Messages" order="8" weight="0.32771084" />
-      <window_info anchor="bottom" id="Command Line Tools Console" order="9" sideWeight="0.4989429" weight="0.32771084" />
+      <window_info active="true" anchor="bottom" id="Command Line Tools Console" order="9" sideWeight="0.49822766" visible="true" weight="0.3270073" />
       <window_info anchor="bottom" id="Database Changes" order="10" weight="0.32891566" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.32891566" />
-      <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.50029325" side_tool="true" weight="0.3288445" />
+      <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.50391805" side_tool="true" visible="true" weight="0.23571429" />
       <window_info anchor="bottom" id="Docker" order="13" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Console" order="14" weight="0.32891566" />
       <window_info anchor="bottom" id="PHP-CGI Server" order="15" weight="0.32891566" />
@@ -1067,48 +1074,38 @@
     <MESSAGE value="追加フォルダ" />
     <MESSAGE value="modal" />
     <MESSAGE value="LINE風UI完成ー！" />
-    <MESSAGE value="デザイン調整" />
     <MESSAGE value="Complete画面" />
-    <option name="LAST_COMMIT_MESSAGE" value="Complete画面" />
+    <MESSAGE value="デザイン調整" />
+    <option name="LAST_COMMIT_MESSAGE" value="デザイン調整" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/update.php</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="JavascriptDebugType">
-        <watch expression="y" />
+        <watch expression="y" language="JavaScript" />
       </configuration>
     </watches-manager>
   </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="watch">
+      <expression>
+        <expression-string>y</expression-string>
+        <language-id>JavaScript</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/chat_line_css/stamp/2.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chat_line_css/stamp/20.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chat_line_css/stamp/21.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chat_line_css/stamp/22.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chat_line_css/stamp/23.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chat_line_css/stamp/24.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chat_line_css/stamp/25.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chat_line_css/stamp/26.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chat_line_css/stamp/27.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chat_line_css/stamp/28.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/chat_line_css/stamp/29.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -1185,16 +1182,6 @@
     <entry file="file://$PROJECT_DIR$/chat_line_css/stamp/9.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/jquery.add-input-area.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Member.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/modaal.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="23">
@@ -1202,26 +1189,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/liff-starter.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/update.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="17" column="6" lean-forward="true" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/symfony/polyfill-ctype/bootstrap.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bootstrap.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="659">
-          <caret line="34" column="19" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/polyfill-ctype/bootstrap.php" />
     <entry file="file://$PROJECT_DIR$/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="464">
@@ -1243,41 +1211,119 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/update.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-112">
-          <caret line="11" column="61" lean-forward="true" selection-start-line="11" selection-start-column="61" selection-end-line="11" selection-end-column="61" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#form#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#select#0;n#div#0;n#div#1;n#form#0;n#body#0;n#!!top" />
-            <element signature="n#div#1;n#div#0;n#div#1;n#form#0;n#body#0;n#!!top" />
-            <element signature="n#select#0;n#div#1;n#div#0;n#div#1;n#form#0;n#body#0;n#!!top" />
-            <element signature="n#div#0;n#body#0;n#!!top" />
-          </folding>
+        <state relative-caret-position="69">
+          <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/script.js">
+    <entry file="file://$PROJECT_DIR$/update.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="763">
-          <caret line="56" column="61" selection-start-line="56" selection-start-column="61" selection-end-line="56" selection-end-column="61" />
+        <state relative-caret-position="115">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/modaal.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="763">
+        <state relative-caret-position="648">
           <caret line="55" column="20" selection-start-line="55" selection-start-column="20" selection-end-line="55" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="851">
+          <caret line="69" selection-start-line="69" selection-end-line="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/migrate_tables.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Table.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Member.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bootstrap.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/input.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1472">
-          <caret line="64" selection-start-line="64" selection-end-line="64" />
+        <state relative-caret-position="360">
+          <caret line="63" column="1" lean-forward="true" selection-start-line="55" selection-end-line="63" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/autoload.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Role.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jquery.add-input-area.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="32" selection-start-line="1" selection-start-column="32" selection-end-line="1" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/send.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1126">
+          <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/checkId.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="37" lean-forward="true" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/update.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="53" column="7" lean-forward="true" selection-start-line="53" selection-start-column="7" selection-end-line="53" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="http://localhost:7000/liff-starter.js">
+      <provider selected="true" editor-type-id="httpFileEditor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="21" lean-forward="true" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3495">
+          <caret line="240" lean-forward="true" selection-start-line="240" selection-end-line="240" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/liff-starter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
