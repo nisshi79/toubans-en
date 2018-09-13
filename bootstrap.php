@@ -9,12 +9,12 @@
 require_once 'vendor/autoload.php';
 
 use Illuminate\Database\Capsule\Manager as Capsule;
-echo getenv("HEROKU_POSTGRESQL_PUCE_URL");
+
 $DATABASE_URL = parse_url(getenv("HEROKU_POSTGRESQL_PUCE_URL"));
 
 
 $capsule = new Capsule;
-$capsule->addConnection([
+/*$capsule->addConnection([
     'driver'    => 'pgsql',
     'host'      => 'localhost',
     'database'  => 'herokulocal',
@@ -23,8 +23,8 @@ $capsule->addConnection([
     'charset'   => 'utf8',
     'collation' => 'utf8_unicode_ci',
     'prefix'    => '',
-]);
-/*$capsule->addConnection([
+]);*/
+$capsule->addConnection([
     'driver' => 'pgsql',
     'host' => $DATABASE_URL["host"],
     'port' => $DATABASE_URL["port"],
@@ -35,7 +35,7 @@ $capsule->addConnection([
     'prefix' => '',
     'schema' => 'public',
     'sslmode' => 'require',
-]);*/
+]);
 
 // Set the event dispatcher used by Eloquent models... (optional)
 /*use Illuminate\Events\Dispatcher;
