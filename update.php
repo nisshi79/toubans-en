@@ -13,7 +13,9 @@ require_once ('Member.php');
 $table = \Model\Table::where('group_id', $groupId)
     ->first();
 
-switch ($table['notification_span']){
+echo 'update!';
+
+switch ($inputs['notification_span']){
     //日
     case 0:
         $notification_date_buf = implode(',',$inputs['notification_dsoW']);
