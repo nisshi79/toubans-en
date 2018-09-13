@@ -12,6 +12,7 @@ require_once ('Role.php');
 require_once ('Member.php');
 $table = \Model\Table::where('group_id', $groupId)
     ->first();
+$inputs=filter_input_array(INPUT_POST);
 
 echo 'update!';
 
