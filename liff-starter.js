@@ -29,7 +29,7 @@ function initializeApp(data) {
     console.log(lineId);
     $('#group_id').val(lineId);
 
-    fetch('checkId.php?groupId=' + lineId/*data.context.group_id*/)
+    fetch('checkId.php?groupId=' + lineId)
         .then(response => {
             return response.json(); // ReadableStream -> String への変換
         })
