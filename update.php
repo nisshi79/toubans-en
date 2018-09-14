@@ -10,9 +10,9 @@ require_once ('bootstrap.php');
 require_once ('Table.php');
 require_once ('Role.php');
 require_once ('Member.php');
-$table = \Model\Table::where('group_id', $groupId)
+$inputs = filter_input_array(INPUT_POST);
+$table = \Model\Table::where('group_id', $inputs['group_id'])
     ->first();
-$inputs=filter_input_array(INPUT_POST);
 
 echo 'update!';
 
@@ -66,3 +66,25 @@ foreach ($inputs['members_list'] as $members_list){
 /*foreach ($tableArray as $table ) {
     $table=
 }*/
+?>
+<html>
+<head>
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+
+    <meta http-equiv="content-type" charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css?<?php echo date('Ymd-Hi'); ?>" type="text/css">
+</head>
+
+<body>
+<div class="screen_center">
+    <div class="inner">
+        <h1><a>Complete!</a></h1>
+        <a>おめでとうございます！設定を変更しました！右上の×ボタンから、この画面を閉じて下さい。</a>
+    </div>
+</div>
+
+</body>
+</html>
