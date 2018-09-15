@@ -14,8 +14,6 @@ $inputs = filter_input_array(INPUT_POST);
 $table = \Model\Table::where('group_id', $inputs['group_id'])
     ->first();
 
-echo 'update!';
-
 switch ($inputs['notification_span']){
     //日
     case 0:
@@ -42,7 +40,7 @@ $table->update([
     'lower_textarea' => $inputs['lower_textarea']
 ]);
 
-$table->role->delete();
+$table->role()->delete();
 $i = 0;
 foreach ($inputs['roles_list'] as $roles_list){
     $i++;
@@ -53,7 +51,7 @@ foreach ($inputs['roles_list'] as $roles_list){
     ]);
 }
 
-$table->member->delete();
+$table->member()->delete();
 $i = 0;
 foreach ($inputs['members_list'] as $members_list){
     $i++;
