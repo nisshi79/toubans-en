@@ -5,7 +5,7 @@
  * Date: 2018/09/14
  * Time: 2:47
  */
-
+require ('vendor/autoload.php');
 use LINE\LINEBot\Constant\HTTPHeader;
 use LINE\LINEBot\Event\MessageEvent;
 use LINE\LINEBot\Event\MessageEvent\TextMessage;
