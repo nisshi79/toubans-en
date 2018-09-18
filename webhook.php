@@ -17,10 +17,15 @@ $json_object = json_decode($json_string);
 
 $httpClient = new \LINE\LINEBot\HTTPClient\CurlHTTPClient(getenv('TOUBAN_BOT_CHANNEL_ACCESS_TOKEN'));
 $bot = new \LINE\LINEBot($httpClient, ['channelSecret' => getenv('TOUBAN_BOT_CHANNEL_SECRET')]);
+/*$channelSecret = '62d8ad6634010ecd45d64f2056dfbcac'; // Channel secret string
+$httpRequestBody = $json_string; // Request body string
+$hash = hash_hmac('sha256', $httpRequestBody, $channelSecret, true);
+$signature = base64_encode($hash);*/
+// Compare X-Line-Signature request header string and the signature
 $signature = $_SERVER['HTTP_' . \LINE\LINEBot\Constant\HTTPHeader::LINE_SIGNATURE];
 
 try {
-    $events = $bot->parseEventRequest(file_get_contents('php://input'), $signature);
+    $events = $bot->parseEventRequest($json_string, $signature);
 } catch(\LINE\LINEBot\Exception\InvalidSignatureException $e) {
     error_log('parseEventRequest failed. InvalidSignatureException => '.var_export($e, true));
 } catch(\LINE\LINEBot\Exception\UnknownEventTypeException $e) {
@@ -144,15 +149,15 @@ JSON;
 JSON;
             // LINE BOT API へのリクエストを作成して実行
             $curl = curl_init("https://api.line.me/v2/bot/message/reply");
-            curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'POST');
-            curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+            curl_setopt($curl, CURLOPT_CUSTOMREQUEST, 'POST');
+            curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
             curl_setopt($curl, CURLOPT_POST, true);
-            curl_setopt($conn, CURLOPT_HTTPHEADER, array('Authorization: Bearer '.getenv('TOUBAN_BOT_CHANNEL_ACCESS_TOKEN'),'Content-type: application/json'));
+            curl_setopt($curl, CURLOPT_HTTPHEADER, array('Authorization: Bearer '.getenv('TOUBAN_BOT_CHANNEL_ACCESS_TOKEN'),'Content-type: application/json'));
             curl_setopt($curl, CURLOPT_POSTFIELDS, $response);
             curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
-            $result = curl_exec($ch);
+            $result = curl_exec($curl);
             error_log($result);
-            curl_close($ch);
+            curl_close($curl);
             /*replyMultiMessage($bot, $event->getReplyToken(),
                 new \LINE\LINEBot\MessageBuilder\TextMessageBuilder("以下のリンクをクリックするとトークのアルバムをプレビューできます。"),
                 new \LINE\LINEBot\MessageBuilder\TextMessageBuilder("http://" . $_SERVER["HTTP_HOST"] . "/album/" . $event->getGroupId())
@@ -175,10 +180,10 @@ JSON;
     }*/
 }
 
-$textMessageBuilder = new \LINE\LINEBot\MessageBuilder\TextMessageBuilder('hello');
-$response = $bot->replyMessage('<replyToken>', $textMessageBuilder);
+/*$textMessageBuilder = new \LINE\LINEBot\MessageBuilder\TextMessageBuilder('hello');
+$response = $bot->replyMessage('<replyToken>', $textMessageBuilder);*/
 
 
-echo $response->getHTTPStatus() . ' ' . $response->getRawBody();
+/*echo $response->getHTTPStatus() . ' ' . $response->getRawBody();*/
 
 
