@@ -145,7 +145,7 @@ a.touban_button{
     color: white;
 }
 .touban_form{
-    display: flex;
+    display: inline-flex;
 }
 .nowrap{
     white-space: nowrap;
@@ -244,11 +244,20 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
-.inner{
 
+.inner{
     text-align: center;
     height: 10em;
     vertical-align: middle;
+}
+
+.roles_list_del{
+    min-width: 45px;
+}
+.touban_text_area{
+
+}
+.roles_list_var, .members_list_var{
+    text-align: left;
 }
