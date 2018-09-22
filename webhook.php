@@ -64,7 +64,7 @@ foreach ($events as $event) {
             $flexData= <<< JSON
             {
                 "type" : "flex",
-                "altText": "This is a Flex Message",
+                "altText": "Toubans! メニュー",
                 "contents" : $flexContents
             }
 JSON;
