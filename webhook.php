@@ -12,6 +12,9 @@ use LINE\LINEBot\Event\MessageEvent\TextMessage;
 use LINE\LINEBot\Exception\InvalidEventRequestException;
 use LINE\LINEBot\Exception\InvalidSignatureException;
 
+$dotenv = new Dotenv\Dotenv(__DIR__);
+$dotenv->load();
+
 $json_string = file_get_contents('php://input');
 $json_object = json_decode($json_string);
 
@@ -21,6 +24,7 @@ $bot = new \LINE\LINEBot($httpClient, ['channelSecret' => getenv('TOUBAN_BOT_CHA
 $httpRequestBody = $json_string; // Request body string
 $hash = hash_hmac('sha256', $httpRequestBody, $channelSecret, true);
 $signature = base64_encode($hash);*/
+
 // Compare X-Line-Signature request header string and the signature
 $signature = $_SERVER['HTTP_' . \LINE\LINEBot\Constant\HTTPHeader::LINE_SIGNATURE];
 
@@ -50,103 +54,44 @@ foreach ($events as $event) {
     }*/
 
     if ($event instanceof \LINE\LINEBot\Event\MessageEvent\TextMessage || $event instanceof \LINE\LINEBot\Event\JoinEvent) {
+        if($event instanceof \LINE\LINEBot\Event\MessageEvent\TextMessage){
+            if($event->getText() == '当番') $sendFlag=true;
+        }
+        if($event instanceof \LINE\LINEBot\Event\JoinEvent)$sendFlag=true;
 
-        if($event->getText() == '当番' || $event instanceof \LINE\LINEBot\Event\JoinEvent) {
-            $flexContents= <<< JSON
+        if($sendFlag) {
+            $flexContents=file_get_contents('./flexMessageMenu.json');
+            $flexData= <<< JSON
             {
-              "type": "bubble",
-              "body": {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                  {
-                    "type": "text",
-                    "text": "Toubans! -当番通知Bot",
-                    "weight": "bold",
-                    "size": "xl"
-                  }
-                ]
-              },
-              "footer": {
-                "type": "box",
-                "layout": "vertical",
-                "spacing": "sm",
-                "contents": [
-                  {
-                    "type": "button",
-                    "style": "link",
-                    "height": "sm",
-                    "action": {
-                      "type": "uri",
-                      "label": "初期設定/情報確認・変更",
-                      "uri": "line://app/1603349366-7OnYqWO"
-                    }
-                  },
-                  {
-                    "type": "button",
-                    "style": "link",
-                    "height": "sm",
-                    "action": {
-                      "type": "uri",
-                      "label": "今日の通知を停止する",
-                      "uri": "https://linecorp.com"
-                    }
-                  },
-                  {
-                    "type": "button",
-                    "style": "link",
-                    "height": "sm",
-                    "action": {
-                      "type": "uri",
-                      "label": "明日の通知を停止する",
-                      "uri": "https://linecorp.com"
-                    }
-                  },
-                  {
-                    "type": "button",
-                    "style": "link",
-                    "height": "sm",
-                    "action": {
-                      "type": "uri",
-                      "label": "期間を指定して通知を停止する",
-                      "uri": "https://linecorp.com"
-                    }
-                  },
-                  {
-                    "type": "spacer",
-                    "size": "sm"
-                  }
-                ],
-                "flex": 0
-              }
+                "type" : "flex",
+                "altText": "This is a Flex Message",
+                "contents" : $flexContents
             }
 JSON;
-            $messageData= <<< JSON
-                "type" => "flex",
-                "contents" => {$flexContents}
-            ];
+            $introduction=<<<JSON
+ 
 JSON;
-            $introduction='';
+
+            ;
             if($event instanceof \LINE\LINEBot\Event\JoinEvent){
                 $introduction= <<<JSON
                 {
-                    "type" => "text",
-                    "text" => "下の「初期設定/情報確認・変更」をタップして、初期設定を開始してください"
+                    "type" : "text",
+                    "text" : "下の「初期設定/情報確認・変更」をタップして、初期設定を開始してください"
                 },
 JSON;
             }
 
             $response = <<<JSON
             {
-                "replyToken":{$event->getReplyToken()},
+                "replyToken":"{$event->getReplyToken()}",
                 "messages":[
-                    {$introduction}
-                    {
-                        {$messageData}
-                    }
+                $introduction
+                    $flexData
                 ]
             }
 JSON;
+            error_log($response);
             // LINE BOT API へのリクエストを作成して実行
             $curl = curl_init("https://api.line.me/v2/bot/message/reply");
             curl_setopt($curl, CURLOPT_CUSTOMREQUEST, 'POST');
@@ -185,5 +130,3 @@ $response = $bot->replyMessage('<replyToken>', $textMessageBuilder);*/
 
 
 /*echo $response->getHTTPStatus() . ' ' . $response->getRawBody();*/
-
-
