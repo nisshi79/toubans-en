@@ -49,8 +49,25 @@ function initializeApp(data) {
             $('#title').text(titleText);
         });
     function fillInputs(json) {
-        $('#top_textarea').val(json.table.top_textarea);
-        $('#lower_textarea').val(json.table.lower_textarea);
+        if(json.table.top_textarea=='明日の当番のお知らせです' || json.table.top_textarea=='今日の当番のお知らせです'){
+            $('#top_textarea_select').val(json.table.top_textarea);
+
+        }else {
+            $('#lower_textarea_select').val('挨拶文を自分で入力する）');
+            $('#top_textarea').val(json.table.top_textarea);
+            $('#top_textarea').show();
+        }
+
+        if(json.table.lower_textarea=='確認しておいてください。'　|| json.table.lower_textarea=='よろしくお願いします。'){
+            $('#lower_textarea_select').val(json.table.lower_textarea);
+        }else {
+            $('#lower_textarea_select').val('（締めの文を自分で入力する）');
+            $('#lower_textarea').val(json.table.lower_textarea);
+            $('#lower_textarea').show();
+        }
+
+        /*$('#top_textarea').val(json.table.top_textarea);
+        $('#lower_textarea').val(json.table.lower_textarea);*/
         $('#notification_time').val(json.table.notification_time);
 
         for (let i = 0; i < json.role.length; i++) {

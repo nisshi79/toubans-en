@@ -23,6 +23,25 @@ $(function () {
 
         }
     });
+    $('[name="top_textarea_select"]').change( function() {
+        var selectVal = $('[name="top_textarea_select"]').val();
+        if(selectVal == "（挨拶文を自分で入力する）"){
+            $('#top_textarea').fadeIn();
+        }else {
+            $('#top_textarea').hide();
+
+        }
+    });
+
+    $('[name="lower_textarea_select"]').change( function() {
+        var selectVal = $('[name="lower_textarea_select"]').val();
+        if(selectVal == "（締めの文を自分で入力する）"){
+            $('#lower_textarea').fadeIn();
+        }else {
+            $('#lower_textarea').hide();
+
+        }
+    });
 
     /*$('[name=notfication_timing_number_sign]').change( function() {
         var selectVal = $('[name=notfication_timing_number_sign]').val();
@@ -32,7 +51,9 @@ $(function () {
             $('#notfication_timing_avsolute_value').fadeOut();
         }
     });*/
+    $('#lower_textarea').hide();
 
+    $('#top_textarea').hide();
     //最初は全てのパネルを非表示に
     $('.notification_doM').hide();
 

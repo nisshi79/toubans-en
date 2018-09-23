@@ -30,17 +30,27 @@ switch ($inputs['notification_span']){
     default:
         break;
 }
+if($inputs['top_textarea_select']=='（挨拶文を自分で入力する）'){
+    $top_textarea_buf=$inputs['top_textarea'];
+}else{
+    $top_textarea_buf=$inputs['top_textarea_select'];
+}
 
+if($inputs['lower_textarea_select']=='（締めの文を自分で入力する）'){
+    $lower_textarea_buf=$inputs['lower_textarea'];
+}else{
+    $lower_textarea_buf=$inputs['lower_textarea_select'];
+}
 
 $table = \Model\Table::create([
-    'top_textarea' => $inputs['top_textarea'],
+    'top_textarea' => $top_textarea_buf,
     'notification_span'=> $inputs['notification_span'],
     'notification_date' => $notification_date_buf,
     'notification_time' => $inputs['notification_time'],
     'last_notified_at' => Carbon::now(new DateTimeZone('Asia/Tokyo')),
     'group_id' => $inputs['group_id'],
     'sent_count' => '0',
-    'lower_textarea' => $inputs['lower_textarea']
+    'lower_textarea' => $lower_textarea_buf
 ]);
 
 $i = 0;

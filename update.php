@@ -29,15 +29,25 @@ switch ($inputs['notification_span']){
     default:
         break;
 }
+if($inputs['top_textarea_select']=='（挨拶文を自分で入力する）'){
+    $top_textarea_buf=$inputs['top_textarea'];
+}else{
+    $top_textarea_buf=$inputs['top_textarea_select'];
+}
 
+if($inputs['lower_textarea_select']=='（締めの文を自分で入力する）'){
+    $lower_textarea_buf=$inputs['lower_textarea'];
+}else{
+    $lower_textarea_buf=$inputs['lower_textarea_select'];
+}
 
 $table->update([
-    'top_textarea' => $inputs['top_textarea'],
+    'top_textarea' => $top_textarea_buf,
     'notification_span'=> $inputs['notification_span'],
     'notification_date' => $notification_date_buf,
     'notification_time' => $inputs['notification_time'],
     'sent_count' => '0',
-    'lower_textarea' => $inputs['lower_textarea']
+    'lower_textarea' => $lower_textarea_buf
 ]);
 
 $table->role()->delete();
