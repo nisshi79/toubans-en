@@ -26,6 +26,9 @@ switch ($inputs['notification_span']){
         $notification_date_buf = $inputs['notification_doM'];
 
         break;
+    case 2:
+        $notification_date_buf = $inputs['notification_doW'];
+        break;
 
     default:
         break;

@@ -10,16 +10,21 @@ $(function () {
             $('#avaliable_for_month').slideUp();
             $('#avaliable_for_day').css("visibility","visible");
             $('#avaliable_for_day').slideDown();*/
-
-            $('.notification_dsoW').fadeIn();
+            $('.notification_doW').hide();
             $('.notification_doM').hide();
+            $('.notification_dsoW').fadeIn();
 
         } else if(selectVal == '1') {
             /*$('#avaliable_for_day').slideUp();
             $('#avaliable_for_month').slideUp();*/
-
+            $('.notification_doW').hide();
             $('.notification_dsoW').hide();
             $('.notification_doM').fadeIn();
+
+        }else if(selectVal == '2'){
+            $('.notification_dsoW').hide();
+            $('.notification_doM').hide();
+            $('.notification_doW').fadeIn();
 
         }
     });
@@ -56,7 +61,7 @@ $(function () {
     $('#top_textarea').hide();
     //最初は全てのパネルを非表示に
     $('.notification_doM').hide();
-
+    $('.notification_doW').hide();
     $('.modal').modaal({
         hide_close: 'true'
     });

@@ -114,41 +114,49 @@
                 <h3><a class="gradation">1. 通知する日を設定</a></h3>
                 <select name="notification_span" id="notification_span">
                     <option value="0">通知する曜日を選択</option>
+                    <option value="2">毎週1回の通知する曜日を選択</option>
                     <option value="1">毎月何日に通知するかを選択</option>
                 </select>
                 <!--曜日を選んだときの通知設定-->
-                <br><a>通知を行う曜日を選択して下さい(複数選択可)</a><br>
-                <div class="notification_dsoW">
-                    <input type="checkbox" id="checkbox_sunday" name="notification_dsoW[]" class="checkbox notification_dsoW_checkbox transition" value="0">
+                <div class="notification_dsoW"><br><a>通知を行う曜日を選択して下さい(複数選択可)</a><br>
+                    <div class="notification_dsoW_checkboxes">
+                        <input type="checkbox" id="checkbox_sunday" name="notification_dsoW[]" class="checkbox notification_dsoW_checkbox transition" value="0">
                         <label class="checkbox_label" for="checkbox_sunday">日</label>
-                    <input type="checkbox" id="checkbox_monday" name="notification_dsoW[]" value="1" class="checkbox transition notification_dsoW_checkbox">
+                        <input type="checkbox" id="checkbox_monday" name="notification_dsoW[]" value="1" class="checkbox transition notification_dsoW_checkbox">
                         <label class="checkbox_label" for="checkbox_monday">月</label>
-                    <input type="checkbox" id="checkbox_tuesday" name="notification_dsoW[]" value="2" class="checkbox transition notification_dsoW_checkbox">
+                        <input type="checkbox" id="checkbox_tuesday" name="notification_dsoW[]" value="2" class="checkbox transition notification_dsoW_checkbox">
                         <label class="checkbox_label" for="checkbox_tuesday">火</label>
-                    <input type="checkbox" id="checkbox_wednesday" name="notification_dsoW[]" value="3" class="checkbox transition notification_dsoW_checkbox">
+                        <input type="checkbox" id="checkbox_wednesday" name="notification_dsoW[]" value="3" class="checkbox transition notification_dsoW_checkbox">
                         <label class="checkbox_label" for="checkbox_wednesday">水</label>
-                    <input type="checkbox" id="checkbox_thursday" name="notification_dsoW[]" value="4" class="checkbox transition notification_dsoW_checkbox">
+                        <input type="checkbox" id="checkbox_thursday" name="notification_dsoW[]" value="4" class="checkbox transition notification_dsoW_checkbox">
                         <label class="checkbox_label" for="checkbox_thursday">木</label>
-                    <input type="checkbox" id="checkbox_friday" name="notification_dsoW[]" value="5" class="checkbox transition notification_dsoW_checkbox">
+                        <input type="checkbox" id="checkbox_friday" name="notification_dsoW[]" value="5" class="checkbox transition notification_dsoW_checkbox">
                         <label class="checkbox_label" for="checkbox_friday">金</label>
-                    <input type="checkbox" id="checkbox_saturday" name="notification_dsoW[]" class="checkbox transition notification_dsoW_checkbox" value="6">
+                        <input type="checkbox" id="checkbox_saturday" name="notification_dsoW[]" class="checkbox transition notification_dsoW_checkbox" value="6">
                         <label class="checkbox_label" for="checkbox_saturday">土</label>
+                    </div>
                 </div>
 
+
                 <!--週を選んだときの通知設定-->
-                <!--<div class="notification_for_week">
-                    <a>通知を行う曜日を選択して下さい</a><br>
-                    <input type="radio" id="radio_sunday" name="notification_doW" value="0"><label for="radio_sunday">日</label>
-                    <input type="radio" id="radio_monday" name="notification_doW" value="1"><label for="radio_monday">月</label>
-                    <input type="radio" id="radio_tuesday" name="notification_doW" value="2"><label for="radio_tuesday">火</label>
-                    <input type="radio" id="radio_wednesday" name="notification_doW" value="3"><label for="radio_wednesday">水</label>
-                    <input type="radio" id="radio_thursday" name="notification_doW" value="4"><label for="radio_thursday">木</label>
-                    <input type="radio" id="radio_friday" name="notification_doW" value="5"><label for="radio_friday">金</label>
-                    <input type="radio" id="radio_saturday" name="notification_doW" value="6"><label for="radio_saturday">土</label>
-                </div>-->
+                <div class="notification_doW">
+                    <br><a>通知を行う曜日を選択して下さい</a><br>
+                    <div class="notification_doW_radios">
+
+                        <input type="radio" id="radio_sunday" name="notification_doW"  value="0"><label for="radio_sunday" class="radio_label">日</label>
+                        <input type="radio" id="radio_monday" name="notification_doW" value="1"><label for="radio_monday" class="radio_label">月</label>
+                        <input type="radio" id="radio_tuesday" name="notification_doW" value="2"><label for="radio_tuesday" class="radio_label">火</label>
+                        <input type="radio" id="radio_wednesday" name="notification_doW" value="3"><label for="radio_wednesday" class="radio_label">水</label>
+                        <input type="radio" id="radio_thursday" name="notification_doW" value="4"><label for="radio_thursday" class="radio_label">木</label>
+                        <input type="radio" id="radio_friday" name="notification_doW" value="5"><label for="radio_friday" class="radio_label">金</label>
+                        <input type="radio" id="radio_saturday" name="notification_doW" value="6"><label for="radio_saturday" class="radio_label">土</label>
+                    </div>
+                </div>
+
 
                 <!--月を選んだときの通知設定-->
                 <div class="notification_doM">
+                    <br>
                         <!--<a>通知する月を選択して下さい</a><br>
                         <input type="checkbox" id="january" name="notification_months[]" value="1" checked><label for="january">1月</label>
                         <input type="checkbox" id="february" name="notification_months[]" value="2" checked><label for="february">2月</label>

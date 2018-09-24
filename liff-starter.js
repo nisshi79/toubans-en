@@ -15,8 +15,6 @@ function initializeApp(data) {
     document.getElementById('roomidfield').textContent = data.context.roomId;
     document.getElementById('groupidfield').textContent = data.context.groupId;
 
-
-
     function isset( data ){
         return ( typeof( data ) != 'undefined' );
     }
@@ -99,7 +97,7 @@ function initializeApp(data) {
                 break;
             case 1:
                 $('#notification_span').val(1);
-                $('.notification_dsoW').hide();
+                $('.notification_dsoW_checkboxes').hide();
                 $('.notification_doM').fadeIn();
                 for (let i = 1; i <= 31; i++) {
                     if (i == json.table.notification_date) $('#notification_doM').val(i);
