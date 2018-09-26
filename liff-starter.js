@@ -20,10 +20,10 @@ function initializeApp(data) {
     }
 
     var lineId;
-
-    if(isset(data.context.groupId))lineId=data.context.groupId;
-    if(isset(data.context.roomId))lineId=data.context.roomId;
     if(isset(data.context.userId))lineId=data.context.userId;
+    if(isset(data.context.roomId))lineId=data.context.roomId;
+    if(isset(data.context.groupId))lineId=data.context.groupId;
+
     console.log(lineId);
     $('#group_id').val(lineId);
 
