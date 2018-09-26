@@ -40,9 +40,8 @@ function notify($table,$dt){
         case 1:
         //doM
             $doM = $dt->day;
-
-            if (in_array("{$doM}", min($table['notification_date'], $dt->daysInMonth)) && isTimeReady($table['notification_time']) && isGreater($table['last_notified_at'], $table['notification_time'])) send($table);
-
+            error_log($doM);
+            if ($doM == min($table['notification_date'], $dt->daysInMonth) && isTimeReady($table['notification_time']) && isGreater($table['last_notified_at'], $table['notification_time'])) send($table);
 
             break;
         default:
@@ -69,7 +68,7 @@ function send($table){
         'last_notified_at' => Carbon::now(new DateTimeZone('Asia/Tokyo'))
     ]);
 
-    echo $response->getHTTPStatus() . ' ' . $response->getRawBody();
+    error_log( $response->getHTTPStatus() . ' ' . $response->getRawBody());
 }
 
 function generate($table){
