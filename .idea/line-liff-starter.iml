@@ -30,5 +30,6 @@
     <orderEntry type="library" name="sdk" level="application" />
     <orderEntry type="library" name="jquery.add-input-area" level="application" />
     <orderEntry type="library" name="modaal" level="application" />
+    <orderEntry type="library" name="validate" level="application" />
   </component>
 </module>

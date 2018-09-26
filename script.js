@@ -26,6 +26,10 @@ $(function () {
             $('.notification_doM').hide();
             $('.notification_doW').fadeIn();
 
+        }else if(selectVal == '3'){
+            $('.notification_dsoW').slideUp();
+            $('.notification_doM').slideUp();
+            $('.notification_doW').slideUp();
         }
     });
     $('[name="top_textarea_select"]').change( function() {
@@ -60,8 +64,10 @@ $(function () {
 
     $('#top_textarea').hide();
     //最初は全てのパネルを非表示に
+    $('.notification_dsoW').hide()
     $('.notification_doM').hide();
     $('.notification_doW').hide();
+    //$('.checkbox').attr('required',true);
     $('.modal').modaal({
         hide_close: 'true'
     });
@@ -91,4 +97,13 @@ $(function () {
         }
     });
 */
+
+
+   ///////////////////
+    // varidation
+    /////////////////
+   /* rules: {
+        mytext: { required: true }
+    }
+    $('form').validate();*/
 });
