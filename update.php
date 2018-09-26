@@ -15,7 +15,6 @@ use Carbon\Carbon;
 $table = \Model\Table::where('group_id', $inputs['group_id'])
     ->first();
 
-
 //Pre-Processing
 switch ($inputs['notification_span']){
     //日

@@ -84,6 +84,8 @@ function initializeApp(data) {
         switch (json.table.notification_span) {
             case 0:
                 for (let i = 0; i < 7; i++) {
+                    $('#notification_span').val(0);
+
                     var bool = $.inArray(String(i), json.table.notification_date.split(','));
                     if ($.inArray(String(i), json.table.notification_date.split(',')) >= 0) {
                         if(i==0)$('#checkbox_sunday').prop("checked", true);
@@ -106,9 +108,10 @@ function initializeApp(data) {
                 }
                 break;
             case 2:
+                $('#notification_span').val(2);
                 for (let i = 0; i < 7; i++) {
-                    var bool = $.inArray(String(i), json.table.notification_date.split(','));
-                    if ($.inArray(String(i), json.table.notification_date.split(',')) >= 0) {
+
+                    if (json.table.notification_date == i){
                         if(i==0)$('#radio_sunday').prop("checked", true);
                         if(i==1)$('#radio_monday').prop("checked", true);
                         if(i==2)$('#radio_tuesday').prop("checked", true);
