@@ -23,7 +23,7 @@ function initializeApp(data) {
 
     if(isset(data.context.groupId))lineId=data.context.groupId;
     if(isset(data.context.roomId))lineId=data.context.roomId;
-    if(isset(data.context.utouId))lineId=data.context.utouId;
+    if(isset(data.context.userId))lineId=data.context.userId;
     console.log(lineId);
     $('#group_id').val(lineId);
 
