@@ -68,6 +68,8 @@ function initializeApp(data) {
         $('#lower_textarea').val(json.table.lower_textarea);*/
         $('#notification_time').val(json.table.notification_time);
 
+
+
         for (let i = 0; i < json.role.length; i++) {
             $('#roles_list_' + i).val(json.role[i].role);
             if (i === json.role.length - 1) break;
@@ -103,6 +105,19 @@ function initializeApp(data) {
                     if (i == json.table.notification_date) $('#notification_doM').val(i);
                 }
                 break;
+            case 2:
+                for (let i = 0; i < 7; i++) {
+                    var bool = $.inArray(String(i), json.table.notification_date.split(','));
+                    if ($.inArray(String(i), json.table.notification_date.split(',')) >= 0) {
+                        if(i==0)$('#radio_sunday').prop("checked", true);
+                        if(i==1)$('#radio_monday').prop("checked", true);
+                        if(i==2)$('#radio_tuesday').prop("checked", true);
+                        if(i==3)$('#radio_wednesday').prop("checked", true);
+                        if(i==4)$('#radio_thursday').prop("checked", true);
+                        if(i==5)$('#radio_friday').prop("checked", true);
+                        if(i==6)$('#radio_saturday').prop("checked", true);
+                    }
+                }
             default:
                 break;
         }
