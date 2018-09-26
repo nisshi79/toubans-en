@@ -24,7 +24,8 @@ foreach ($tableArray as $table ) {
 function notify($table,$dt){
 
     switch ($table['notification_span']) {
-        case 0: //dsoW
+        case 0:
+        case 2://dsoW
             $doW = $dt->dayOfWeek;
 
             echo $table['notification_time'];
@@ -37,7 +38,7 @@ function notify($table,$dt){
             break;
 
         case 1:
-        case 2://doM
+        //doM
             $doM = $dt->day;
 
             if (in_array("{$doM}", min($table['notification_date'], $dt->daysInMonth)) && isTimeReady($table['notification_time']) && isGreater($table['last_notified_at'], $table['notification_time'])) send($table);
