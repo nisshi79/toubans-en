@@ -11,9 +11,12 @@ require_once ('Table.php');
 require_once ('Role.php');
 require_once ('Member.php');
 $inputs = filter_input_array(INPUT_POST);
+use Carbon\Carbon;
 $table = \Model\Table::where('group_id', $inputs['group_id'])
     ->first();
 
+
+//Pre-Processing
 switch ($inputs['notification_span']){
     //日
     case 0:
@@ -25,7 +28,9 @@ switch ($inputs['notification_span']){
         $notification_date_buf = $inputs['notification_doM'];
 
         break;
-
+    case 2:
+        $notification_date_buf = $inputs['notification_doW'];
+        break;
     default:
         break;
 }
