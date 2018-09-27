@@ -85,7 +85,7 @@ function initializeApp(data) {
             case 0:
                 for (let i = 0; i < 7; i++) {
                     $('#notification_span').val(0);
-
+                    $('.notification_dsoW_checkboxes').fadeIn();
                     var bool = $.inArray(String(i), json.table.notification_date.split(','));
                     if ($.inArray(String(i), json.table.notification_date.split(',')) >= 0) {
                         if(i==0)$('#checkbox_sunday').prop("checked", true);
@@ -109,6 +109,7 @@ function initializeApp(data) {
                 break;
             case 2:
                 $('#notification_span').val(2);
+                $('.notification_dsoW_checkboxes').fadeIn();
                 for (let i = 0; i < 7; i++) {
 
                     if (json.table.notification_date == i){
