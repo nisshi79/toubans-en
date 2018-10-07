@@ -64,7 +64,7 @@ $(function () {
 
     $('#top_textarea').hide();
     //最初は全てのパネルを非表示に
-    $('.notification_dsoW').hide()
+    $('.notification_dsoW').hide();
     $('.notification_doM').hide();
     $('.notification_doW').hide();
     //$('.checkbox').attr('required',true);
