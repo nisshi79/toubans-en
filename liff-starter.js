@@ -128,7 +128,9 @@ function initializeApp(data) {
         }
     }
 
-
+    $('.notification_dsoW').hide();
+    $('.notification_doM').hide();
+    $('.notification_doW').hide();
 
 
 
