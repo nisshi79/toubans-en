@@ -60,14 +60,17 @@ $(function () {
             $('#notfication_timing_avsolute_value').fadeOut();
         }
     });*/
-    $('#lower_textarea').hide();
 
+    $('#lower_textarea').hide();
     $('#top_textarea').hide();
+
     //最初は全てのパネルを非表示に
     $('.notification_dsoW').hide();
     $('.notification_doM').hide();
     $('.notification_doW').hide();
+
     //$('.checkbox').attr('required',true);
+
     $('.modal').modaal({
         hide_close: 'true'
     });

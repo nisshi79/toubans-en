@@ -82,10 +82,10 @@ function initializeApp(data) {
             $('#members_list_add').click();
         }
         switch (json.table.notification_span) {
-            case 0:
+            case 0: //毎日
+                $('#notification_span').val(0);
+                $('.notification_dsoW_checkboxes').fadeIn();
                 for (let i = 0; i < 7; i++) {
-                    $('#notification_span').val(0);
-                    $('.notification_dsoW_checkboxes').fadeIn();
                     var bool = $.inArray(String(i), json.table.notification_date.split(','));
                     if ($.inArray(String(i), json.table.notification_date.split(',')) >= 0) {
                         if(i==0)$('#checkbox_sunday').prop("checked", true);
@@ -99,15 +99,16 @@ function initializeApp(data) {
                 }
 
                 break;
-            case 1:
+
+            case 1: //月
                 $('#notification_span').val(1);
-                $('.notification_dsoW_checkboxes').hide();
                 $('.notification_doM').fadeIn();
                 for (let i = 1; i <= 31; i++) {
                     if (i == json.table.notification_date) $('#notification_doM').val(i);
                 }
                 break;
-            case 2:
+
+            case 2: //週
                 $('#notification_span').val(2);
                 $('.notification_dsoW_checkboxes').fadeIn();
                 for (let i = 0; i < 7; i++) {
