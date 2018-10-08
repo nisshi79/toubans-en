@@ -12,12 +12,12 @@ use LINE\LINEBot\Event\MessageEvent\TextMessage;
 use LINE\LINEBot\Exception\InvalidEventRequestException;
 use LINE\LINEBot\Exception\InvalidSignatureException;
 
-/*$dotenv = new Dotenv\Dotenv(__DIR__);
-$dotenv->load();*/
+$dotenv = new Dotenv\Dotenv(__DIR__);
+$dotenv->load();
 
 $json_string = file_get_contents('php://input');
 $json_object = json_decode($json_string);
-
+error_log($json_string);
 $httpClient = new \LINE\LINEBot\HTTPClient\CurlHTTPClient(getenv('TOUBAN_BOT_CHANNEL_ACCESS_TOKEN'));
 $bot = new \LINE\LINEBot($httpClient, ['channelSecret' => getenv('TOUBAN_BOT_CHANNEL_SECRET')]);
 /*$channelSecret = '62d8ad6634010ecd45d64f2056dfbcac'; // Channel secret string
@@ -77,7 +77,7 @@ JSON;
                 $introduction= <<<JSON
                 {
                     "type" : "text",
-                    "text" : "下の「初期設定/情報確認・変更」をタップして、初期設定を開始してください"
+                    "text" : "下の「設定画面を開く」をタップして、初期設定を開始してください"
                 },
 JSON;
             }
@@ -91,7 +91,7 @@ JSON;
                 ]
             }
 JSON;
-            error_log($response);
+            /*error_log($response);*/
             // LINE BOT API へのリクエストを作成して実行
             $curl = curl_init("https://api.line.me/v2/bot/message/reply");
             curl_setopt($curl, CURLOPT_CUSTOMREQUEST, 'POST');
@@ -101,7 +101,7 @@ JSON;
             curl_setopt($curl, CURLOPT_POSTFIELDS, $response);
             curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
             $result = curl_exec($curl);
-            error_log($result);
+            /*error_log($result);*/
             curl_close($curl);
             /*replyMultiMessage($bot, $event->getReplyToken(),
                 new \LINE\LINEBot\MessageBuilder\TextMessageBuilder("以下のリンクをクリックするとトークのアルバムをプレビューできます。"),

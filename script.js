@@ -1,6 +1,11 @@
 
 
 $(function () {
+
+    $('.notification_dsoW').hide();
+    $('.notification_doM').hide();
+    $('.notification_doW').hide();
+
     $('[name="notification_span"]').change( function() {
 
         var selectVal = $('[name="notification_span"]').val();
