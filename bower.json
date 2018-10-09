@@ -1,0 +1,21 @@
+{
+  "name": "line-liff-starter",
+  "homepage": "https://github.com/nisshi79/line-liff-starter",
+  "authors": [
+    "Yui Nishimura <nisshi.yui79@gmail.com>"
+  ],
+  "description": "",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "moment": "^2.22.2",
+    "bootstrap": "^4.1.3"
+  }
+}

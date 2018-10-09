@@ -1,0 +1,111 @@
+window.onload = function (e) {
+    liff.init(function (data) {
+
+        initializeApp(data);
+    });
+};
+
+function initializeApp(data) {
+    document.getElementById('languagefield').textContent = data.language;
+    document.getElementById('viewtypefield').textContent = data.context.viewType;
+    document.getElementById('useridfield').textContent = data.context.userId;
+    document.getElementById('utouidfield').textContent = data.context.utouId;
+    document.getElementById('roomidfield').textContent = data.context.roomId;
+    document.getElementById('groupidfield').textContent = data.context.groupId;
+
+    function isset( data ){
+        return ( typeof( data ) != 'undefined' );
+    }
+
+    var lineId;
+    if(isset(data.context.userId))lineId=data.context.userId;
+    if(isset(data.context.roomId))lineId=data.context.roomId;
+    if(isset(data.context.groupId))lineId=data.context.groupId;
+
+    console.log(lineId);
+    $('#group_id').val(lineId);
+
+    fetch('checkId.php?groupId=' + lineId)
+        .then(response => {
+            return response.json();
+            // ReadableStream -> String への変換
+        })
+        .then(json => {
+
+            console.log(json);
+            if(isset(json.table.stop_span)){
+
+                fillInputs(json);
+            }
+        });
+
+    function fillInputs(json){
+
+        var spansArr = json.table.stop_span.split(',');
+        $('#spans_list_0').val(spansArr.length);
+        for (let i = 0; i < spansArr.length; i++) {
+            $('#spans_list_'+i).val(spansArr[i]);
+
+            if (i === spansArr.length - 1) break;
+            $('#spans_list_add').click();
+        }
+    }
+    // openWindow call
+    document.getElementById('openwindowbutton').addEventListener('click', function () {
+        liff.openWindow({
+            url: 'https://line.me'
+        });
+    });
+
+    // closeWindow call
+    document.getElementById('closewindowbutton').addEventListener('click', function () {
+        liff.closeWindow();
+    });
+
+    // sendMessages call
+    document.getElementById('sendmessagebutton').addEventListener('click', function () {
+        liff.sendMessages([{
+            type: 'text',
+            text: "You've successfully sent a message! Hooray!"
+        }, {
+            type: 'sticker',
+            packageId: '2',
+            stickerId: '144'
+        }]).then(function () {
+            window.alert("Message sent");
+        }).catch(function (error) {
+            window.alert("Error sending message: " + error);
+        });
+    });
+
+    //get profile call
+    document.getElementById('getprofilebutton').addEventListener('click', function () {
+        liff.getProfile().then(function (profile) {
+            document.getElementById('useridprofilefield').textContent = profile.userId;
+            document.getElementById('displaynamefield').textContent = profile.displayName;
+
+            var profilePictureDiv = document.getElementById('profilepicturediv');
+            if (profilePictureDiv.firstElementChild) {
+                profilePictureDiv.removeChild(profilePictureDiv.firstElementChild);
+            }
+            var img = document.createElement('img');
+            img.src = profile.pictureUrl;
+            img.alt = "Profile Picture";
+            profilePictureDiv.appendChild(img);
+
+            document.getElementById('statusmessagefield').textContent = profile.statusMessage;
+            toggleProfileData();
+        }).catch(function (error) {
+            window.alert("Error getting profile: " + error);
+        });
+    });
+}
+
+function toggleProfileData() {
+    var elem = document.getElementById('profileinfo');
+    if (elem.offsetWidth > 0 && elem.offsetHeight > 0) {
+        elem.style.display = "none";
+    } else {
+        elem.style.display = "block";
+    }
+}
