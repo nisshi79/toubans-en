@@ -40,7 +40,7 @@
 
 </head>
 <body>
-    <form name = "spans" method = "POST" action="stopSpanInput.php">
+    <form name = "spans" method = "GET" action="stopSpanInput.php">
         <div class = "spans">
             <a>既に設定されている通知停止期間</a><br>
             <ol id="spans_list"><!-- "id" attribute is required -->

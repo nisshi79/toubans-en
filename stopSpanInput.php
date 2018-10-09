@@ -11,7 +11,7 @@ require_once ('Table.php');
 require_once ('Role.php');
 require_once ('Member.php');
 
-$inputs = filter_input_array(INPUT_POST);
+$inputs = filter_input_array(INPUT_GET);
 use Carbon\Carbon;
 
 $table = \Model\Table::where('group_id', $inputs['group_id'])

@@ -23,7 +23,7 @@
         "height": "sm",
         "action": {
           "type": "uri",
-          "label": "初期設定/情報確認・変更",
+          "label": "設定画面を開く",
           "uri": "line://app/1603349366-7OnYqWOO"
         }
       },
@@ -34,7 +34,7 @@
         "action":{
           "type":"postback",
           "label":"今日の通知を停止する",
-          "data":"stoptoday",
+          "data":"stopdate=today",
           "text":"今日の通知を停止する"
         }
       },
@@ -45,7 +45,7 @@
         "action":{
           "type":"postback",
           "label":"明日の通知を停止する",
-          "data":"stoptmorrow",
+          "data":"stopdate=tomorrow",
           "text":"明日の通知を停止する"
         }
       },
