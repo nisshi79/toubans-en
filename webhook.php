@@ -12,8 +12,8 @@ use LINE\LINEBot\Event\MessageEvent\TextMessage;
 use LINE\LINEBot\Exception\InvalidEventRequestException;
 use LINE\LINEBot\Exception\InvalidSignatureException;
 
-$dotenv = new Dotenv\Dotenv(__DIR__);
-$dotenv->load();
+/*$dotenv = new Dotenv\Dotenv(__DIR__);
+$dotenv->load();*/
 
 $json_string = file_get_contents('php://input');
 $json_object = json_decode($json_string);
