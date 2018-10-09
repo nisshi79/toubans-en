@@ -122,13 +122,16 @@ function isGreater($time1, $time2){
     return $time1Buf->lt($time2Buf);
 }
 function isStop_span($table ,$dt){
-    $stop_spanArr = explode(',',$table['stop_span']);
     $isStop_span = false;
-    foreach ($stop_spanArr as $stop_span){
-        $edgeDates = explode(' - ',$stop_span);
-        $fromDate = Carbon\Carbon::createFromFormat('d/m/Y h:i:s', $edgeDates[0].' '.'00:00:00');
-        $toDate = Carbon\Carbon::createFromFormat('d/m/Y h:i:s', $edgeDates[1].' '.'23:59:59');
-        if($dt->gte($fromDate) && $dt->lte($toDate))$isStop_span=true;
+    if(isset($table['stop_span'])) {
+        $stop_spanArr = explode(',', $table['stop_span']);
+
+        foreach ($stop_spanArr as $stop_span) {
+            $edgeDates = explode(' - ', $stop_span);
+            $fromDate = Carbon\Carbon::createFromFormat('d/m/Y h:i:s', $edgeDates[0] . ' ' . '00:00:00');
+            $toDate = Carbon\Carbon::createFromFormat('d/m/Y h:i:s', $edgeDates[1] . ' ' . '23:59:59');
+            if ($dt->gte($fromDate) && $dt->lte($toDate)) $isStop_span = true;
+        }
     }
     echo $isStop_span;
 }
