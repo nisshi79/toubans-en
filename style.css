@@ -264,3 +264,6 @@ h1{
 .notification_doW_radios{
     display: flex;
 }
+.hidden{
+    display: none;
+}

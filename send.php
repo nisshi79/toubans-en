@@ -32,7 +32,7 @@ function notify($table,$dt){
 
             echo $table['last_notified_at'];
 
-            if (in_array("{$doW}", explode(',', $table['notification_date'])) && isTimeReady($table['notification_time']) && isGreater($table['last_notified_at'], $table['notification_time'])) send($table);
+            if (in_array("{$doW}", explode(',', $table['notification_date'])) && isTimeReady($table['notification_time']) && isGreater($table['last_notified_at'], $table['notification_time']) && !isStop_span($table,$dt)) send($table);
             // 週のうちの何日目か 0 (日曜)から 6 (土曜)
 
             break;
@@ -41,7 +41,7 @@ function notify($table,$dt){
         //doM
             $doM = $dt->day;
             error_log($doM);
-            if ($doM == min($table['notification_date'], $dt->daysInMonth) && isTimeReady($table['notification_time']) && isGreater($table['last_notified_at'], $table['notification_time'])) send($table);
+            if ($doM == min($table['notification_date'], $dt->daysInMonth) && isTimeReady($table['notification_time']) && isGreater($table['last_notified_at'], $table['notification_time']) && !isStop_span($table,$dt)) send($table);
 
             break;
         default:
@@ -120,4 +120,15 @@ function isGreater($time1, $time2){
     echo 'time1Buf is'.$time1Buf.'this';
     echo 'time2Buf is'.$time2Buf.'this';
     return $time1Buf->lt($time2Buf);
+}
+function isStop_span($table ,$dt){
+    $stop_spanArr = explode(',',$table['stop_span']);
+    $isStop_span = false;
+    foreach ($stop_spanArr as $stop_span){
+        $edgeDates = explode(' - ',$stop_span);
+        $fromDate = Carbon\Carbon::createFromFormat('d/m/Y h:i:s', $edgeDates[0].' '.'00:00:00');
+        $toDate = Carbon\Carbon::createFromFormat('d/m/Y h:i:s', $edgeDates[1].' '.'23:59:59');
+        if($dt->gte($fromDate) && $dt->lte($toDate))$isStop_span=true;
+    }
+    echo $isStop_span;
 }

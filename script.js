@@ -1,6 +1,13 @@
 
 
 $(function () {
+   /* $('#spans_list_add').on("click", function () {
+        $('.date_range_input').daterangepicker({
+            opens: 'left'
+        }, function(start, end, label) {
+            console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+        });
+    });*/
 
     $('.notification_dsoW').hide();
     $('.notification_doM').hide();
@@ -112,4 +119,37 @@ $(function () {
         mytext: { required: true }
     }
     $('form').validate();*/
+
+   //////////////////////
+    // date-picker Initiarization
+    ////////////////////
+
+    /*$('input[name="daterange"]').daterangepicker({
+            startDate: '<%= @current_date_range.first.strftime("%Y-%m-%d") %>',
+            endDate: '<%= @current_date_range.last.strftime("%Y-%m-%d") %>',
+            format:'YYYY/MM/DD',
+            showDropdowns: false,
+            ranges: {
+                '直近30日': [moment().subtract('days', 29), moment()],
+                '今月': [moment().startOf('month'), moment().endOf('month')],
+                '先月': [moment().subtract('month', 1).startOf('month'), moment().subtract('month', 1).endOf('month')]
+            },
+            opens: 'left',
+            locale: {
+                applyLabel: '反映',
+                cancelLabel: '取消',
+                fromLabel: '開始日',
+                toLabel: '終了日',
+                weekLabel: 'W',
+                customRangeLabel: '自分で指定',
+                daysOfWeek: moment.weekdaysMin(),
+                monthNames: moment.monthsShort(),
+                firstDay: moment.localeData()._week.dow
+            },
+        },
+        function(s, e){
+            console.log(s)
+            console.log(e)
+        });*/
+
 });

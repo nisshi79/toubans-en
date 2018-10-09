@@ -31,5 +31,11 @@
     <orderEntry type="library" name="jquery.add-input-area" level="application" />
     <orderEntry type="library" name="modaal" level="application" />
     <orderEntry type="library" name="validate" level="application" />
+    <orderEntry type="library" name="moment" level="application" />
+    <orderEntry type="library" name="daterangepicker" level="application" />
+    <orderEntry type="library" name="jquery" level="application" />
+    <orderEntry type="library" name="bootstrap" level="application" />
+    <orderEntry type="library" name="jquery-ui" level="application" />
+    <orderEntry type="library" name="ja" level="application" />
   </component>
 </module>

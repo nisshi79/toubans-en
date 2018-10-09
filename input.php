@@ -75,6 +75,7 @@ foreach ($inputs['members_list'] as $members_list){
     ]);
 }
 ?>
+<!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Pragma" content="no-cache">

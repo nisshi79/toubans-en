@@ -28,7 +28,9 @@ function initializeApp(data) {
     $('#group_id').val(lineId);
 
     //var requestBuf ='checkId.php?groupId=UU09facbeea4dafecede9e058973ac6b85bcc0202053fcf2caa7886bf9f5b14cc3454a4405db654ca51b8ab0099b20728f6d67245e2adccd77b0c64ed25d7b7413' + lineId;
-
+    $('.notification_dsoW').hide();
+    $('.notification_doM').hide();
+    $('.notification_doW').hide();
 
     fetch('checkId.php?groupId=' + lineId)
 
