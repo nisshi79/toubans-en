@@ -31,14 +31,11 @@
         "type": "button",
         "style": "link",
         "height": "sm",
-        "action": {
-          "type":"datetimepicker",
-          "label":"期間を指定して通知を停止する",
-          "data":"storeId=12345",
-          "mode":"datetime",
-          "initial":"2017-12-25t00:00",
-          "max":"2018-01-24t23:59",
-          "min":"2017-12-25t00:00"
+        "action":{
+          "type":"postback",
+          "label":"今日の通知を停止する",
+          "data":"stoptoday",
+          "text":"今日の通知を停止する"
         }
       },
       {
@@ -47,9 +44,19 @@
         "height": "sm",
         "action":{
           "type":"postback",
-          "label":"Buy",
-          "data":"action=buy&itemid=111",
-          "text":"Buy"
+          "label":"明日の通知を停止する",
+          "data":"stoptmorrow",
+          "text":"明日の通知を停止する"
+        }
+      },
+      {
+        "type": "button",
+        "style": "link",
+        "height": "sm",
+        "action": {
+          "type": "uri",
+          "label": "期間を指定して通知を停止",
+          "uri": "line://app/1603349366-Q2PRJE22"
         }
       },
       {
