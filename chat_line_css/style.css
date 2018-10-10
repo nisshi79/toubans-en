@@ -72,7 +72,7 @@
 
 .line__container .line__left .line__left-text .name {
   font-size: 80%;
-  color: #E8EDF1;
+  color: /*#E8EDF1*/whitesmoke;
 }
 
 /* コメントエリア */
@@ -81,7 +81,7 @@
   position: relative;
   padding: 10px;
   border-radius: 20px;
-  background-color: #E8EDF1;
+  background-color: whitesmoke;
 }
 
 /* 吹き出し */
@@ -93,7 +93,7 @@
   height: 0;
   left: -10px;
   top: 10px;
-  border-right: 20px solid #E8EDF1;
+  border-right: 20px solid /*#E8EDF1*/whitesmoke;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
 }
