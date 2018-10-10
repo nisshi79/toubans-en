@@ -1,5 +1,13 @@
 @import url("chat_line_css/style.css");
 
+:root {
+    --blackBlue: #35445A;
+    --afGradient: -webkit-linear-gradient(0deg, #A949D8, #DD4D61);
+    --cream: #E8EDF1;
+    --buttonShadow: -2px 2px 50px -10px #000000;
+    --baloonShadow: -2px 2px 38px -9px #000000;
+}
+
 html{
     font-size: 11px;
 }
@@ -73,35 +81,45 @@ h1{
 }
 
 .button{
-    background: -webkit-linear-gradient( 0deg ,#EE795D, #C769A3);
-    font-size: large;
+    background: var(--afGradient);
+    /*background: #35445A;*/
+    font-size: 30px;
     border-radius: 20px;
     border-width: 0px;
     color: #ffffff;
-    padding-right: 10px;
-    padding-left: 10px;
+    padding: 10px;
+    box-shadow:-2px 2px 50px -10px #000000;
+
 }
 body{
-    background: #30363D;
+    background: /*#E99B01*/#E8EDF1;
 }
 .gradation{
     text-align: center;
-    margin: 1em;
+   /* margin: 1em;*/
     color: #FF8C00;
-    background: -webkit-linear-gradient(0deg, #EE795D, #C769A3);
+    background: /*black*/var(--afGradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: bold;
 }
 a{
-    color: #ffffff;
+    color: var(--blackBlue);
 }
-.button{
-    color: white;
+.date_range_input{
+    min-width: 11em;
+    text-align: center;
+}
+ol{
+    padding-left: 30%;
 }
 
-
-
+.big_font{
+    font-size: 50px;
+}
+.bottom_margin{
+    margin-bottom: 2em;
+}
 label{
     color: #ffffff;
 }
@@ -114,7 +132,7 @@ a.touban_button{
 }
 
 .babble{
-    background:#BEF18C;
+    
     border-radius: 7px;
     padding: 1em;
 }
@@ -137,12 +155,17 @@ a.touban_button{
 }
 .gradation_button{
     padding: 1em;
+    text-align: right;
 }
 .btn{
     padding: 1em;
-    border-radius: 7px;
-    background: -webkit-linear-gradient(0deg, #EE795D, #C769A3);
+    border-radius: 1em;
+    background: var(--afGradient);
     color: white;
+    box-shadow: var(--buttonShadow);
+}
+.shadow{
+    box-shadow: var(--baloonShadow);
 }
 .touban_form{
     display: inline-flex;
@@ -157,7 +180,9 @@ a.touban_button{
 #modaal_close{
     padding: 7px;
 }
-
+.relax_container{
+    padding:20px!important;
+}
 .modaal-content-container h3{
     /*text-align: center;*/
 }
@@ -182,7 +207,7 @@ input[type=checkbox],input[type=radio] {
 }
 
 input[type="checkbox"].checkbox:checked + label, input[type="radio"]:checked + label{
-    background: -webkit-linear-gradient(0deg, #EE795D, #C769A3);
+    background: -webkit-linear-gradient(0deg, #A949D8, #DD4D61);
     color: #ffffff;
     border: 0px;
 }
@@ -228,9 +253,16 @@ input[type="checkbox"].checkbox:checked + label, input[type="radio"]:checked + l
 }
 
 h1{
+    /*margin-top: 2em;*/
+    font-size: 2em;
+
+}
+.margin_top{
     margin-top: 2em;
 }
-
+button a{
+    color: white;
+}
 .screen_center{
 
     position: fixed;
@@ -266,4 +298,19 @@ h1{
 }
 .hidden{
     display: none;
+}
+.spans{
+    text-align: center;
+}
+.title{
+    max-width: 100%;
+
+
+
+}
+.li{
+    text-align: left!important;
+}
+.center{
+    text-align: center;
 }

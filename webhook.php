@@ -129,6 +129,7 @@ foreach ($events as $event) {
         $message = new \LINE\LINEBot\MessageBuilder\TextMessageBuilder("{$stopDateStr}は既に通知が停止されています。");
         $res = $bot->replyMessage($replyToken, $message);
     }
+
     /////////////////
     /// stop
     ////////////////
@@ -145,7 +146,10 @@ foreach ($events as $event) {
             }
 
         }elseif (isset($postbackData['ans'])){
-            if($postbackData['ans']=='y')inputStopSpan($event,$postbackData);
+            if($postbackData['ans']=='y'){
+                inputStopSpan($event,$postbackData);
+                sendComplete();
+            }
         }
 
     }

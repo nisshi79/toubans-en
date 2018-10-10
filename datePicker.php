@@ -42,15 +42,19 @@
 <body>
     <form name = "spans" method = "GET" action="stopSpanInput.php">
         <div class = "spans">
-            <a>既に設定されている通知停止期間</a><br>
-            <ol id="spans_list"><!-- "id" attribute is required -->
-                <li class="spans_list_var"><!-- .(id)_var -->
+            <h1><a class="gradation title">期間を設定して通知を停止</a></h1><br>
+            <h2><a class="gradation">通知停止期間一覧</a></h2>
+            <div class="center">
+                <ol id="spans_list"><!-- "id" attribute is required -->
+                    <li class="spans_list_var"><!-- .(id)_var -->
 
-                    <input placeholder="ここをタップして日付を入力してください" type="text" data-name-format="spans_list[]" name="spans_list[]" id="spans_list_0" readonly="readonly" class="date_range_input">
-                    <button class="spans_list_del btn nowrap vertical_slim"><a class="nowrap">削除</a></button><!-- .(id)_del -->
+                        <input placeholder="ここをタップして日付を入力してください" type="text" data-name-format="spans_list[]" name="spans_list[]" id="spans_list_0" readonly="readonly" class="date_range_input">
+                        <button class="spans_list_del btn nowrap vertical_slim"><a class="nowrap">削除</a></button><!-- .(id)_del -->
 
-                </li>
-            </ol>
+                    </li>
+                </ol>
+            </div>
+
             <a href="javascript:void(0)" id="spans_list_add" class="spans_list_add btn">通知停止期間を追加</a>
         </div>
         <input type="hidden" id="group_id" value="" name="group_id">

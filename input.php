@@ -90,8 +90,8 @@ foreach ($inputs['members_list'] as $members_list){
     <body>
         <div class="screen_center">
             <div class="inner">
-                <h1><a>Complete!</a></h1>
-                <a>おめでとうございます！これで設定は完了です！右上の×ボタンから、この画面を閉じて下さい。</a>
+                <h1 class="bottom_margin"><a class="gradation big_font">Complete!</a></h1>
+                <a class="bottom_margin">おめでとうございます！これで設定は完了です！右上の×ボタンから、この画面を閉じて下さい。</a>
             </div>
         </div>
 
