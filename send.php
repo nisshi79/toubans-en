@@ -128,8 +128,8 @@ function isStop_span($table ,$dt){
 
         foreach ($stop_spanArr as $stop_span) {
             $edgeDates = explode(' - ', $stop_span);
-            $fromDate = Carbon\Carbon::createFromFormat('Y/m/d H:i:s', $edgeDates[0] . ' ' . '00:00:00');
-            $toDate = Carbon\Carbon::createFromFormat('Y/m/d H:i:s', $edgeDates[1] . ' ' . '23:59:59');
+            $fromDate = Carbon::createFromFormat('Y/m/d H:i:s', $edgeDates[0] . ' ' . '00:00:00');
+            $toDate = Carbon::createFromFormat('Y/m/d H:i:s', $edgeDates[1] . ' ' . '23:59:59');
             if ($dt->gte($fromDate) && $dt->lte($toDate)) $isStop_span = true;
         }
     }
