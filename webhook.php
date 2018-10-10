@@ -104,15 +104,17 @@ foreach ($events as $event) {
         if($stopDate=='tomorrow')$checkDate->addDay();
         $table = \Model\Table::where('group_id', $sourceId)
             ->first();
-        $stop_spans = explode(',',$table['stop_span']);
+        if(isset($table['stop_span'])){
+            $stop_spans = explode(',',$table['stop_span']);
 
-        foreach ($stop_spans as $stop_span){
+            foreach ($stop_spans as $stop_span){
 
-            $edgeDates = explode(' - ',$stop_span);
-            $fromDate = Carbon::createFromFormat('Y/m/d H:i:s', $edgeDates[0] . ' ' . '00:00:00');
-            $toDate = Carbon::createFromFormat('Y/m/d H:i:s', $edgeDates[1] . ' ' . '23:59:59');
-            error_log($edgeDates[1]);
-            if($checkDate->gte($fromDate) && $checkDate->lte($toDate))$isInRange=true;
+                $edgeDates = explode(' - ',$stop_span);
+                $fromDate = Carbon::createFromFormat('Y/m/d H:i:s', $edgeDates[0].' '.'00:00:00');
+                $toDate = Carbon::createFromFormat('Y/m/d H:i:s', $edgeDates[1].' '.'23:59:59');
+                error_log($edgeDates[1]);
+                if($checkDate->gte($fromDate) && $checkDate->lte($toDate))$isInRange=true;
+            }
         }
 
         return $isInRange;
