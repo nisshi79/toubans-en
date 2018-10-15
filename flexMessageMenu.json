@@ -23,7 +23,7 @@
         "height": "sm",
         "action": {
           "type": "uri",
-          "label": "初期設定/設定変更",
+          "label": "初期設定／設定変更",
           "uri": "line://app/1603349366-7OnYqWOO"
         }
       },
