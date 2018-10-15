@@ -20,7 +20,7 @@
       {
         "type": "button",
         "style": "primary",
-        "color": "#A143B1",
+        "color": "#EB3BE5",
         "height": "sm",
         "action": {
           "type": "uri",
