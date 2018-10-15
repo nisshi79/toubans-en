@@ -144,7 +144,7 @@
           <entry key="htaccess" value="30" />
           <entry key="html" value="6048" />
           <entry key="js" value="5356" />
-          <entry key="json" value="196" />
+          <entry key="json" value="222" />
           <entry key="php" value="13845" />
           <entry key="sh" value="28" />
           <entry key="sql" value="8" />
@@ -157,7 +157,7 @@
           <entry key="Bash" value="1" />
           <entry key="CSS" value="2498" />
           <entry key="HTML" value="6051" />
-          <entry key="JSON" value="196" />
+          <entry key="JSON" value="222" />
           <entry key="JavaScript" value="5365" />
           <entry key="PHP" value="13842" />
           <entry key="PLAIN_TEXT" value="1691" />
@@ -250,8 +250,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/flexMessageMenu.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="326">
-              <caret line="29" column="7" lean-forward="true" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
+            <state relative-caret-position="244">
+              <caret line="22" column="27" lean-forward="true" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -687,21 +687,7 @@
       <workItem from="1537887467858" duration="12772000" />
       <workItem from="1538909700770" duration="72037000" />
       <workItem from="1539138554871" duration="10514000" />
-      <workItem from="1539328047326" duration="1551000" />
-    </task>
-    <task id="LOCAL-00103" summary="bugfix">
-      <created>1536849283479</created>
-      <option name="number" value="00103" />
-      <option name="presentableId" value="LOCAL-00103" />
-      <option name="project" value="LOCAL" />
-      <updated>1536849283479</updated>
-    </task>
-    <task id="LOCAL-00104" summary="test">
-      <created>1536850166358</created>
-      <option name="number" value="00104" />
-      <option name="presentableId" value="LOCAL-00104" />
-      <option name="project" value="LOCAL" />
-      <updated>1536850166358</updated>
+      <workItem from="1539328047326" duration="1800000" />
     </task>
     <task id="LOCAL-00105" summary="test">
       <created>1536850337309</created>
@@ -1032,11 +1018,25 @@
       <option name="project" value="LOCAL" />
       <updated>1539179434456</updated>
     </task>
-    <option name="localTasksCounter" value="152" />
+    <task id="LOCAL-00152" summary="all done!">
+      <created>1539569752320</created>
+      <option name="number" value="00152" />
+      <option name="presentableId" value="LOCAL-00152" />
+      <option name="project" value="LOCAL" />
+      <updated>1539569752321</updated>
+    </task>
+    <task id="LOCAL-00153" summary="all done!">
+      <created>1539569839114</created>
+      <option name="number" value="00153" />
+      <option name="presentableId" value="LOCAL-00153" />
+      <option name="project" value="LOCAL" />
+      <updated>1539569839114</updated>
+    </task>
+    <option name="localTasksCounter" value="154" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="541319000" />
+    <option name="totallyTimeSpent" value="541568000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1133,9 +1133,9 @@
     <MESSAGE value="flex message and datePicker" />
     <MESSAGE value="carbon bug fix" />
     <MESSAGE value="bug fix" />
-    <MESSAGE value="all done!" />
     <MESSAGE value="baloon color change" />
-    <option name="LAST_COMMIT_MESSAGE" value="baloon color change" />
+    <MESSAGE value="all done!" />
+    <option name="LAST_COMMIT_MESSAGE" value="all done!" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -1425,8 +1425,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/flexMessageMenu.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="29" column="7" lean-forward="true" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
+        <state relative-caret-position="244">
+          <caret line="22" column="27" lean-forward="true" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
         </state>
       </provider>
     </entry>
