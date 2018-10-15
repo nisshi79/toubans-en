@@ -19,17 +19,17 @@
     "contents": [
       {
         "type": "button",
-        "style": "link",
+        "style": "primary",
         "height": "sm",
         "action": {
           "type": "uri",
-          "label": "設定画面を開く",
+          "label": "初期設定/設定変更",
           "uri": "line://app/1603349366-7OnYqWOO"
         }
       },
       {
         "type": "button",
-        "style": "link",
+        "style": "secondary",
         "height": "sm",
         "action":{
           "type":"postback",
@@ -40,7 +40,7 @@
       },
       {
         "type": "button",
-        "style": "link",
+        "style": "secondary",
         "height": "sm",
         "action":{
           "type":"postback",
@@ -51,7 +51,7 @@
       },
       {
         "type": "button",
-        "style": "link",
+        "style": "secondary",
         "height": "sm",
         "action": {
           "type": "uri",
