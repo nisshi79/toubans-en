@@ -251,7 +251,7 @@
         <entry file="file://$PROJECT_DIR$/flexMessageMenu.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="244">
-              <caret line="22" column="27" lean-forward="true" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
+              <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -687,14 +687,7 @@
       <workItem from="1537887467858" duration="12772000" />
       <workItem from="1538909700770" duration="72037000" />
       <workItem from="1539138554871" duration="10514000" />
-      <workItem from="1539328047326" duration="1800000" />
-    </task>
-    <task id="LOCAL-00105" summary="test">
-      <created>1536850337309</created>
-      <option name="number" value="00105" />
-      <option name="presentableId" value="LOCAL-00105" />
-      <option name="project" value="LOCAL" />
-      <updated>1536850337310</updated>
+      <workItem from="1539328047326" duration="1963000" />
     </task>
     <task id="LOCAL-00106" summary="test2">
       <created>1536851033941</created>
@@ -1032,11 +1025,18 @@
       <option name="project" value="LOCAL" />
       <updated>1539569839114</updated>
     </task>
-    <option name="localTasksCounter" value="154" />
+    <task id="LOCAL-00154" summary="all done!">
+      <created>1539570018994</created>
+      <option name="number" value="00154" />
+      <option name="presentableId" value="LOCAL-00154" />
+      <option name="project" value="LOCAL" />
+      <updated>1539570018994</updated>
+    </task>
+    <option name="localTasksCounter" value="155" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="541568000" />
+    <option name="totallyTimeSpent" value="541731000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1426,7 +1426,7 @@
     <entry file="file://$PROJECT_DIR$/flexMessageMenu.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="244">
-          <caret line="22" column="27" lean-forward="true" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
+          <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
         </state>
       </provider>
     </entry>
