@@ -249,8 +249,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/flexMessageMenu.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="21" column="27" lean-forward="true" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
+            <state relative-caret-position="244">
+              <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -686,21 +686,7 @@
       <workItem from="1537887467858" duration="12772000" />
       <workItem from="1538909700770" duration="72037000" />
       <workItem from="1539138554871" duration="10514000" />
-      <workItem from="1539328047326" duration="2103000" />
-    </task>
-    <task id="LOCAL-00108" summary="直しtazo">
-      <created>1536851376661</created>
-      <option name="number" value="00108" />
-      <option name="presentableId" value="LOCAL-00108" />
-      <option name="project" value="LOCAL" />
-      <updated>1536851376661</updated>
-    </task>
-    <task id="LOCAL-00109" summary="update確認">
-      <created>1536851640134</created>
-      <option name="number" value="00109" />
-      <option name="presentableId" value="LOCAL-00109" />
-      <option name="project" value="LOCAL" />
-      <updated>1536851640134</updated>
+      <workItem from="1539328047326" duration="2282000" />
     </task>
     <task id="LOCAL-00110" summary="inputpost">
       <created>1536851819135</created>
@@ -1031,11 +1017,25 @@
       <option name="project" value="LOCAL" />
       <updated>1539570309263</updated>
     </task>
-    <option name="localTasksCounter" value="157" />
+    <task id="LOCAL-00157" summary="flex button color">
+      <created>1539570432863</created>
+      <option name="number" value="00157" />
+      <option name="presentableId" value="LOCAL-00157" />
+      <option name="project" value="LOCAL" />
+      <updated>1539570432863</updated>
+    </task>
+    <task id="LOCAL-00158" summary="flex button color">
+      <created>1539570559202</created>
+      <option name="number" value="00158" />
+      <option name="presentableId" value="LOCAL-00158" />
+      <option name="project" value="LOCAL" />
+      <updated>1539570559202</updated>
+    </task>
+    <option name="localTasksCounter" value="159" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="541871000" />
+    <option name="totallyTimeSpent" value="542050000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1424,8 +1424,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/flexMessageMenu.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="21" column="27" lean-forward="true" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
+        <state relative-caret-position="244">
+          <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
         </state>
       </provider>
     </entry>
