@@ -164,7 +164,7 @@ foreach ($events as $event) {
         $sendFlag =false;
 
         if($event instanceof \LINE\LINEBot\Event\MessageEvent\TextMessage){
-            if($event->getText() == '当番') $sendFlag=true;
+            if($event->getText() == 'メニュー') $sendFlag=true;
         }
         if($event instanceof \LINE\LINEBot\Event\JoinEvent)$sendFlag=true;
 
