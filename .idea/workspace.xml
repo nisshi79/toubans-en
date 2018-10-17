@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="efe43d86-ccff-4ec1-957d-70c74f49e1e3" name="Default" comment="flex button color">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webhook.php" beforeDir="false" afterPath="$PROJECT_DIR$/webhook.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flexMessageMenu.json" beforeDir="false" afterPath="$PROJECT_DIR$/flexMessageMenu.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -143,8 +143,8 @@
           <entry key="htaccess" value="30" />
           <entry key="html" value="6048" />
           <entry key="js" value="5356" />
-          <entry key="json" value="222" />
-          <entry key="php" value="13852" />
+          <entry key="json" value="226" />
+          <entry key="php" value="13924" />
           <entry key="sh" value="28" />
           <entry key="sql" value="8" />
           <entry key="txt" value="1565" />
@@ -156,9 +156,9 @@
           <entry key="Bash" value="1" />
           <entry key="CSS" value="2498" />
           <entry key="HTML" value="6051" />
-          <entry key="JSON" value="222" />
+          <entry key="JSON" value="226" />
           <entry key="JavaScript" value="5365" />
-          <entry key="PHP" value="13849" />
+          <entry key="PHP" value="13921" />
           <entry key="PLAIN_TEXT" value="1710" />
           <entry key="Scratch" value="13" />
           <entry key="SmartyConfig" value="2" />
@@ -234,11 +234,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webhook.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="166" column="41" selection-start-line="166" selection-start-column="41" selection-end-line="166" selection-end-column="41" />
+            <state relative-caret-position="-2694">
+              <caret line="104" selection-start-line="104" selection-end-line="104" />
               <folding>
                 <element signature="e#236#273#0#PHP" expanded="true" />
               </folding>
@@ -246,11 +246,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/flexMessageMenu.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
-              <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
+            <state relative-caret-position="184">
+              <caret line="8" column="32" lean-forward="true" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -276,7 +276,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/datePicker.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1035">
+            <state relative-caret-position="499">
               <caret line="50" column="190" selection-start-line="50" selection-start-column="190" selection-end-line="50" selection-end-column="190" />
             </state>
           </provider>
@@ -285,7 +285,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/stopSpanInput.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="966">
+            <state relative-caret-position="524">
               <caret line="42" column="32" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="32" />
             </state>
           </provider>
@@ -455,8 +455,8 @@
         <option value="$PROJECT_DIR$/style.css" />
         <option value="$PROJECT_DIR$/chat_line_css/style.css" />
         <option value="$PROJECT_DIR$/bootstrap.php" />
-        <option value="$PROJECT_DIR$/flexMessageMenu.json" />
         <option value="$PROJECT_DIR$/webhook.php" />
+        <option value="$PROJECT_DIR$/flexMessageMenu.json" />
       </list>
     </option>
   </component>
@@ -687,21 +687,7 @@
       <workItem from="1538909700770" duration="72037000" />
       <workItem from="1539138554871" duration="10514000" />
       <workItem from="1539328047326" duration="2628000" />
-      <workItem from="1539702646939" duration="28000" />
-    </task>
-    <task id="LOCAL-00111" summary="icon">
-      <created>1536855513238</created>
-      <option name="number" value="00111" />
-      <option name="presentableId" value="LOCAL-00111" />
-      <option name="project" value="LOCAL" />
-      <updated>1536855513238</updated>
-    </task>
-    <task id="LOCAL-00112" summary="bug fix">
-      <created>1536910253969</created>
-      <option name="number" value="00112" />
-      <option name="presentableId" value="LOCAL-00112" />
-      <option name="project" value="LOCAL" />
-      <updated>1536910253969</updated>
+      <workItem from="1539702646939" duration="816000" />
     </task>
     <task id="LOCAL-00113" summary="reration delete">
       <created>1537027026231</created>
@@ -1032,11 +1018,25 @@
       <option name="project" value="LOCAL" />
       <updated>1539570636845</updated>
     </task>
-    <option name="localTasksCounter" value="160" />
+    <task id="LOCAL-00160" summary="flex button color">
+      <created>1539702683876</created>
+      <option name="number" value="00160" />
+      <option name="presentableId" value="LOCAL-00160" />
+      <option name="project" value="LOCAL" />
+      <updated>1539702683876</updated>
+    </task>
+    <task id="LOCAL-00161" summary="flex button color">
+      <created>1539702839726</created>
+      <option name="number" value="00161" />
+      <option name="presentableId" value="LOCAL-00161" />
+      <option name="project" value="LOCAL" />
+      <updated>1539702839726</updated>
+    </task>
+    <option name="localTasksCounter" value="162" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="542424000" />
+    <option name="totallyTimeSpent" value="543212000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1357,34 +1357,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="16" column="35" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/datePicker.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1035">
-          <caret line="50" column="190" selection-start-line="50" selection-start-column="190" selection-end-line="50" selection-end-column="190" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stopSpanInput.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="966">
-          <caret line="42" column="32" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/input.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2139">
@@ -1413,20 +1385,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/flexMessageMenu.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webhook.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="166" column="41" selection-start-line="166" selection-start-column="41" selection-end-line="166" selection-end-column="41" />
+        <state relative-caret-position="-2694">
+          <caret line="104" selection-start-line="104" selection-end-line="104" />
           <folding>
             <element signature="e#236#273#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/datePicker.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="499">
+          <caret line="50" column="190" selection-start-line="50" selection-start-column="190" selection-end-line="50" selection-end-column="190" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="16" column="35" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stopSpanInput.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="524">
+          <caret line="42" column="32" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flexMessageMenu.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="32" lean-forward="true" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
         </state>
       </provider>
     </entry>
