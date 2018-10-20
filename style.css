@@ -152,7 +152,7 @@ a.touban_button{
 }
 .text_area{
     width:100%;
-
+    resize: vertical;
     border-radius: 7px;
 }
 .gradation_button{
@@ -336,5 +336,5 @@ button a{
     font-size: x-large;
 }
 .pulldownmenu{
-    max-width: 90%;
+    max-width: 100%;
 }

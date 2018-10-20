@@ -55,7 +55,7 @@
                                 <ol id="roles_list" class="touban_list_container large_font"><!-- "id" attribute is required -->
                                     <li class="roles_list_var"><!-- .(id)_var -->
                                         <div class="touban_form">
-                                            <input type="text" data-name-format="roles_list[]" name="roles_list[]" id="roles_list_0" class="text_area touban_text_area large_font vertical_fat">
+                                            <input type="text" data-name-format="roles_list[]" name="roles_list[]" id="roles_list_0" placeholder="例）お茶当番" class="text_area touban_text_area large_font vertical_fat">
                                             <button class="roles_list_del btn nowrap vertical_slim"><a class="nowrap large_font">削除</a></button><!-- .(id)_del -->
                                         </div>
                                     </li>
@@ -72,7 +72,7 @@
                                 <ol id="members_list" class="touban_list_container large_font"><!-- "id" attribute is required -->
                                     <li class="members_list_var"><!-- .(id)_var -->
                                         <div class="touban_form">
-                                            <input type="text" data-name-format="members_list[]" name="members_list[]" id="members_list_0" class="text_area touban_text_area large_font vertical_fat">
+                                            <input type="text" data-name-format="members_list[]" name="members_list[]" id="members_list_0" placeholder="例）田中さん" class="text_area touban_text_area large_font vertical_fat">
                                             <button class="members_list_del btn vertical_slim"><a class="nowrap large_font">削除</a></button><!-- .(id)_del -->
                                         </div>
                                     </li>
@@ -97,7 +97,7 @@
                             <option value="確認しておいてください。">確認しておいてください。</option>
                             <option value="（締めの文を自分で入力する）">（締めの文を自分で入力する）</option>
                         </select><br>
-                        <input type="text" name="lower_textarea" id="lower_textarea" class="text_area" placeholder="例）よろしくお願いします">
+                        <input type="text" name="lower_textarea" id="lower_textarea" class="text_area large_font" placeholder="例）よろしくお願いします">
                     </div>
 
                     <br>
@@ -261,7 +261,7 @@
 <script src="https://cdn.jsdelivr.net/npm/jquery.add-input-area@4.11.0/dist/jquery.add-input-area.min.js"></script>
 <script src="https://d.line-scdn.net/liff/1.0/sdk.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.12.0/validate.min.js"></script>
-
+<script src="autosize.js"></script>
 <script src="script.js"></script>
 <script src="liff-starter.js"></script>
 <script src="modaal.min.js"></script>
