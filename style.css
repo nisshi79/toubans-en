@@ -111,7 +111,7 @@ a{
     text-align: center;
 }
 ol{
-    padding-left: 30%;
+    padding-left: 10%;
 }
 
 .big_font{
@@ -284,8 +284,8 @@ button a{
     vertical-align: middle;
 }
 
-.roles_list_del{
-    min-width: 45px;
+.roles_list_del .members_list_del{
+    min-width: 80px;
 }
 .touban_text_area{
 
@@ -313,4 +313,23 @@ button a{
 }
 .center{
     text-align: center;
+}
+.bold{
+    font-weight: bold;
+}
+.large_font{
+    font-size: large;
+}
+.roles_list_add{
+    margin-top: 1em;
+}
+.vertical_fat{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.touban_list_container{
+    margin-bottom: 2em;
+}
+.xlarge_font{
+    font-size: x-large;
 }

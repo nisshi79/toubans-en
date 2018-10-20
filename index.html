@@ -18,7 +18,7 @@
 <form name = "tableInfo" method = "POST" action="input.php">
     <input type="hidden" id="group_id" value="" name="group_id">
 
-    <h2><a class="gradation">1. まず、通知内容を設定します。</a></h2>
+    <h2><a class="gradation xlarge_font">1. まず、通知内容を設定します。</a></h2>
 
     <!-- ▼LINE風ここから -->
     <div class="line__container">
@@ -35,53 +35,53 @@
                     <div class="name">当番お知らせBot</div>
 
                     <div class="text shadow">
-                        <h3><label for="top_textarea" class="gradation">1. 挨拶文（導入文）を入力</label></h3>
-                        <select name="top_textarea_select" id="top_textarea_select">
+                        <h3><label for="top_textarea" class="gradation large_font">1. 挨拶文（導入文）を入力</label></h3>
+                        <select name="top_textarea_select" id="top_textarea_select" class="large_font">
                             <option value="今日の当番のお知らせです">今日の当番のお知らせです</option>
                             <option value="明日の当番のお知らせです">明日の当番のお知らせです</option>
                             <option value="（挨拶文を自分で入力する）">（挨拶文を自分で入力する）</option>
                         </select><br>
-                        <input type="text" name="top_textarea" id="top_textarea" class="text_area" placeholder="例）今日の当番のお知らせです"><br><br>
+                        <input type="text" name="top_textarea" id="top_textarea" class="text_area large_font" placeholder="例）今日の当番のお知らせです"><br><br>
 
-                        <h3><a class="gradation">2.当番を設定する</a></h3>
-                        <a href="#touban_modal" class="modal btn">当番設定画面へ</a>
+                        <h3><a class="gradation large_font">2.当番を設定する</a></h3><br><br>
+                        <a href="#touban_modal" class="modal btn large_font">当番設定画面へ</a><br>
 
                         <div id="touban_modal" class="touban_container" style="display: none;">
-                            <h3 class="no-margin-bottom"><a class="gradation">1. 当番名を入力</a></h3>
+                            <h3 class="no-margin-bottom"><a class="gradation xlarge_font">1. 当番名を入力</a></h3>
 
                             <div class = "roles">
-                                <a>役割</a><br>
-                                <ol id="roles_list"><!-- "id" attribute is required -->
+                                <!--<a class="bold">役割</a><br>-->
+                                <ol id="roles_list" class="touban_list_container large_font"><!-- "id" attribute is required -->
                                     <li class="roles_list_var"><!-- .(id)_var -->
                                         <div class="touban_form">
-                                            <input type="text" data-name-format="roles_list[]" name="roles_list[]" id="roles_list_0" class="text_area touban_text_area">
-                                            <button class="roles_list_del btn nowrap vertical_slim"><a class="nowrap">削除</a></button><!-- .(id)_del -->
+                                            <input type="text" data-name-format="roles_list[]" name="roles_list[]" id="roles_list_0" class="text_area touban_text_area large_font vertical_fat">
+                                            <button class="roles_list_del btn nowrap vertical_slim"><a class="nowrap large_font">削除</a></button><!-- .(id)_del -->
                                         </div>
                                     </li>
                                 </ol>
-                                <a href="javascript:void(0)" id="roles_list_add" class="roles_list_add btn roles_add_btn">当番を追加</a>
+                                <a href="javascript:void(0)" id="roles_list_add" class="roles_list_add btn roles_add_btn large_font">役割を追加</a>
                             </div>
 
                             <br><br>
 
-                            <h3 class="no-margin-bottom"><a class="gradation">2. メンバー／班などを入力</a></h3>
-
+                            <h3 class="no-margin-bottom"><a class="gradation xlarge_font">2. メンバー／班などを入力</a></h3>
+                            <a class="large_font">※メンバー追加ボタンを押して、当番を回したいメンバー（班）全員の名前を入力します。<br> 番号順に当番が回ります</a><br><br>
                             <div class="members">
-                                <a>メンバー</a><br>
-                                <ol id="members_list"><!-- "id" attribute is required -->
+                                <!--<a class="bold">メンバー</a><br>-->
+                                <ol id="members_list" class="touban_list_container large_font"><!-- "id" attribute is required -->
                                     <li class="members_list_var"><!-- .(id)_var -->
                                         <div class="touban_form">
-                                            <input type="text" data-name-format="members_list[]" name="members_list[]" id="members_list_0" class="text_area touban_text_area">
-                                            <button class="members_list_del btn vertical_slim"><a class="nowrap">削除</a></button><!-- .(id)_del -->
+                                            <input type="text" data-name-format="members_list[]" name="members_list[]" id="members_list_0" class="text_area touban_text_area large_font vertical_fat">
+                                            <button class="members_list_del btn vertical_slim"><a class="nowrap large_font">削除</a></button><!-- .(id)_del -->
                                         </div>
                                     </li>
                                 </ol>
-                                <a href="javascript:void(0)" id="members_list_add" class="members_list_add btn members_add_btn">メンバーを追加</a>
+                                <a href="javascript:void(0)" id="members_list_add" class="members_list_add btn members_add_btn large_font">メンバーを追加</a>
                             </div>
 
-                            <br><br>
+                            <br>
 
-                            <a class="gradation">※メンバーの番号順に当番が回ります</a><br>
+
                             <h3><a href="javascript:void(0)" class="button" id="modaal_close">完了</a></h3>
                         </div>
 
@@ -89,8 +89,8 @@
                         <input type="radio" id="block_size_day" name="block_size_radio" value="0" checked><label for="block_size_day">日</label>
                         <input type="radio" id="block_size_week" name="block_size_radio" value="1"><label for="block_size_week">週</label>
                         <input type="radio" id="block_size_month" name="block_size_radio" value="2"><label for="block_size_month">月</label><br>-->
-                        <br><br><h3><label for="lower_textarea" class="gradation">3. 締めの文を入力</label></h3>
-                        <select name="lower_textarea_select" id="lower_textarea_select">
+                        <br><br><h3><label for="lower_textarea" class="gradation large_font">3. 締めの文を入力</label></h3>
+                        <select name="lower_textarea_select" id="lower_textarea_select" class="large_font">
                             <option value="よろしくお願いします。">よろしくお願いします。</option>
                             <option value="確認しておいてください。">確認しておいてください。</option>
                             <option value="（締めの文を自分で入力する）">（締めの文を自分で入力する）</option>
@@ -110,9 +110,9 @@
 
 
             <div class="notification_date_container">
-                <h2><a class="gradation">2. 次に、通知のタイミングを設定します。</a></h2><br>
-                <h3><a class="gradation">1. 通知する日を設定</a></h3>
-                <select name="notification_span" id="notification_span">
+                <h2><a class="gradation xlarge_font">2. 次に、通知のタイミングを設定します。</a></h2><br>
+                <h3><a class="gradation large_font">1. 通知する日を設定</a></h3>
+                <select name="notification_span" id="notification_span" class="large_font">
                     <option value="3">（周期を選択して下さい）</option>
                     <option value="0">毎日1回の通知（曜日を選択）</option>
                     <option value="2">毎週1回の通知（曜日を選択)</option>
@@ -211,9 +211,9 @@
                     </a>
                 </div>
 
-                <h3><a class="gradation">2. 通知する時間を設定</a></h3>
+                <h3><a class="gradation large_font">2. 通知する時間を設定</a></h3>
 
-                <input type="time" id="notification_time" name="notification_time">
+                <input type="time" id="notification_time" name="notification_time" class="large_font">
 
             </div>
         </div><br>
