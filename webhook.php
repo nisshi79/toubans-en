@@ -187,22 +187,24 @@ JSON;
                 {
                     "type" : "text",
                     "text" : "Toubans!へようこそ！\\nこのサービスは、次の様な当番通知を簡単に設定することができます。"
-                }
+                },
 JSON;
                 $example= <<<JSON
                 {
                     "type" : "text",
                     "text" : "(1回目の通知)\\n\\n今日の当番のお知らせです。\\nお茶当番：田中さん\\nです。よろしくお願いします。"
-                }
+                },
 JSON;
                 $example2=<<<JSON
                 {
                     "type" : "text",
                     "text" : "(2回目の通知)\\n\\n今日の当番のお知らせです。\\nお茶当番：佐藤さん\\nです。よろしくお願いします。"
-                }
+                },
 JSON;
 
                 $introduction2=<<<JSON
+                ,
+                 
                 {
                     "type" : "text",
                     "text" : "上のメニューから「初期設定／設定変更」をタップして、初期設定を開始してください。\\nメニューは、「メニュー」とメッセージを送ることで、いつでも呼び出すことができます。"
@@ -216,10 +218,10 @@ JSON;
             {
                 "replyToken":"{$event->getReplyToken()}",
                 "messages":[
-                $introduction,
-                $example,
-                $example2,
-                $flexData,
+                $introduction
+                $example
+                $example2
+                $flexData
                 $introduction2
                 ]
             }
