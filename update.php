@@ -93,8 +93,8 @@ foreach ($inputs['members_list'] as $members_list){
 <body>
 <div class="screen_center">
     <div class="inner">
-        <h1><a>Complete!</a></h1>
-        <a>おめでとうございます！設定を変更しました！右上の×ボタンから、この画面を閉じて下さい。</a>
+        <h1><a class="gradation big_font">Complete!</a></h1>
+        <a class="large_font">おめでとうございます！設定を変更しました！右上の×ボタンから、この画面を閉じて下さい。</a>
     </div>
 </div>
 
