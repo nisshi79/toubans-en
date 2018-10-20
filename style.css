@@ -223,8 +223,8 @@ input[type="checkbox"].checkbox:checked + label, input[type="radio"]:checked + l
     padding-left: 5px;
     padding-right: 5px;
     cursor: pointer;
-    color: white;
-    border: 2px solid white;
+    color: var(--blackBlue);
+    border: 2px solid var(--blackBlue);
     /*border-left: 2px solid #EE795D;
     border-right: 2px solid #C769A3;*/
     border-radius: 7px;
