@@ -15,8 +15,11 @@ $(function () {
     $(".text_area").css("lineHeight","20px");//init*/
 
 
+    const isIOS = /iP(hone|(o|a)d)/.test(navigator.userAgent)
 
-
+    if(isIOS){
+        $('.alert-for-ios').fadeIn();
+    }
 
     $('.notification_dsoW').hide();
     $('.notification_doM').hide();

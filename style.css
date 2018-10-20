@@ -338,3 +338,6 @@ button a{
 .pulldownmenu{
     max-width: 100%;
 }
+.alert-for-ios{
+    display: none;
+}
