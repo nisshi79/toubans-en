@@ -187,19 +187,26 @@ JSON;
                 {
                     "type" : "text",
                     "text" : "Toubans!へようこそ！\\nこのサービスは、次の様な当番通知を簡単に設定することができます。"
-                },
+                }
 JSON;
                 $example= <<<JSON
                 {
-                    "type":"text",
-                    "text":"今日の当番のお知らせです。\\nお茶当番：田中さん\\nです。よろしくお願いします。
-                },
+                    "type" : "text",
+                    "text" : "(1回目の通知)\\n\\n今日の当番のお知らせです。\\nお茶当番：田中さん\\nです。よろしくお願いします。"
+                }
 JSON;
+                $example2=<<<JSON
+                {
+                    "type" : "text",
+                    "text" : "(2回目の通知)\\n\\n今日の当番のお知らせです。\\nお茶当番：佐藤さん\\nです。よろしくお願いします。"
+                }
+JSON;
+
                 $introduction2=<<<JSON
                 {
-                    "type":"text",
-                    "text":"下のメニューから「初期設定／設定変更」をタップして、初期設定を開始してください。メニューは、「メニュー」とメッセージを送ることで、いつでも呼び出すことができます。"
-                },
+                    "type" : "text",
+                    "text" : "上のメニューから「初期設定／設定変更」をタップして、初期設定を開始してください。\\nメニューは、「メニュー」とメッセージを送ることで、いつでも呼び出すことができます。"
+                }
 JSON;
 
 
@@ -209,14 +216,15 @@ JSON;
             {
                 "replyToken":"{$event->getReplyToken()}",
                 "messages":[
-                $introduction
-                $example
+                $introduction,
+                $example,
+                $example2,
+                $flexData,
                 $introduction2
-                    $flexData
                 ]
             }
 JSON;
-            /*error_log($response);*/
+            error_log($response);
             // LINE BOT API へのリクエストを作成して実行
             $curl = curl_init("https://api.line.me/v2/bot/message/reply");
             curl_setopt($curl, CURLOPT_CUSTOMREQUEST, 'POST');
