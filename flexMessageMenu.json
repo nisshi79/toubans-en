@@ -61,6 +61,16 @@
         }
       },
       {
+        "type": "button",
+        "style": "primary",
+        "height": "sm",
+        "action": {
+          "type": "uri",
+          "label": "使い方",
+          "uri": "line://app/1603349366-knKbl8JJ"
+        }
+      },
+      {
         "type": "spacer",
         "size": "sm"
       }
