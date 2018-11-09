@@ -1,4 +1,5 @@
 window.onload = function (data) {
+    $('.add_touban').attr('href', 'mainForm.php');
     if (navigator.userAgent.indexOf("Line") !== -1) {
         liff.init(function (data) {
             initializeApp(data);
