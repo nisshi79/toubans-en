@@ -12,8 +12,7 @@ require_once ('Role.php');
 require_once ('Member.php');
 $inputs = filter_input_array(INPUT_POST);
 use Carbon\Carbon;
-$table = \Model\Table::where('group_id', $inputs['group_id'])
-    ->first();
+$table = \Model\Table::find($inputs['table_id']);
 
 //Pre-Processing
 switch ($inputs['notification_span']){
@@ -94,7 +93,7 @@ foreach ($inputs['members_list'] as $members_list){
 <div class="screen_center">
     <div class="inner">
         <h1><a class="gradation big_font">Complete!</a></h1>
-        <a class="large_font">おめでとうございます！設定を変更しました！右上の×ボタンから、この画面を閉じて下さい。</a>
+        <a class="large_font">おめでとうございます！設定を変更しました！<br>あとは通知を待つだけでOKです！<br>右上の×ボタンから、この画面を閉じて下さい。</a>
     </div>
 </div>
 

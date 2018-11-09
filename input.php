@@ -91,7 +91,7 @@ foreach ($inputs['members_list'] as $members_list){
         <div class="screen_center">
             <div class="inner">
                 <h1 class="bottom_margin"><a class="gradation big_font">Complete!</a></h1>
-                <a class="bottom_margin large_font">おめでとうございます！これで設定は完了です！右上の×ボタンから、この画面を閉じて下さい。</a>
+                <a class="bottom_margin large_font">おめでとうございます！これで設定は完了です！<br>あとは通知を待つだけでOKです！<br>右上の×ボタンから、この画面を閉じて下さい。</a>
             </div>
         </div>
 

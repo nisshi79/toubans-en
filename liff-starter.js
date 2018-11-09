@@ -1,10 +1,115 @@
 window.onload = function (data) {
-    liff.init(function (data) {
-        initializeApp(data);
-    });
-    console.log('su');
+    if (navigator.userAgent.indexOf("Line") !== -1) {
+        liff.init(function (data) {
+            initializeApp(data);
+        });
+    }
+    else {
+        function isset( data ){
+            return ( typeof( data ) != 'undefined' );
+        }
 
 
+
+        fetch('checkId.php?groupId=test')
+
+            .then(response => {
+                return response.json(); // ReadableStream -> String への変換
+            })
+            .then(json => {
+                console.log(json);
+                fillInputs(json);
+                // <form name = "tableInfo" method = "POST" action="input.php">
+                // ↑これを、
+                // <form name = "tableInfo" method = "POST" action="update.php">
+                // ↑こうする
+                $('form[name="tableInfo"]').attr('action', 'update.php');
+                var titleText = $('#title').text();
+                titleText = titleText.replace("初期設定", "設定変更");
+                $('#title').text(titleText);
+            });
+        function fillInputs(json) {
+            if(json.table.top_textarea=='明日の当番のお知らせです' || json.table.top_textarea=='今日の当番のお知らせです'){
+                $('#top_textarea_select').val(json.table.top_textarea);
+
+            }else {
+                $('#lower_textarea_select').val('挨拶文を自分で入力する）');
+                $('#top_textarea').val(json.table.top_textarea);
+                $('#top_textarea').show();
+            }
+
+            if(json.table.lower_textarea=='確認しておいてください。'　|| json.table.lower_textarea=='よろしくお願いします。'){
+                $('#lower_textarea_select').val(json.table.lower_textarea);
+            }else {
+                $('#lower_textarea_select').val('（締めの文を自分で入力する）');
+                $('#lower_textarea').val(json.table.lower_textarea);
+                $('#lower_textarea').show();
+            }
+
+            /*$('#top_textarea').val(json.table.top_textarea);
+            $('#lower_textarea').val(json.table.lower_textarea);*/
+            $('#notification_time').val(json.table.notification_time);
+
+
+
+            for (let i = 0; i < json.role.length; i++) {
+                $('#roles_list_' + i).val(json.role[i].role);
+                if (i === json.role.length - 1) break;
+                $('#roles_list_add').click();
+            }
+
+            for (let i = 0; i < json.member.length; i++) {
+                $('#members_list_' + i).val(json.member[i].member);
+                if (i === json.member.length - 1) break;
+                $('#members_list_add').click();
+            }
+            switch (json.table.notification_span) {
+                case 0: //毎日
+                    $('#notification_span').val(0);
+                    $('.notification_dsoW').fadeIn();
+                    for (let i = 0; i < 7; i++) {
+                        var bool = $.inArray(String(i), json.table.notification_date.split(','));
+                        if ($.inArray(String(i), json.table.notification_date.split(',')) >= 0) {
+                            if(i==0)$('#checkbox_sunday').prop("checked", true);
+                            if(i==1)$('#checkbox_monday').prop("checked", true);
+                            if(i==2)$('#checkbox_tuesday').prop("checked", true);
+                            if(i==3)$('#checkbox_wednesday').prop("checked", true);
+                            if(i==4)$('#checkbox_thursday').prop("checked", true);
+                            if(i==5)$('#checkbox_friday').prop("checked", true);
+                            if(i==6)$('#checkbox_saturday').prop("checked", true);
+                        }
+                    }
+
+                    break;
+
+                case 1: //月
+                    $('#notification_span').val(1);
+                    $('.notification_doM').fadeIn();
+                    for (let i = 1; i <= 31; i++) {
+                        if (i == json.table.notification_date) $('#notification_doM').val(i);
+                    }
+                    break;
+
+                case 2: //週
+                    $('#notification_span').val(2);
+                    $('.notification_dsoW').fadeIn();
+                    for (let i = 0; i < 7; i++) {
+
+                        if (json.table.notification_date == i){
+                            if(i==0)$('#radio_sunday').prop("checked", true);
+                            if(i==1)$('#radio_monday').prop("checked", true);
+                            if(i==2)$('#radio_tuesday').prop("checked", true);
+                            if(i==3)$('#radio_wednesday').prop("checked", true);
+                            if(i==4)$('#radio_thursday').prop("checked", true);
+                            if(i==5)$('#radio_friday').prop("checked", true);
+                            if(i==6)$('#radio_saturday').prop("checked", true);
+                        }
+                    }
+                default:
+                    break;
+            }
+        }
+    }
 };
 
 function initializeApp(data) {

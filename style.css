@@ -335,9 +335,11 @@ button a{
 .xlarge_font{
     font-size: x-large;
 }
+
 .pulldownmenu{
     max-width: 100%;
 }
+
 .alert-for-ios{
     display: none;
 }

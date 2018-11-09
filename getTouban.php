@@ -1,9 +1,9 @@
 <?php
 /**
- * Created by PhpStorm.
+ * Created by IntelliJ IDEA.
  * User: yui
- * Date: 2018/09/10
- * Time: 17:31
+ * Date: 2018/11/06
+ * Time: 21:58
  */
 require_once ('vendor/autoload.php');
 require_once ('bootstrap.php');
@@ -11,9 +11,8 @@ require_once ('Table.php');
 require_once ('Role.php');
 require_once ('Member.php');
 
-$groupId = filter_input(INPUT_GET, 'groupId');
-$foundTouban = \Model\Table::where('group_id', $groupId)
-    ->first();
+$tableId = filter_input(INPUT_GET, 'tableId');
+$foundTouban = \Model\Table::find($tableId);
 
 header('Content-Type: application/json');
 

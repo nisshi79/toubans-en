@@ -17,7 +17,7 @@
 <a class="alert-for-ios large_font">iOS(iPhone,iPad,iPod)をご利用の方へ：<br>LINEが最新バージョンにアップデートされているか必ず確認してください。<br>LINEのバージョンが最新ではない場合、このサービスは正しく動作しません。</a>
 <form name = "tableInfo" method = "POST" action="input.php">
     <input type="hidden" id="group_id" value="" name="group_id">
-
+    <div id="table_id_container"></div>
     <h2><a class="gradation xlarge_font">1. まず、通知内容を設定します。</a></h2>
 
     <!-- ▼LINE風ここから -->
@@ -263,7 +263,7 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.12.0/validate.min.js"></script>
 <script src="autosize.js"></script>
 <script src="script.js"></script>
-<script src="liff-starter.js"></script>
+<!--<script src="liff-starter.js"></script>-->
 <script src="modaal.min.js"></script>
 <script src="jquery.add-input-area.min.js"></script>
 </body>
