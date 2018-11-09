@@ -74,8 +74,8 @@ function send($table){
 function generate($table){
     $roles = $table->role;
     $members = $table->member;
-    var_dump($roles);
-    var_dump($members);
+    /*var_dump($roles);
+    var_dump($members);*/
     $generated_message ='';
 
     $number_of_states = max(count($roles),count($members));
@@ -88,8 +88,8 @@ function generate($table){
         for($i = 0; $i < $pairs_num; $i++){
             $memberId = ($i+$currentState) % $number_of_states;
             if($memberId<0)$memberId += $number_of_states;
-            echo $roles[$i]['role'];
-            echo $members[$memberId];
+            /*echo $roles[$i]['role'];
+            echo $members[$memberId];*/
 
             $generated_message .= $roles[$i]['role'].':'.$members[$memberId]['member']."\n";
         }
@@ -117,8 +117,8 @@ function isTimeReady($startTime){
 function isGreater($time1, $time2){
     $time2Buf = new Carbon($time2,'Asia/Tokyo');
     $time1Buf = new Carbon($time1,'Asia/Tokyo');
-    echo 'time1Buf is'.$time1Buf.'this';
-    echo 'time2Buf is'.$time2Buf.'this';
+   /* echo 'time1Buf is'.$time1Buf.'this';
+    echo 'time2Buf is'.$time2Buf.'this';*/
     return $time1Buf->lt($time2Buf);
 }
 function isStop_span($table ,$dt){
@@ -133,5 +133,5 @@ function isStop_span($table ,$dt){
             if ($dt->gte($fromDate) && $dt->lte($toDate)) $isStop_span = true;
         }
     }
-    echo $isStop_span;
+    return $isStop_span;
 }

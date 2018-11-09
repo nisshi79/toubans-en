@@ -18,15 +18,22 @@ $foundToubans = \Model\Table::where('group_id', $groupId)
 
 header('Content-Type: application/json');
 
-$jsonBuf = array();
 
-foreach($foundToubans as $foundTouban){
-    $toubanBuf = array(
-        'table' => $foundTouban,
-        'role' => $foundTouban->role,
-        'member' => $foundTouban->member
-    );
-    array_push($jsonBuf, $toubanBuf);
+if(!isset($foundToubans)){
+    echo json_encode('no');
+}else{
+    $jsonBuf = array();
+
+    foreach($foundToubans as $foundTouban){
+        $toubanBuf = array(
+            'table' => $foundTouban,
+            'role' => $foundTouban->role,
+            'member' => $foundTouban->member
+        );
+        array_push($jsonBuf, $toubanBuf);
+    }
+
+    echo json_encode($jsonBuf);
 }
 
-echo json_encode($jsonBuf);
+
