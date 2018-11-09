@@ -7,8 +7,8 @@
  */
 
 require_once 'vendor/autoload.php';
-$dotenv = new Dotenv\Dotenv(__DIR__);
-$dotenv->load();
+/*$dotenv = new Dotenv\Dotenv(__DIR__);
+$dotenv->load();*/
 use Illuminate\Database\Capsule\Manager as Capsule;
 
 $DATABASE_URL = parse_url(getenv("HEROKU_POSTGRESQL_PUCE_URL"));
