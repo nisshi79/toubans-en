@@ -1,41 +1,27 @@
-ul{
-    counter-reset:number; /*数字をリセット*/
-    list-style-type: none!important; /*数字を一旦消す*/
-    padding:0.5em;
-    border: dashed 1px gray;
+:root {
+    --blackBlue: #35445A;
+    --afGradient: -webkit-linear-gradient(0deg, #A949D8, #DD4D61);
+    --cream: #E8EDF1;
+    --buttonShadow: -2px 2px 50px -10px #000000;
+    --baloonShadow: -2px 2px 38px -9px #000000;
 }
 
-ul li{
+ul {
     position: relative;
-    line-height: 1.5em;
-    padding: 0.5em 0.5em 0.5em 30px;
+    padding: 0;
+    list-style-type: none;
+    margin-bottom: 4em;
 }
-
-ul li:before{
-    /* 以下数字をつける */
-    position: absolute;
-    counter-increment: number;
-    content: counter(number);
-    /*数字のデザイン変える*/
-    display:inline-block;
-    background: -webkit-linear-gradient(0deg, #A949D8, #DD4D61);
-    color: white;
-    font-family: 'Avenir','Arial Black','Arial',sans-serif;
-    font-weight: bold;
-    font-size: xx-large;
-    left: 0;
-    width: 50px;
-    height: 50px;
-    line-height: 25px;
-    text-align: center;
-    /*以下上下中央寄せのため*/
-    top: 50%;
-    -moz-transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
+ul li {
+    padding: 0.5em;
+    margin-bottom: 3px;
+    line-height: 1.5;
+    border-radius: 15px;
+    border-left: var(--afGradient);
+    background: var(--afGradient);
+    color:var(--cream);
+    font-size: large;
 }
-li{
-    font-size: x-large;
+ul li a{
+    color:white;
 }

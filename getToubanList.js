@@ -13,7 +13,7 @@ window.onload = function (data) {
             .then(json => {
                 json.forEach(function (touban) {
                     $('.toubanList')
-                        .append(`<li><a href="mainForm.php?groupId=test&tableId=${touban.table.id}">`+touban.role[0].role+'</a></li>');
+                        .append(`<li><a href="mainForm.php?groupId=test&tableId=${touban.table.id}">`+touban.role[0].role+' の設定を変更</a></li>');
                 });
             });
         $('.add_touban').attr('href', 'mainForm.php?groupId=test');
@@ -42,7 +42,7 @@ function initializeApp(data) {
         .then(json => {
             json.forEach(function (touban) {
                 $('.toubanList')
-                    .append(`<li><a href="mainForm.php?groupId=${lineId}&tableId=${touban.table.id}">`+touban.role[0].role+'</a></li>');
+                    .append(`<li><a href="mainForm.php?groupId=${lineId}&tableId=${touban.table.id}">`+touban.role[0].role+' の設定を変更</a></li>');
             });
         })
 
