@@ -5,7 +5,6 @@ window.onload = function (data) {
         });
     }
     else {
-
         fetch('getToubanList.php?groupId=test')
             .then(response => {
                 return response.json(); // ReadableStream -> String への変換
@@ -13,10 +12,29 @@ window.onload = function (data) {
             .then(json => {
                 json.forEach(function (touban) {
                     $('.toubanList')
-                        .append(`<li><a href="mainForm.php?groupId=test&tableId=${touban.table.id}">`+touban.role[0].role+' の設定を変更</a></li>');
+                        .append(`<li><a class="black_font large_font">${touban.role[0].role}: </a><a class="btn" href="mainForm.php?groupId=test&tableId=${touban.table.id}">設定変更</a> <a id="${touban.table.id}" class="btn touban_del" href="javascript:void(0)">削除</a></li>`);
+                    $('.touban_del').off('click');
+                    $('.touban_del').on('click', function () {
+
+                        if(window.confirm('本当によろしいですか？')){
+                            fetch('delTouban.php?toubanId='+$(this).attr('id')+'&groupId=test')
+                                .then(response => {
+                                    return response.json(); // ReadableStream -> String への変換
+                                })
+                                .then(json => {
+                                    $('.toubanList').empty();
+                                    json.forEach(function (touban) {
+                                        $('.toubanList')
+                                            .append(`<li><a class="black_font large_font">${touban.role[0].role}: </a><a class="btn" href="mainForm.php?groupId=test&tableId=${touban.table.id}">設定変更</a> <a id="${touban.table.id}" class="btn touban_del" href="javascript:void(0)">削除</a></li>`);
+                                    });
+                                });;
+                        }
+                    });
                 });
             });
         $('.add_touban').attr('href', 'mainForm.php?groupId=test');
+
+
 
     }
 };
@@ -44,6 +62,6 @@ function initializeApp(data) {
                 $('.toubanList')
                     .append(`<li><a href="mainForm.php?groupId=${lineId}&tableId=${touban.table.id}">`+touban.role[0].role+' の設定を変更</a></li>');
             });
-        })
+        });
 
 }

@@ -9,10 +9,17 @@
 ul {
     position: relative;
     padding: 0;
-    list-style-type: none;
+    list-style-type: decimal;
     margin-bottom: 4em;
 }
-ul li {
+ul li{
+    height: auto;
+    margin: 20px;
+}
+li:before{
+    font-size: x-large;
+}
+.btn{
     padding: 0.5em;
     margin-bottom: 3px;
     line-height: 1.5;

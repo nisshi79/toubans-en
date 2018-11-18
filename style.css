@@ -344,3 +344,10 @@ button a{
 .alert-for-ios{
     display: none;
 }
+
+.black_font {
+    color: #1d2124;
+}
+.add_touban{
+    text-align: center;
+}

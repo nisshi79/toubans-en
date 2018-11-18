@@ -29,11 +29,10 @@
         <div class="form line__contents relax_container">
             <div class="line__left">
                 <figure>
-                    <img class="shadow" src="pic/icon.png" />
+                    <img class="shadow" src="pic/icon.png"/>
                 </figure>
                 <div class="line__left-text">
                     <div class="name">当番お知らせBot</div>
-
                     <div class="text shadow">
                         <h3><label for="top_textarea" class="gradation large_font">1. 挨拶文（導入文）を入力</label></h3>
                         <select name="top_textarea_select" id="top_textarea_select" class="large_font pulldownmenu">
