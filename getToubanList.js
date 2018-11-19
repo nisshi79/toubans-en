@@ -13,9 +13,8 @@ window.onload = function (data) {
                 json.forEach(function (touban) {
                     $('.toubanList')
                         .append(`<li><a class="black_font large_font">${touban.role[0].role}: </a><a class="btn" href="mainForm.php?groupId=test&tableId=${touban.table.id}">設定変更</a> <a id="${touban.table.id}" class="btn touban_del" href="javascript:void(0)">削除</a></li>`);
-                    $('.touban_del').off('click');
-                    $('.touban_del').on('click', function () {
-
+                    $('.toubanList').off('click');
+                    $('.toubanList').on('click','li .touban_del', function () {
                         if(window.confirm('本当によろしいですか？')){
                             fetch('delTouban.php?toubanId='+$(this).attr('id')+'&groupId=test')
                                 .then(response => {
@@ -61,9 +60,8 @@ function initializeApp(data) {
             json.forEach(function (touban) {
                 $('.toubanList')
                     .append(`<li><a class="black_font large_font">${touban.role[0].role}: </a><a class="btn" href="mainForm.php?groupId=${lineId}&tableId=${touban.table.id}">設定変更</a> <a id="${touban.table.id}" class="btn touban_del" href="javascript:void(0)">削除</a></li>`);
-                $('.touban_del').off('click');
-                $('.touban_del').on('click', function () {
-
+                $('.toubanList').off('click');
+                $('.toubanList').on('click','li .touban_del', function () {
                     if(window.confirm('本当によろしいですか？')){
                         fetch('delTouban.php?toubanId='+$(this).attr('id')+'&groupId='+lineId)
                             .then(response => {

@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="efe43d86-ccff-4ec1-957d-70c74f49e1e3" name="Default" comment="delTouban">
+    <list default="true" id="efe43d86-ccff-4ec1-957d-70c74f49e1e3" name="Default" comment="userAgent">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootstrap.php" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/getToubanList.js" beforeDir="false" afterPath="$PROJECT_DIR$/getToubanList.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -104,9 +105,9 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="267" />
-          <entry key="JavaScript" value="849" />
+          <entry key="JavaScript" value="962" />
           <entry key="PHP" value="611" />
-          <entry key="PLAIN_TEXT" value="67" />
+          <entry key="PLAIN_TEXT" value="77" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -133,9 +134,9 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="267" />
-          <entry key="js" value="849" />
+          <entry key="js" value="962" />
           <entry key="php" value="611" />
-          <entry key="txt" value="67" />
+          <entry key="txt" value="77" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -186,8 +187,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/getToubanList.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1968">
-              <caret line="82" column="4" selection-start-line="82" selection-start-column="4" selection-end-line="82" selection-end-column="4" />
+            <state relative-caret-position="95">
+              <caret line="63" column="75" selection-start-line="63" selection-start-column="75" selection-end-line="63" selection-end-column="75" />
             </state>
           </provider>
         </entry>
@@ -195,8 +196,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bootstrap.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="8" column="20" lean-forward="true" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+            <state relative-caret-position="216">
+              <caret line="9" column="11" lean-forward="true" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
               <folding>
                 <element signature="e#6#83#0#PHP" expanded="true" />
               </folding>
@@ -455,7 +456,7 @@
     <property name="SearchEverywhereHistoryKey" value="boo&#9;FILE&#9;file:///Users/yui/line-liff-starter/bootstrap.php&#10;inde&#9;FILE&#9;file:///Users/yui/line-liff-starter/index.php&#10;get&#9;FILE&#9;file:///Users/yui/line-liff-starter/getToubanList.php&#10;upda&#9;FILE&#9;file:///Users/yui/line-liff-starter/update.php&#10;inpu&#9;FILE&#9;file:///Users/yui/line-liff-starter/input.php&#10;che&#9;FILE&#9;file:///Users/yui/line-liff-starter/checkId.php&#10;bo&#9;FILE&#9;file:///Users/yui/line-liff-starter/bootstrap.php&#10;mainfo&#9;FILE&#9;file:///Users/yui/line-liff-starter/mainForm.php&#10;in&#9;FILE&#9;file:///Users/yui/line-liff-starter/index.php&#10;send&#9;FILE&#9;file:///Users/yui/line-liff-starter/send.php&#10;gettou&#9;FILE&#9;file:///Users/yui/line-liff-starter/getToubanList.php&#10;dotenv&#9;null&#9;null&#10;w&#9;FILE&#9;file:///Users/yui/line-liff-starter/webhook.php&#10;css&#9;FILE&#9;file:///Users/yui/line-liff-starter/style.css&#10;m&#9;FILE&#9;file:///Users/yui/line-liff-starter/mainForm.php&#10;inp&#9;FILE&#9;file:///Users/yui/line-liff-starter/input.php&#10;up&#9;FILE&#9;file:///Users/yui/line-liff-starter/update.php&#10;scr&#9;FILE&#9;file:///Users/yui/line-liff-starter/script.js&#10;main&#9;FILE&#9;file:///Users/yui/line-liff-starter/mainForm.php&#10;liff&#9;FILE&#9;file:///Users/yui/line-liff-starter/liff-starter.js&#10;ge&#9;FILE&#9;file:///Users/yui/line-liff-starter/getToubanList.js&#10;chj&#9;FILE&#9;file:///Users/yui/line-liff-starter/checkId.php&#10;env&#9;FILE&#9;file:///Users/yui/line-liff-starter/.env&#10;boot&#9;FILE&#9;file:///Users/yui/line-liff-starter/bootstrap.php&#10;upda\&#9;FILE&#9;file:///Users/yui/line-liff-starter/update.php&#10;we&#9;FILE&#9;file:///Users/yui/line-liff-starter/webhook.php&#10;json&#9;FILE&#9;file:///Users/yui/line-liff-starter/flexMessageMenu.json&#10;add&#9;FILE&#9;file:///Users/yui/line-liff-starter/jquery.add-input-area.min.js&#10;js&#9;FILE&#9;file:///Users/yui/line-liff-starter/script.js&#10;en&#9;FILE&#9;file:///Users/yui/line-liff-starter/.env&#10;style&#9;FILE&#9;file:///Users/yui/line-liff-starter/chat_line_css/style.css&#10;s&#9;FILE&#9;file:///Users/yui/line-liff-starter/style.css&#10;sty&#9;FILE&#9;file:///Users/yui/line-liff-starter/style.css&#10;min&#9;FILE&#9;file:///Users/yui/line-liff-starter/jquery.add-input-area.min.js&#10;html&#9;FILE&#9;file:///Users/yui/line-liff-starter/index.html&#10;se&#9;FILE&#9;file:///Users/yui/line-liff-starter/send.php&#10;date&#9;FILE&#9;file:///Users/yui/line-liff-starter/datePicker.php&#10;sen&#9;FILE&#9;file:///Users/yui/line-liff-starter/send.php&#10;pick&#9;FILE&#9;file:///Users/yui/line-liff-starter/datePicker.php&#10;Inpu&#9;FILE&#9;file:///Users/yui/line-liff-starter/stopSpanInput.php&#10;sto&#9;FILE&#9;file:///Users/yui/line-liff-starter/stopSpanInput.php&#10;tes&#9;FILE&#9;file:///Users/yui/line-liff-starter/test.php&#10;stop&#9;FILE&#9;file:///Users/yui/line-liff-starter/stopSpanInput.php&#10;ch&#9;FILE&#9;file:///Users/yui/line-liff-starter/checkId.php&#10;ja&#9;FILE&#9;file:///Users/yui/line-liff-starter/dist/js/i18n/datepicker.ja.js&#10;dateP&#9;FILE&#9;file:///Users/yui/line-liff-starter/datePicker.php&#10;datePick&#9;FILE&#9;file:///Users/yui/line-liff-starter/datePicker.php&#10;li&#9;FILE&#9;file:///Users/yui/line-liff-starter/liff-starter-datePicker.js&#10;lif&#9;FILE&#9;file:///Users/yui/line-liff-starter/liff-starter.js" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542527590664" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542633588888" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="PostgreSQL" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -619,14 +620,7 @@
       <workItem from="1541600800143" duration="827000" />
       <workItem from="1541662807680" duration="2779000" />
       <workItem from="1541680605567" duration="1778000" />
-      <workItem from="1541721538082" duration="34903000" />
-    </task>
-    <task id="LOCAL-00136" summary="bug fix">
-      <created>1538919838408</created>
-      <option name="number" value="00136" />
-      <option name="presentableId" value="LOCAL-00136" />
-      <option name="project" value="LOCAL" />
-      <updated>1538919838408</updated>
+      <workItem from="1541721538082" duration="38156000" />
     </task>
     <task id="LOCAL-00137" summary="bug fix">
       <created>1538920090109</created>
@@ -964,11 +958,18 @@
       <option name="project" value="LOCAL" />
       <updated>1542526985677</updated>
     </task>
-    <option name="localTasksCounter" value="185" />
+    <task id="LOCAL-00185" summary="userAgent">
+      <created>1542529132322</created>
+      <option name="number" value="00185" />
+      <option name="presentableId" value="LOCAL-00185" />
+      <option name="project" value="LOCAL" />
+      <updated>1542529132322</updated>
+    </task>
+    <option name="localTasksCounter" value="186" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="644034000" />
+    <option name="totallyTimeSpent" value="647287000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1026,7 +1027,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="carbon bug fix" />
     <MESSAGE value="bug fix" />
     <MESSAGE value="baloon color change" />
     <MESSAGE value="all done!" />
@@ -1051,7 +1051,8 @@
     <MESSAGE value="send" />
     <MESSAGE value="font for ios" />
     <MESSAGE value="delTouban" />
-    <option name="LAST_COMMIT_MESSAGE" value="delTouban" />
+    <MESSAGE value="userAgent" />
+    <option name="LAST_COMMIT_MESSAGE" value="userAgent" />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
@@ -1367,8 +1368,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/bootstrap.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="8" column="20" lean-forward="true" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+        <state relative-caret-position="216">
+          <caret line="9" column="11" lean-forward="true" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
           <folding>
             <element signature="e#6#83#0#PHP" expanded="true" />
           </folding>
@@ -1377,8 +1378,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/getToubanList.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1968">
-          <caret line="82" column="4" selection-start-line="82" selection-start-column="4" selection-end-line="82" selection-end-column="4" />
+        <state relative-caret-position="95">
+          <caret line="63" column="75" selection-start-line="63" selection-start-column="75" selection-end-line="63" selection-end-column="75" />
         </state>
       </provider>
     </entry>
