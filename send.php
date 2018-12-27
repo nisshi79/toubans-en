@@ -127,10 +127,12 @@ function isStop_span($table ,$dt){
         $stop_spanArr = explode(',', $table['stop_span']);
 
         foreach ($stop_spanArr as $stop_span) {
-            $edgeDates = explode(' - ', $stop_span);
-            $fromDate = Carbon::createFromFormat('Y/m/d H:i:s', $edgeDates[0] . ' ' . '00:00:00');
-            $toDate = Carbon::createFromFormat('Y/m/d H:i:s', $edgeDates[1] . ' ' . '23:59:59');
-            if ($dt->gte($fromDate) && $dt->lte($toDate)) $isStop_span = true;
+            if(isset($stop_span)){
+                $edgeDates = explode(' - ', $stop_span);
+                $fromDate = Carbon::createFromFormat('Y/m/d H:i:s', $edgeDates[0] . ' ' . '00:00:00');
+                $toDate = Carbon::createFromFormat('Y/m/d H:i:s', $edgeDates[1] . ' ' . '23:59:59');
+                if ($dt->gte($fromDate) && $dt->lte($toDate)) $isStop_span = true;
+            }
         }
     }
     return $isStop_span;
