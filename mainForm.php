@@ -210,7 +210,7 @@
                     </select><br>
                     <a>
                         *If a date not in that month is specified, it will automatically be the end of the month.<br>
-                        e.g. If you select 31, the notification will be made on 30 in June.例)31日を指定した場合、6月は30日に通知が行われる
+                        e.g. If you select 31, the notification will be made on 30 in June.
                     </a>
                 </div>
 
