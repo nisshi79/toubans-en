@@ -17,11 +17,11 @@
     <body>
 
 
-    <h1 class="center margin_top"><a id="title" class="gradation">グループ内の当番一覧</a></h1>
+    <h1 class="center margin_top"><a id="title" class="gradation">Duties in this thread</a></h1>
 
 
     <ul class="toubanList"></ul>
-        <a class="add_touban large_font btn nowrap margin_top">当番を追加</a><!-- .(id)_del -->
+        <a class="add_touban large_font btn nowrap margin_top">Add Duty</a><!-- .(id)_del -->
 
         <!--scripts-->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
