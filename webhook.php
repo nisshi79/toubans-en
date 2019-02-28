@@ -64,7 +64,7 @@ foreach ($events as $event) {
     }*/
     function sendConfirmMessage($replyToken,$stopDate){
         // 「はい」ボタン
-        $yes_post = new  \LINE\LINEBot\TemplateActionBuilder\PostbackTemplateActionBuilder("はい", "ans=y&stop={$stopDate}",'はい');
+        $yes_post = new \LINE\LINEBot\TemplateActionBuilder\PostbackTemplateActionBuilder("はい", "ans=y&stop={$stopDate}",'はい');
         // 「いいえ」ボタン
         $no_post = new \LINE\LINEBot\TemplateActionBuilder\PostbackTemplateActionBuilder("いいえ", "ans=n",'いいえ');
         // Confirmテンプレートを作る
@@ -126,7 +126,7 @@ foreach ($events as $event) {
 
         $httpClient = new \LINE\LINEBot\HTTPClient\CurlHTTPClient(getenv('TOUBAN_BOT_CHANNEL_ACCESS_TOKEN'));
         $bot = new \LINE\LINEBot($httpClient, ['channelSecret' => getenv('TOUBAN_BOT_CHANNEL_SECRET')]);
-        $message = new \LINE\LINEBot\MessageBuilder\TextMessageBuilder("{$stopDateStr}は既に通知が停止されています。");
+        $message = new \LINE\LINEBot\MessageBuilder\TextMessageBuilder("{$stopDateStr}'s notification is already stopped.");
         $res = $bot->replyMessage($replyToken, $message);
     }
 
@@ -164,7 +164,7 @@ foreach ($events as $event) {
         $sendFlag =false;
 
         if($event instanceof \LINE\LINEBot\Event\MessageEvent\TextMessage){
-            if($event->getText() == 'メニュー') $sendFlag=true;
+            if($event->getText() == 'menu') $sendFlag=true;
         }
         if($event instanceof \LINE\LINEBot\Event\JoinEvent)$sendFlag=true;
 
@@ -173,7 +173,7 @@ foreach ($events as $event) {
             $flexData= <<< JSON
             {
                 "type" : "flex",
-                "altText": "Toubans! メニュー",
+                "altText": "Toubans! Menu",
                 "contents" : $flexContents
             }
 JSON;
@@ -186,19 +186,19 @@ JSON;
                 $introduction= <<<JSON
                 {
                     "type" : "text",
-                    "text" : "Toubans!へようこそ！\\nこのサービスは、次の様な当番通知を簡単に設定することができます。"
+                    "text" : "Welcome to Toubans!\\nThis service allows you to receive the following type of “duty notifications” with a quick and simple setup."
                 },
 JSON;
                 $example= <<<JSON
                 {
                     "type" : "text",
-                    "text" : "(1回目の通知)\\n\\n今日の当番のお知らせです。\\nお茶当番：田中さん\\nです。よろしくお願いします。"
+                    "text" : "(1st notification)\\n\\nThis is a friendly reminder of today’s duty.\\n\\nCleaning duty: Ms. Jones"
                 },
 JSON;
                 $example2=<<<JSON
                 {
                     "type" : "text",
-                    "text" : "(2回目の通知)\\n\\n今日の当番のお知らせです。\\nお茶当番：佐藤さん\\nです。よろしくお願いします。"
+                    "text" : "(2nd notification)\\n\\nThis is a friendly reminder of today’s duty.\\n\nCleaning duty: Mary"
                 },
 JSON;
 
@@ -207,7 +207,7 @@ JSON;
                 
                 {
                     "type" : "text",
-                    "text" : "上のメニューから「初期設定／設定変更」をタップして、初期設定を開始してください。\\nメニューは、「メニュー」とメッセージを送ることで、いつでも呼び出すことができます。"
+                    "text" : "Please begin setup by pressing the “SETUP/CHANGES” button in the above menu.\\nYou can call up the menu any time by sending a message saying “MENU” to the chat room."
                 }
 JSON;
 

@@ -1,80 +1,71 @@
 {
   "type": "bubble",
-  "body": {
+  "direction": "ltr",
+  "header": {
     "type": "box",
     "layout": "vertical",
     "contents": [
       {
         "type": "text",
-        "text": "Toubans! メニュー",
+        "text": "Toubans! MENU",
+        "size": "xxl",
+        "align": "center",
         "weight": "bold",
-        "size": "xl"
+        "color": "#A44BA6"
+      },
+      {
+        "type": "button",
+        "action": {
+          "type": "uri",
+          "label": "SETUP/CHANGES",
+          "uri": "https://linecorp.com"
+        },
+        "color": "#BD67BF",
+        "margin": "sm",
+        "style": "primary"
+      },
+      {
+        "type": "button",
+        "action": {
+          "type": "uri",
+          "label": "STOP TODAY",
+          "uri": "https://linecorp.com"
+        },
+        "color": "#494949",
+        "margin": "sm",
+        "style": "primary"
+      },
+      {
+        "type": "button",
+        "action": {
+          "type": "uri",
+          "label": "STOP TOMORROW",
+          "uri": "https://linecorp.com"
+        },
+        "color": "#494949",
+        "margin": "sm",
+        "style": "primary"
+      },
+      {
+        "type": "button",
+        "action": {
+          "type": "uri",
+          "label": "STOP FOR A PERIOD",
+          "uri": "https://linecorp.com"
+        },
+        "margin": "sm",
+        "style": "secondary"
+      },
+      {
+        "type": "button",
+        "action": {
+          "type": "uri",
+          "label": "INSTRUCTION",
+          "uri": "https://linecorp.com"
+        },
+        "margin": "sm",
+        "style": "primary"
       }
     ]
-  },
-  "footer": {
-    "type": "box",
-    "layout": "vertical",
-    "spacing": "sm",
-    "contents": [
-      {
-        "type": "button",
-        "style": "primary",
-        "color": "#C32FBE",
-        "height": "sm",
-        "action": {
-          "type": "uri",
-          "label": "初期設定／設定変更",
-          "uri": "line://app/1603349366-7OnYqWOO"
-        }
-      },
-      {
-        "type": "button",
-        "style": "secondary",
-        "height": "sm",
-        "action":{
-          "type":"postback",
-          "label":"今日の通知を停止する",
-          "data":"stopdate=today",
-          "text":"今日の通知を停止する"
-        }
-      },
-      {
-        "type": "button",
-        "style": "secondary",
-        "height": "sm",
-        "action":{
-          "type":"postback",
-          "label":"明日の通知を停止する",
-          "data":"stopdate=tomorrow",
-          "text":"明日の通知を停止する"
-        }
-      },
-      {
-        "type": "button",
-        "style": "secondary",
-        "height": "sm",
-        "action": {
-          "type": "uri",
-          "label": "期間を指定して通知を停止",
-          "uri": "line://app/1603349366-Q2PRJE22"
-        }
-      },
-      {
-        "type": "button",
-        "style": "primary",
-        "height": "sm",
-        "action": {
-          "type": "uri",
-          "label": "使い方",
-          "uri": "line://app/1603349366-knKbl8JJ"
-        }
-      },
-      {
-        "type": "spacer",
-        "size": "sm"
-      }
-    ],
-    "flex": 0
   }
 }
