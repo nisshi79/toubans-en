@@ -1,113 +1,119 @@
-<head>
-    <meta http-equiv="Pragma" content="no-cache">
-    <meta http-equiv="Cache-Control" content="no-cache">
+<?php
+    session_start();
+    $timezone = $_SESSION['time'];
+?>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Pragma" content="no-cache">
+        <meta http-equiv="Cache-Control" content="no-cache">
 
-    <meta http-equiv="content-type" charset="utf-8">
+        <meta http-equiv="content-type" charset="utf-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Toubans! Preferences</title>
+        <title>Toubans! Preferences</title>
 
-    <link rel="stylesheet" href="style.css?<?php echo date('Ymd-Hi'); ?>" type="text/css">
-    <link rel="stylesheet" href="modaal.css" type="text/css">
-</head>
+        <link rel="stylesheet" href="style.css?<?php echo date('Ymd-Hi'); ?>" type="text/css">
+        <link rel="stylesheet" href="modaal.css" type="text/css">
+    </head>
 
-<body>
-<h1 class="center margin_top"><a id="title" class="gradation">Toubans! Preferences</a></h1>
-<a class="alert-for-ios large_font">To iOS (iPhone, iPad, iPod) users:<br>
-    Make sure that your LINE app has been updated to the latest version.<br>
-    This service doesn’t function properly if the LINE app version is not the latest.</a>
-<form name = "tableInfo" method = "POST" action="input.php">
-    <input type="hidden" id="group_id" value="" name="group_id">
-    <div id="table_id_container"></div>
-    <h2><a class="gradation xlarge_font">1. What to include in notifications: </a></h2>
+    <body>
+    <h1 class="center margin_top"><a id="title" class="gradation">Toubans! Preferences</a></h1>
+    <a class="alert-for-ios large_font">To iOS (iPhone, iPad, iPod) users:<br>
+        Make sure that your LINE app has been updated to the latest version.<br>
+        This service doesn’t function properly if the LINE app version is not the latest.</a>
+    <form name = "tableInfo" method = "POST" action="input.php">
+        <input type="hidden" id="group_id" value="" name="group_id">
+        <div id="table_id_container"></div>
+        <h2><a class="gradation xlarge_font">1. What to include in notifications: </a></h2>
 
-    <!-- ▼LINE風ここから -->
-    <div class="line__container">
-        <!-- タイトル -->
-        <!--<div class="line__title">
-            メッセージのイメージ
-        </div>-->
-        <div class="form line__contents relax_container">
-            <div class="line__left">
-                <figure>
-                    <img class="shadow" src="pic/icon.png"/>
-                </figure>
-                <div class="line__left-text">
-                    <div class="name">Toubans!</div>
-                    <div class="text shadow">
-                        <h3><label for="top_textarea" class="gradation large_font">1. First line</label></h3>
-                        <select name="top_textarea_select" id="top_textarea_select" class="large_font pulldownmenu">
-                            <option value="">(Select)</option>
-                            <option value="今日の当番のお知らせです">Notification of today's duty.</option>
-                            <option value="明日の当番のお知らせです">Notification of tomorrow's duty.</option>
-                            <option value="（挨拶文を自分で入力する）">(Write original message.)</option>
-                        </select><br>
-                        <input type="text" name="top_textarea" id="top_textarea" class="text_area large_font" placeholder="例）今日の当番のお知らせです"><br><br>
+        <!-- ▼LINE風ここから -->
+        <div class="line__container">
+            <!-- タイトル -->
+            <!--<div class="line__title">
+                メッセージのイメージ
+            </div>-->
+            <div class="form line__contents relax_container">
+                <div class="line__left">
+                    <figure>
+                        <img class="shadow" src="pic/icon.png"/>
+                    </figure>
+                    <div class="line__left-text">
+                        <div class="name">Toubans!</div>
+                        <div class="text shadow">
+                            <h3><label for="top_textarea" class="gradation large_font">1. First line</label></h3>
+                            <select name="top_textarea_select" id="top_textarea_select" class="large_font pulldownmenu">
+                                <option value="">(Select)</option>
+                                <option value="今日の当番のお知らせです">Notification of today's duty.</option>
+                                <option value="明日の当番のお知らせです">Notification of tomorrow's duty.</option>
+                                <option value="（挨拶文を自分で入力する）">(Write original message.)</option>
+                            </select><br>
+                            <input type="text" name="top_textarea" id="top_textarea" class="text_area large_font" placeholder="例）今日の当番のお知らせです"><br><br>
 
-                        <h3><a class="gradation large_font">2.Content of duties</a></h3><br><br>
-                        <a href="#touban_modal" class="modal btn large_font">Tap for setup.</a><br>
+                            <h3><a class="gradation large_font">2.Content of duties</a></h3><br><br>
+                            <a href="#touban_modal" class="modal btn large_font">Tap for setup.</a><br>
 
-                        <div id="touban_modal" class="touban_container" style="display: none;">
-                            <h3 class="no-margin-bottom"><a class="gradation xlarge_font">1. Enter duty name(s).</a></h3>
+                            <div id="touban_modal" class="touban_container" style="display: none;">
+                                <h3 class="no-margin-bottom"><a class="gradation xlarge_font">1. Enter duty name(s).</a></h3>
 
-                            <div class = "roles">
-                                <!--<a class="bold">役割</a><br>-->
-                                <ol id="roles_list" class="touban_list_container large_font"><!-- "id" attribute is required -->
-                                    <li class="roles_list_var"><!-- .(id)_var -->
-                                        <div class="touban_form">
-                                            <input type="text" data-name-format="roles_list[]" name="roles_list[]" id="roles_list_0" placeholder="e.g. &quot;Laundry&quot;" class="text_area touban_text_area large_font vertical_fat">
-                                            <button class="roles_list_del btn nowrap vertical_slim"><a class="nowrap large_font">Delete</a></button><!-- .(id)_del -->
-                                        </div>
-                                    </li>
-                                </ol>
-                                <a href="javascript:void(0)" id="roles_list_add" class="roles_list_add btn roles_add_btn large_font">Add duty</a>
+                                <div class = "roles">
+                                    <!--<a class="bold">役割</a><br>-->
+                                    <ol id="roles_list" class="touban_list_container large_font"><!-- "id" attribute is required -->
+                                        <li class="roles_list_var"><!-- .(id)_var -->
+                                            <div class="touban_form">
+                                                <input type="text" data-name-format="roles_list[]" name="roles_list[]" id="roles_list_0" placeholder="e.g. &quot;Laundry&quot;" class="text_area touban_text_area large_font vertical_fat">
+                                                <button class="roles_list_del btn nowrap vertical_slim"><a class="nowrap large_font">Delete</a></button><!-- .(id)_del -->
+                                            </div>
+                                        </li>
+                                    </ol>
+                                    <a href="javascript:void(0)" id="roles_list_add" class="roles_list_add btn roles_add_btn large_font">Add duty</a>
+                                </div>
+
+                                <br><br>
+
+                                <h3 class="no-margin-bottom"><a class="gradation xlarge_font">2. Enter member name(s).</a></h3>
+                                <a class="large_font">*Tap the "Add duty" button to add member(s). Duties will be rotated in numerical order.<!--※メンバー追加ボタンを押して、当番を回したい全てのメンバー（班）の名前を入力します。--></a><br><br>
+                                <div class="members">
+                                    <!--<a class="bold">メンバー</a><br>-->
+                                    <ol id="members_list" class="touban_list_container large_font"><!-- "id" attribute is required -->
+                                        <li class="members_list_var"><!-- .(id)_var -->
+                                            <div class="touban_form">
+                                                <input type="text" data-name-format="members_list[]" name="members_list[]" id="members_list_0" placeholder="e.g &quot;Group A&quot;" class="text_area touban_text_area large_font vertical_fat">
+                                                <button class="members_list_del btn vertical_slim"><a class="nowrap large_font">Delete</a></button><!-- .(id)_del -->
+                                            </div>
+                                        </li>
+                                    </ol>
+                                    <a href="javascript:void(0)" id="members_list_add" class="members_list_add btn members_add_btn large_font">Add member</a>
+                                </div>
+
+                                <br>
+
+
+                                <h3><a href="javascript:void(0)" class="button" id="modaal_close">Done</a></h3>
                             </div>
 
-                            <br><br>
-
-                            <h3 class="no-margin-bottom"><a class="gradation xlarge_font">2. Enter member name(s).</a></h3>
-                            <a class="large_font">*Tap the "Add duty" button to add member(s). Duties will be rotated in numerical order.<!--※メンバー追加ボタンを押して、当番を回したい全てのメンバー（班）の名前を入力します。--></a><br><br>
-                            <div class="members">
-                                <!--<a class="bold">メンバー</a><br>-->
-                                <ol id="members_list" class="touban_list_container large_font"><!-- "id" attribute is required -->
-                                    <li class="members_list_var"><!-- .(id)_var -->
-                                        <div class="touban_form">
-                                            <input type="text" data-name-format="members_list[]" name="members_list[]" id="members_list_0" placeholder="e.g &quot;Group A&quot;" class="text_area touban_text_area large_font vertical_fat">
-                                            <button class="members_list_del btn vertical_slim"><a class="nowrap large_font">Delete</a></button><!-- .(id)_del -->
-                                        </div>
-                                    </li>
-                                </ol>
-                                <a href="javascript:void(0)" id="members_list_add" class="members_list_add btn members_add_btn large_font">Add member</a>
-                            </div>
-
-                            <br>
-
-
-                            <h3><a href="javascript:void(0)" class="button" id="modaal_close">Done</a></h3>
+                            <!--<a>回し方</a><br>
+                            <input type="radio" id="block_size_day" name="block_size_radio" value="0" checked><label for="block_size_day">日</label>
+                            <input type="radio" id="block_size_week" name="block_size_radio" value="1"><label for="block_size_week">週</label>
+                            <input type="radio" id="block_size_month" name="block_size_radio" value="2"><label for="block_size_month">月</label><br>-->
+                            <br><br><h3><label for="lower_textarea" class="gradation large_font">3. Closing remark</label></h3>
+                            <select name="lower_textarea_select" id="lower_textarea_select" class="large_font pulldownmenu">
+                                <option value="">(Select)</option>
+                                <option value="Thanks!">Thanks!</option>
+                                <option value="A friendly reminder!">A friendly reminder!</option>
+                                <option value="（締めの文を自分で入力する）">（Write original message.）</option>
+                            </select><br>
+                            <input type="text" name="lower_textarea" id="lower_textarea" class="text_area large_font" placeholder="e.g &quot;Thanks.&quot;">
                         </div>
 
-                        <!--<a>回し方</a><br>
-                        <input type="radio" id="block_size_day" name="block_size_radio" value="0" checked><label for="block_size_day">日</label>
-                        <input type="radio" id="block_size_week" name="block_size_radio" value="1"><label for="block_size_week">週</label>
-                        <input type="radio" id="block_size_month" name="block_size_radio" value="2"><label for="block_size_month">月</label><br>-->
-                        <br><br><h3><label for="lower_textarea" class="gradation large_font">3. Closing remark</label></h3>
-                        <select name="lower_textarea_select" id="lower_textarea_select" class="large_font pulldownmenu">
-                            <option value="">(Select)</option>
-                            <option value="Thanks!">Thanks!</option>
-                            <option value="A friendly reminder!">A friendly reminder!</option>
-                            <option value="（締めの文を自分で入力する）">（Write original message.）</option>
-                        </select><br>
-                        <input type="text" name="lower_textarea" id="lower_textarea" class="text_area large_font" placeholder="e.g &quot;Thanks.&quot;">
+                        <br>
                     </div>
-
-                    <br>
                 </div>
             </div>
         </div>
-    </div>
 
-    <br>
+        <br>
 
         <div class="notification_settings">
 
@@ -161,20 +167,20 @@
                 <!--月を選んだときの通知設定-->
                 <div class="notification_doM large_font">
                     <br>
-                        <!--<a>通知する月を選択して下さい</a><br>
-                        <input type="checkbox" id="january" name="notification_months[]" value="1" checked><label for="january">1月</label>
-                        <input type="checkbox" id="february" name="notification_months[]" value="2" checked><label for="february">2月</label>
-                        <input type="checkbox" id="march" name="notification_months[]" value="3" checked><label for="march">3月</label>
-                        <input type="checkbox" id="april" name="notification_months[]" value="4" checked><label for="april">4月</label>
-                        <input type="checkbox" id="may" name="notification_months[]" value="5" checked><label for="may">5月</label>
-                        <input type="checkbox" id="june" name="notification_months[]" value="6" checked><label for="june">6月</label>
-                        <input type="checkbox" id="july" name="notification_months[]" value="7" checked><label for="july">7月</label>
-                        <input type="checkbox" id="august" name="notification_months[]" value="8" checked><label for="august">8月</label>
-                        <input type="checkbox" id="september" name="notification_months[]" value="9" checked><label for="september">9月</label>
-                        <input type="checkbox" id="october" name="notification_months[]" value="10" checked><label for="october">10月</label>
-                        <input type="checkbox" id="november" name="notification_months[]" value="11" checked><label for="november">11月</label>
-                        <input type="checkbox" id="december" name="notification_months[]" value="12" checked><label for="december">12月</label>
-                    <a>の</a>-->
+                    <!--<a>通知する月を選択して下さい</a><br>
+                    <input type="checkbox" id="january" name="notification_months[]" value="1" checked><label for="january">1月</label>
+                    <input type="checkbox" id="february" name="notification_months[]" value="2" checked><label for="february">2月</label>
+                    <input type="checkbox" id="march" name="notification_months[]" value="3" checked><label for="march">3月</label>
+                    <input type="checkbox" id="april" name="notification_months[]" value="4" checked><label for="april">4月</label>
+                    <input type="checkbox" id="may" name="notification_months[]" value="5" checked><label for="may">5月</label>
+                    <input type="checkbox" id="june" name="notification_months[]" value="6" checked><label for="june">6月</label>
+                    <input type="checkbox" id="july" name="notification_months[]" value="7" checked><label for="july">7月</label>
+                    <input type="checkbox" id="august" name="notification_months[]" value="8" checked><label for="august">8月</label>
+                    <input type="checkbox" id="september" name="notification_months[]" value="9" checked><label for="september">9月</label>
+                    <input type="checkbox" id="october" name="notification_months[]" value="10" checked><label for="october">10月</label>
+                    <input type="checkbox" id="november" name="notification_months[]" value="11" checked><label for="november">11月</label>
+                    <input type="checkbox" id="december" name="notification_months[]" value="12" checked><label for="december">12月</label>
+                <a>の</a>-->
                     <select name="notification_doM" id="notification_doM" class="large_font">
                         <option value="1">1</option>
                         <option value="2">2</option>
@@ -225,46 +231,47 @@
             <button type="submit" class="button"><a>All Done!</a></button>
         </div>
 
-</form>
+    </form>
 
-<div id="liffdata">
-    <h2>LIFF Data</h2>
-    <table border="1">
-        <tr>
-            <th>language</th>
-            <td id="languagefield"></td>
-        </tr>
-        <tr>
-            <th>context.viewType</th>
-            <td id="viewtypefield"></td>
-        </tr>
-        <tr>
-            <th>context.userId</th>
-            <td id="useridfield"></td>
-        </tr>
-        <tr>
-            <th>context.utouId</th>
-            <td id="utouidfield"></td>
-        </tr>
-        <tr>
-            <th>context.roomId</th>
-            <td id="roomidfield"></td>
-        </tr>
-        <tr>
-            <th>context.groupId</th>
-            <td id="groupidfield"></td>
-        </tr>
-    </table>
-</div>
+    <div id="liffdata">
+        <h2>LIFF Data</h2>
+        <table border="1">
+            <tr>
+                <th>language</th>
+                <td id="languagefield"></td>
+            </tr>
+            <tr>
+                <th>context.viewType</th>
+                <td id="viewtypefield"></td>
+            </tr>
+            <tr>
+                <th>context.userId</th>
+                <td id="useridfield"></td>
+            </tr>
+            <tr>
+                <th>context.utouId</th>
+                <td id="utouidfield"></td>
+            </tr>
+            <tr>
+                <th>context.roomId</th>
+                <td id="roomidfield"></td>
+            </tr>
+            <tr>
+                <th>context.groupId</th>
+                <td id="groupidfield"></td>
+            </tr>
+        </table>
+    </div>
 
-<!--scripts-->
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/jquery.add-input-area@4.11.0/dist/jquery.add-input-area.min.js"></script>
-<script src="https://d.line-scdn.net/liff/1.0/sdk.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.12.0/validate.min.js"></script>
-<script src="autosize.js"></script>
-<script src="script.js"></script>
-<!--<script src="liff-starter.js"></script>-->
-<script src="modaal.min.js"></script>
-<script src="jquery.add-input-area.min.js"></script>
-</body>
+    <!--scripts-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.add-input-area@4.11.0/dist/jquery.add-input-area.min.js"></script>
+    <script src="https://d.line-scdn.net/liff/1.0/sdk.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.12.0/validate.min.js"></script>
+    <script src="autosize.js"></script>
+    <script src="script.js"></script>
+    <!--<script src="liff-starter.js"></script>-->
+    <script src="modaal.min.js"></script>
+    <script src="jquery.add-input-area.min.js"></script>
+    </body>
+</html>

@@ -16,7 +16,7 @@ use Carbon\Carbon;
 $tableArray = \Model\Table::all();
 
 foreach ($tableArray as $table ) {
-    $dt = Carbon::now(new DateTimeZone('Asia/Tokyo'));
+    $dt = Carbon::now(new DateTimeZone('America/Chicago'));
     notify($table,$dt);
     echo $table['group_id'];
 }
@@ -65,7 +65,7 @@ function send($table){
 
     $table->update([
         'sent_count' => $table['sent_count']+1,
-        'last_notified_at' => Carbon::now(new DateTimeZone('Asia/Tokyo'))
+        'last_notified_at' => Carbon::now(new DateTimeZone('America/Chicago'))
     ]);
 
     error_log( $response->getHTTPStatus() . ' ' . $response->getRawBody());
@@ -108,15 +108,15 @@ function generate($table){
 }
 
 function isTimeReady($startTime){
-     $notificationTimeCarbon = new Carbon($startTime,'Asia/Tokyo');
+     $notificationTimeCarbon = new Carbon($startTime,'America/Chicago');
 
-     $dt = Carbon::now(new DateTimeZone('Asia/Tokyo'));
+     $dt = Carbon::now(new DateTimeZone('America/Chicago'));
 
     return $dt->gte($notificationTimeCarbon);
 }
 function isGreater($time1, $time2){
-    $time2Buf = new Carbon($time2,'Asia/Tokyo');
-    $time1Buf = new Carbon($time1,'Asia/Tokyo');
+    $time2Buf = new Carbon($time2,'America/Chicago');
+    $time1Buf = new Carbon($time1,'America/Chicago');
    /* echo 'time1Buf is'.$time1Buf.'this';
     echo 'time2Buf is'.$time2Buf.'this';*/
     return $time1Buf->lt($time2Buf);

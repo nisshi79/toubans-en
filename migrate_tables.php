@@ -26,6 +26,7 @@ Capsule::schema()->create('tables', function (Blueprint $table) {
     $table->dateTime('last_notified_at');
     $table->unsignedBigInteger('sent_count');
     $table->string('group_id');
+    $table->integer('stop_span');
     $table->timestamps();
     $table->integer('notification_span');
 });

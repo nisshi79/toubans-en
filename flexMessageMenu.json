@@ -18,7 +18,7 @@
         "action": {
           "type": "uri",
           "label": "SETUP/CHANGES",
-          "uri": "https://linecorp.com"
+          "uri": "https://toubans-en.herokuapp.com/"
         },
         "color": "#BD67BF",
         "margin": "sm",

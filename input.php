@@ -32,13 +32,13 @@ switch ($inputs['notification_span']){
     default:
         break;
 }
-if($inputs['top_textarea_select']=='（挨拶文を自分で入力する）'){
+if($inputs['top_textarea_select']=='（Write original message.）'){
     $top_textarea_buf=$inputs['top_textarea'];
 }else{
     $top_textarea_buf=$inputs['top_textarea_select'];
 }
 
-if($inputs['lower_textarea_select']=='（締めの文を自分で入力する）'){
+if($inputs['lower_textarea_select']=='（Write original message.）'){
     $lower_textarea_buf=$inputs['lower_textarea'];
 }else{
     $lower_textarea_buf=$inputs['lower_textarea_select'];
@@ -49,7 +49,7 @@ $table = \Model\Table::create([
     'notification_span'=> $inputs['notification_span'],
     'notification_date' => $notification_date_buf,
     'notification_time' => $inputs['notification_time'],
-    'last_notified_at' => Carbon::now(new DateTimeZone('Asia/Tokyo')),
+    'last_notified_at' => Carbon::now(new DateTimeZone('America/Chicago')),
     'group_id' => $inputs['group_id'],
     'sent_count' => '0',
     'lower_textarea' => $lower_textarea_buf

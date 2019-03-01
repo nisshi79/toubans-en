@@ -64,17 +64,17 @@ foreach ($events as $event) {
     }*/
     function sendConfirmMessage($replyToken,$stopDate){
         // 「はい」ボタン
-        $yes_post = new \LINE\LINEBot\TemplateActionBuilder\PostbackTemplateActionBuilder("はい", "ans=y&stop={$stopDate}",'はい');
+        $yes_post = new \LINE\LINEBot\TemplateActionBuilder\PostbackTemplateActionBuilder("Yes", "ans=y&stop={$stopDate}",'Yes');
         // 「いいえ」ボタン
-        $no_post = new \LINE\LINEBot\TemplateActionBuilder\PostbackTemplateActionBuilder("いいえ", "ans=n",'いいえ');
+        $no_post = new \LINE\LINEBot\TemplateActionBuilder\PostbackTemplateActionBuilder("No", "ans=n",'No');
         // Confirmテンプレートを作る
         $yesButton = new QuickReplyBuilder\ButtonBuilder\QuickReplyButtonBuilder($yes_post);
         $noButton = new QuickReplyBuilder\ButtonBuilder\QuickReplyButtonBuilder($no_post);
         $confirm_message = new LINE\LINEBot\QuickReplyBuilder\QuickReplyMessageBuilder([$yesButton,$noButton]);
         $confirmDate='';
-        if($stopDate=='today')$confirmDate='今日';
-        if($stopDate=='tomorrow')$confirmDate='明日';
-        $message = new \LINE\LINEBot\MessageBuilder\TextMessageBuilder("本当に{$confirmDate}の通知を停止しますか？",$confirm_message);
+        if($stopDate=='today')$confirmDate='today';
+        if($stopDate=='tomorrow')$confirmDate='tomorrow';
+        $message = new \LINE\LINEBot\MessageBuilder\TextMessageBuilder("Are you sure to stop {$confirmDate}'s notification?",$confirm_message);
         // Confirmメッセージを作る
         /*$confirm_message = new TemplateMessageBuilder("確認", $confirm);*/
 
@@ -121,8 +121,8 @@ foreach ($events as $event) {
     }
     function sendAlreadyStopped($stopDate, $sourceId,$replyToken){
         $stopDateStr='';
-        if($stopDate=='tomorrow')$stopDateStr='明日';
-        if($stopDate=='today')$stopDateStr='今日';
+        if($stopDate=='tomorrow')$stopDateStr='tomorrow';
+        if($stopDate=='today')$stopDateStr='today';
 
         $httpClient = new \LINE\LINEBot\HTTPClient\CurlHTTPClient(getenv('TOUBAN_BOT_CHANNEL_ACCESS_TOKEN'));
         $bot = new \LINE\LINEBot($httpClient, ['channelSecret' => getenv('TOUBAN_BOT_CHANNEL_SECRET')]);
