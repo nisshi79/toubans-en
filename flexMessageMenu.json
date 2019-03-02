@@ -18,7 +18,7 @@
         "action": {
           "type": "uri",
           "label": "SETUP/CHANGES",
-          "uri": "https://toubans-en.herokuapp.com/"
+          "uri": "line://app/1648777470-J54BE5mA"
         },
         "color": "#BD67BF",
         "margin": "sm",
