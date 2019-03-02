@@ -49,7 +49,27 @@ try {
 } catch(\LINE\LINEBot\Exception\InvalidEventRequestException $e) {
     error_log('parseEventRequest failed. InvalidEventRequestException => '.var_export($e, true));
 }
+function sendConfirmMessage($replyToken,$stopDate){
+    // 「はい」ボタン
+    $yes_post = new \LINE\LINEBot\TemplateActionBuilder\PostbackTemplateActionBuilder("Yes", "ans=y&stop={$stopDate}",'Yes');
+    // 「いいえ」ボタン
+    $no_post = new \LINE\LINEBot\TemplateActionBuilder\PostbackTemplateActionBuilder("No", "ans=n",'No');
+    // Confirmテンプレートを作る
+    $yesButton = new QuickReplyBuilder\ButtonBuilder\QuickReplyButtonBuilder($yes_post);
+    $noButton = new QuickReplyBuilder\ButtonBuilder\QuickReplyButtonBuilder($no_post);
+    $confirm_message = new LINE\LINEBot\QuickReplyBuilder\QuickReplyMessageBuilder([$yesButton,$noButton]);
+    $confirmDate='';
+    if($stopDate=='today')$confirmDate='today';
+    if($stopDate=='tomorrow')$confirmDate='tomorrow';
+    $message = new \LINE\LINEBot\MessageBuilder\TextMessageBuilder("Are you sure to stop {$confirmDate}'s notification?",$confirm_message);
+    // Confirmメッセージを作る
+    /*$confirm_message = new TemplateMessageBuilder("確認", $confirm);*/
 
+    $httpClient = new \LINE\LINEBot\HTTPClient\CurlHTTPClient(getenv('TOUBAN_BOT_CHANNEL_ACCESS_TOKEN'));
+    $bot = new \LINE\LINEBot($httpClient, ['channelSecret' => getenv('TOUBAN_BOT_CHANNEL_SECRET')]);
+    /* $message = new \LINE\LINEBot\MessageBuilder\TextMessageBuilder('ooooo');*/
+    $res = $bot->replyMessage($replyToken, $message);
+}
 // 配列に格納された各イベントをループで処理
 foreach ($events as $event) {
     // MessageEventクラスのインスタンスでなければ処理をスキップ
@@ -62,27 +82,6 @@ foreach ($events as $event) {
         $bot->replyText($event->getReplyToken(), 'Add this Bot to Group.');
         continue;
     }*/
-    function sendConfirmMessage($replyToken,$stopDate){
-        // 「はい」ボタン
-        $yes_post = new \LINE\LINEBot\TemplateActionBuilder\PostbackTemplateActionBuilder("Yes", "ans=y&stop={$stopDate}",'Yes');
-        // 「いいえ」ボタン
-        $no_post = new \LINE\LINEBot\TemplateActionBuilder\PostbackTemplateActionBuilder("No", "ans=n",'No');
-        // Confirmテンプレートを作る
-        $yesButton = new QuickReplyBuilder\ButtonBuilder\QuickReplyButtonBuilder($yes_post);
-        $noButton = new QuickReplyBuilder\ButtonBuilder\QuickReplyButtonBuilder($no_post);
-        $confirm_message = new LINE\LINEBot\QuickReplyBuilder\QuickReplyMessageBuilder([$yesButton,$noButton]);
-        $confirmDate='';
-        if($stopDate=='today')$confirmDate='today';
-        if($stopDate=='tomorrow')$confirmDate='tomorrow';
-        $message = new \LINE\LINEBot\MessageBuilder\TextMessageBuilder("Are you sure to stop {$confirmDate}'s notification?",$confirm_message);
-        // Confirmメッセージを作る
-        /*$confirm_message = new TemplateMessageBuilder("確認", $confirm);*/
-
-        $httpClient = new \LINE\LINEBot\HTTPClient\CurlHTTPClient(getenv('TOUBAN_BOT_CHANNEL_ACCESS_TOKEN'));
-        $bot = new \LINE\LINEBot($httpClient, ['channelSecret' => getenv('TOUBAN_BOT_CHANNEL_SECRET')]);
-        /* $message = new \LINE\LINEBot\MessageBuilder\TextMessageBuilder('ooooo');*/
-        $res = $bot->replyMessage($replyToken, $message);
-    }
     function inputStopSpan($event,$postbackData){
         $table = \Model\Table::where('group_id', $event->getEventSourceId())
             ->first();
