@@ -45,8 +45,8 @@
                             <h3><label for="top_textarea" class="gradation large_font">1. First line</label></h3>
                             <select name="top_textarea_select" id="top_textarea_select" class="large_font pulldownmenu">
                                 <option value="">(Select)</option>
-                                <option value="今日の当番のお知らせです">Notification of today's duty.</option>
-                                <option value="明日の当番のお知らせです">Notification of tomorrow's duty.</option>
+                                <option value="Notification of today's duty.">Notification of today's duty.</option>
+                                <option value="Notification of tomorrow's duty.">Notification of tomorrow's duty.</option>
                                 <option value="（挨拶文を自分で入力する）">(Write original message.)</option>
                             </select><br>
                             <input type="text" name="top_textarea" id="top_textarea" class="text_area large_font" placeholder="例）今日の当番のお知らせです"><br><br>
